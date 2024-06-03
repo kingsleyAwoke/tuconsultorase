@@ -8,7 +8,7 @@ const StyledIcon = styled(FontAwesomeIcon)
 font-size: 12px;
 `
 
-const Navbar = () => {
+const Header = () => {
   return (
     <header>
       <nav>
@@ -89,4 +89,4 @@ const Navbar = () => {
   );
 }
 
-export default Navbar
+export default Header

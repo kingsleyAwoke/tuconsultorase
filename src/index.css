@@ -49,7 +49,7 @@ input, textarea, button {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BODY-BGCOLOR: whitesmoke;
+    --BODY-BGCOLOR: #fff;
     --FONT-COLOR: #333;
     --BORDER-COLOR: #333;
     --SUCCESS-COLOR: #3c763d;
@@ -73,12 +73,13 @@ input, textarea, button {
     /* || STANDARD PADDING */
     --PADDING-T-B: 0.25em;
     --PADDING-SIDE: 2.5%;
+    /* --SECTION-PADDING: 5px; */
 
     /* || STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.5em)0;
 
-    /* SHASOW */
-    --SHADOW: 0 2px 28px var(--BLACK);
+    /* SHADOW */
+    --SHADOW: 0 2px 28px var(--BLACK);    
 }
 
 /* || UTILITY CLASSES */
@@ -134,7 +135,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--BODY-BGCOLOR);
+    background-color: whitesmoke;
     z-index: 4;
     padding-block: 10px;
     border-block-end:1px solid #ededed;
@@ -193,3 +194,5 @@ nav li:hover > .dropdown-menu {
 #active {
     background-color: #e7e7e7;
 }
+
+/* HERO */

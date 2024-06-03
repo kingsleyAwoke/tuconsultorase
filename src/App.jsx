@@ -1,34 +1,21 @@
-import React,  { useState, useEffect } from 'react';
-import SkeletonLoading from './components/Loading';
-import Header from './components/Header';
-import Hero from './components/Hero';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import MainLayout from './Layouts/MainLayout'
+import Homepage from './Pages/homepage'
 
 
-// SKELETON LOADING FUNCTION
-const Loading = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-  }, []);
-
-  return (
-    <div>
-      {isLoading ? <SkeletonLoading />: <App />}
-    </div>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout />}>      
+      <Route index element={<Homepage />} />
+    </Route>
   )
-}
+)
+
+
 
 // APP CONTENT
 const App = () => {
-  return (
-    <>
-      <Header />
-      <Hero />
-    </>
-  );
+  return <RouterProvider router={ router } />
 }
 
-export default Loading
+export default App;
