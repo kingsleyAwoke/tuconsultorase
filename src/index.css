@@ -65,6 +65,7 @@ input, textarea, button {
     --DANGER-HOVER: #843534;
     --BLACK: #000;
     --WHITE: #fff;
+    --NAV-HOVER: #e7e7e7;
 
 
     /* || BORDERS */
@@ -73,7 +74,7 @@ input, textarea, button {
     /* || STANDARD PADDING */
     --PADDING-T-B: 0.25em;
     --PADDING-SIDE: 2.5%;
-    /* --SECTION-PADDING: 5px; */
+    --SECTION-PADDING: 20px;
 
     /* || STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.5em)0;
@@ -92,6 +93,9 @@ input, textarea, button {
     text-align: center;
 }
 
+.padding-top {
+    padding-block-start: calc(var(--SECTION-PADDING) + 50px);
+}
 /* || GENERAL STYLES */
 
 html {
@@ -117,13 +121,9 @@ p {
 }
 
 a:any-link {
-    color: var(--LINK-COLOR);
     text-decoration: none;
 }
 
-a:hover, a:focus-visible {
-    color: var(--LINK-HOVER);
-}
 
 li {
     list-style-type: none;
@@ -145,13 +145,8 @@ header.active {
     filter: drop-shadow(var(--SHADOW));
 }
 
-header .nav-link {
-    color: var(--FONT-COLOR);
-}
-
 /* NAV BAR */
 nav {
-    color: var(--FONT-COLOR);
     display: flex;
     justify-content: center;
 }
@@ -164,6 +159,11 @@ nav ul {
 nav li a {
     display: block;
     padding: 10px 15px;
+    color: var(--FONT-COLOR);
+}
+
+nav li a:hover, nav li a:focus-visible {
+    color: var(--BLACK);
 }
 
 .dropdown-menu {
@@ -172,7 +172,6 @@ nav li a {
     background-color: var(--BODY-BGCOLOR);
     min-width: 200px;
     z-index: 1;
-    box-shadow: 5px 10px 8px #888888;
 }
 
 .dropdown-menu li {
@@ -180,19 +179,33 @@ nav li a {
 }
 
 .dropdown-menu li a {
-    padding: 7px;
+    padding: 5px;
 }
 
 .dropdown-menu li a:hover {
-    background-color: #e6e6e6;
+    background-color: var(--NAV-HOVER);
 }
 
 nav li:hover > .dropdown-menu {
     display: block;
 }
 
-#active {
-    background-color: #e7e7e7;
+.active-link {
+    background-color: var(--NAV-HOVER);
+    border-radius: 5px;
+}
+
+.inactive-link {
+    background-color: none;
 }
 
 /* HERO */
+.hero-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hero-banner {
+    position: relative;
+}
