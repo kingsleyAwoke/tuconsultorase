@@ -95,7 +95,7 @@ input, textarea, button {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0 10px;
 }
 
 .padding-top {
@@ -206,7 +206,9 @@ nav li:hover > .dropdown-menu {
 
 /* HERO */
 .hero-content {
-    
+    background: url('images/jumbotron5.png');
+    color: var(--WHITE);
+    padding: 40px;
 }
 
 .hero-banner {
