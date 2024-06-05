@@ -1,16 +1,16 @@
-import { Link } from 'react-router-dom'
-import React from 'react';
-import { FaExclamationTriangle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const NotFoundPage = () => {
   return (
-    <section>
-
-        <FaExclamationTriangle />
-      <h1>404 Not Found</h1>
-      <p>This Page does not exist</p>
-
-      <Link to='/'>Go back to home page</Link>
+    <section className='notFoundContainer'>
+      <div className='notFound'>
+        <h1 className='notFoundH1'>Oops!</h1>
+        <div className="notFoundContent">
+          <span>404 Error &ndash; Page Not Found</span>
+          <p>Sorry, the page you're looking for doesn't exist. Please go back to Homepage.</p>
+          <Link to='/' className='notFoundLink'>Go To Homepage</Link>
+        </div>        
+      </div>
     </section>
   );
 }

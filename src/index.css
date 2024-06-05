@@ -45,7 +45,7 @@ input, textarea, button {
 :root {
     /* FONTS */
     --FF: Roboto, sans-serif;
-    --FF-HEADINGS: "PT Sans";
+    --FF-HEADINGS: sans-serif;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
@@ -94,8 +94,21 @@ input, textarea, button {
     font-size: 11px;
 }
 
+.primary-color {
+    color: var(--LINK-COLOR);
+}
+
+.primary-color:hover {
+    color: var(--LINK-HOVER);
+    text-decoration: underline;
+}
+
 .container {
     margin: 0 10px;
+}
+
+.warn-color {
+    color: #e49503;
 }
 
 .padding-top {
@@ -122,7 +135,7 @@ h1, h2, h3 {
 
 p {
     /* DONT ADD UNIT TO THE LINE-HEIGHT */
-    line-height: 1.5; 
+    line-height: 1.4; 
 }
 
 a:any-link {
@@ -206,11 +219,97 @@ nav li:hover > .dropdown-menu {
 
 /* HERO */
 .hero-content {
-    background: url('images/jumbotron5.png');
+    background-image: url('images/jumbotron5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--WHITE);
-    padding: 40px;
+    padding: 65px 60px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    margin-top: 10px;
 }
 
-.hero-banner {
-    
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 5px;
+    margin: 3px 0;
+}
+
+.search-box:focus {
+    outline: none;
+}
+
+.search-box-btn {
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+.search-box {
+    margin-left: 50px;
+}
+
+/* NOT FOUND PAGE */
+.notFoundContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--NAV-BGCOLOR);
+}
+
+.notFound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--WHITE);
+    padding: 30px;
+    box-shadow: 0 0 10px 10px #00000033;
+    border-radius: 10px;
+}
+
+.notFoundH1 {
+    font-family: futura;
+    font-size: 10rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.notFound .notFoundContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.notFound .notFoundContent p {
+    text-align: center;
+}
+
+.notFound .notFoundContent span {
+    font-family: futura;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.notFoundLink {
+    margin-top: 20px;
+    padding: 16px 26px;
+    border-radius: 50px;
+    color: var(--WHITE);
+    background-color: var(--LINK-COLOR);
+}
+
+.notFoundLink:hover {
+    color: var(--LINK-COLOR);
+    background-color: transparent;
+    border: 1px solid var(--LINK-COLOR);
 }
