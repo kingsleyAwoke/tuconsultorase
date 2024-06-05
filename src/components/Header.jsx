@@ -1,13 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
+import { FaCaretDown } from 'react-icons/fa';
 
-const StyledIcon = styled(FontAwesomeIcon)
-`color: #333;
-font-size: 12px;
-`
 
 const Header = () => {
 
@@ -19,7 +13,7 @@ const Header = () => {
           <li><NavLink to="/" className={linkClass}>Inicio</NavLink></li>
 
           <li className='dropdown'>
-            <NavLink to="/blog" className={linkClass}>Blog <StyledIcon icon={faCaretDown} /></NavLink>
+            <NavLink to="/blog" className={linkClass}>Blog <FaCaretDown className='caretDown' /></NavLink>
             <ul  className='dropdown-menu'>
               <li><NavLink to="/blog/seo" className={linkClass}>SEO</NavLink></li>
               <li><NavLink to="/blog/joomla" className={linkClass}>Joomla</NavLink></li>
@@ -30,7 +24,7 @@ const Header = () => {
           </li>
 
           <li className='dropdown'>
-              <NavLink to="/utilidades" className={linkClass}>Utilidades seo <StyledIcon icon={faCaretDown} /></NavLink>
+              <NavLink to="/utilidades" className={linkClass}>Utilidades seo <FaCaretDown className='caretDown' /></NavLink>
             <ul className='dropdown-menu'>
               <li><NavLink to="/utilidades/seo-imagen" className={linkClass}>seo imagen</NavLink></li>
               <li><NavLink to="/utilidades/herramienta" className={linkClass}>herramienta if-Modified</NavLink></li>
@@ -42,7 +36,7 @@ const Header = () => {
           <li><NavLink to="/maoa-del-sitio" className={linkClass}>Mapa del sitio</NavLink></li>
 
           <li className='dropdown'>
-            <NavLink to="/plantilla" className={linkClass}>Plantilla joomla gratis y de pago <StyledIcon icon={faCaretDown} /></NavLink>
+            <NavLink to="/plantilla" className={linkClass}>Plantilla joomla gratis y de pago <FaCaretDown className='caretDown' /></NavLink>
             <ul className='dropdown-menu'>
               <li><NavLink to="/plantilla/plantillas-joomla" className={linkClass}>Plantillas Joomla gratis</NavLink></li>
               <li><NavLink to="/plantilla/demo-plantilla" className={linkClass}>Demo planNavtilla Atomical</NavLink></li>
@@ -50,7 +44,7 @@ const Header = () => {
           </li>
           
           <li className='dropdown'>
-            <NavLink to="/modulos" className={linkClass}>Modulos <StyledIcon icon={faCaretDown} /> </NavLink>
+            <NavLink to="/modulos" className={linkClass}>Modulos <FaCaretDown className='caretDown' /> </NavLink>
               <ul className='dropdown-menu'>
                 <li><NavLink to="/modulos/jumbotron" className={linkClass}>Jumbotron</NavLink></li>
                 <li><NavLink to="/modulos/deno-modulo" className={linkClass}>Deno Modulo Jumbotron</NavLink></li>
@@ -62,7 +56,7 @@ const Header = () => {
           <li><NavLink to="/portafolio" className={linkClass}>Portafolio</NavLink></li>
 
           <li className='dropdown'>
-            <NavLink to="/servicios" className={linkClass}>Servicios <StyledIcon icon={faCaretDown} />  </NavLink>
+            <NavLink to="/servicios" className={linkClass}>Servicios <FaCaretDown className='caretDown' />  </NavLink>
             <ul className='dropdown-menu'>
               <li><NavLink to="/servicios/diseno-de-pagainas-web" className={linkClass}>Diseno de Pagainas web</NavLink></li>
               <li><NavLink to="/servicios/acelerar-joomla" className={linkClass}>Acelerar Joomla!</NavLink></li>

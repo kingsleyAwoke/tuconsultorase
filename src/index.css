@@ -89,8 +89,13 @@ input, textarea, button {
     white-space: nowrap;
 }
 
-.center {
-    text-align: center;
+.caretDown {
+    color: var(--FONT-COLOR);
+    font-size: 11px;
+}
+
+.container {
+    margin: 0 auto;
 }
 
 .padding-top {
@@ -201,11 +206,9 @@ nav li:hover > .dropdown-menu {
 
 /* HERO */
 .hero-content {
-    position: absolute;
-    left: 0;
-    top: 0;
+    
 }
 
 .hero-banner {
-    position: relative;
+    
 }
