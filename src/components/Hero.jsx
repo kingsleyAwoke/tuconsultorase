@@ -1,8 +1,10 @@
-import React from 'react';
+import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { FaCaretRight } from 'react-icons/fa';
 
 const Hero = () => {
+
+  const [text, setText] = useState('');
   return (
     <section className='hero container'>
       <div className="hero-content">
@@ -12,18 +14,18 @@ const Hero = () => {
         </div>
       </div>
 
-      <form id="mod-finder-searchform" action="http://google.com" method="get">
+      <form action="http://google.com" method="get">
         <div>
           <b><label htmlFor='search-bar'>Buscar</label></b>
           <br/>
-          <input type="text" name="q" className="search-box" size="25" value=""/>
-          <button type="submit" className='search-box-btn'>Ir</button>
+          <input type="search" placeholder='busca aquí..' className="search-box" size="25" value={text} onChange={ (e) => setText(e.target.value) } />
+          <button type="submit" className='submit-btn'>Ir</button>
           <br/>
           <Link to="http://google.com" className='primary-color'>Búsqueda avanzada</Link>
         </div>
       </form>
 
-      <div class="breadcrumbs">
+      <div className="breadcrumbs">
         <span>Está aquí: </span>
         <Link to="/" className='primary-color'>Inicio</Link>
         <FaCaretRight className='warn-color' />

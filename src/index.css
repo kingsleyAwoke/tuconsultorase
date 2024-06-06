@@ -46,12 +46,12 @@ input, textarea, button {
     /* FONTS */
     --FF: Roboto, sans-serif;
     --FF-HEADINGS: sans-serif;
-    --FS: clamp(1rem, 2.2vh, 1.5rem);
+    --FS: clamp(1rem, 2.2vh, 1.5rem);    
 
     /* COLORS */
     --BODY-BGCOLOR: #fff;
     --FONT-COLOR: #333;
-    --BORDER-COLOR: #333;
+    --BORDER-COLOR: #ccc;
     --SUCCESS-COLOR: #3c763d;
     --SUCCESS-HOVER: #2b542c;
     --LINK-COLOR: #428bca;
@@ -105,6 +105,27 @@ input, textarea, button {
 
 .container {
     margin: 0 10px;
+}
+
+.submit-btn {
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    color: var(--WHITE);
+    background-color: var(--LINK-COLOR);
+    border-radius: .25em;
+    padding: 8px;
+    text-align: center;
+}
+
+.primary-btn:hover {
+    background-color: var(--LINK-HOVER);
+}
+
+.no-focus:focus {
+    outline: none;
 }
 
 .warn-color {
@@ -240,17 +261,115 @@ nav li:hover > .dropdown-menu {
     margin: 3px 0;
 }
 
-.search-box:focus {
-    outline: none;
-}
-
-.search-box-btn {
-    padding: 0 3px;
-    cursor: pointer;
-}
-
 .search-box {
     margin-left: 50px;
+}
+
+/* MAIN SECTION */
+.main-section {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.subscribe-window {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 130%;
+}
+
+.subscribe-form {
+    border: 1px solid var(--BORDER-COLOR);
+    text-align: center;
+    padding: 3px;
+}
+
+.subscribe-form p:first-child {
+    color: blue;
+}
+
+.tutor-img {
+    border: 1px solid var(--BORDER-COLOR);
+}
+
+.tutor-window h3 {
+    color: var(--LINK-HOVER);
+}
+
+.tutor-window-txt {
+    color: #4cb2cf;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tutor-window-link {
+    width: 80%;
+    text-align: center;
+}
+
+/* SERVICE */
+.service-content {
+    margin-right: 15px;
+}
+
+.service-content-head {
+    background-color: #185359;
+    margin: 0 -5px 10px;
+    padding: 30px 0 10px 0;
+    font-size: 24px;
+    line-height: 1.19em;
+    color: var(--WHITE);
+    font-family: 'Titillium Maps', Arial;
+    text-shadow: #000000 1px 1px;
+    text-align: center;
+    background: #185359;
+}
+
+.service-content-txt {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.service-content-txt p span{
+    color: var(--FONT-COLOR);
+    line-height: 19px;
+}
+
+.service-content-head-first {
+    color: #227ab4;
+    line-height: 26px;
+    letter-spacing: -1px;
+    font-size: 24px;
+}
+
+.service-content-head-second {
+    color: #227ab4;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+}
+
+/*  QUICK ACCESS */
+.quick-access {
+    width: 110%;
+}
+
+.quick-access-header {
+    text-align: center;
+    width: 60%;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+.quick-link li {
+    list-style-type: disc;
+    padding-top: 5px;
 }
 
 /* NOT FOUND PAGE */
@@ -306,6 +425,7 @@ nav li:hover > .dropdown-menu {
     border-radius: 50px;
     color: var(--WHITE);
     background-color: var(--LINK-COLOR);
+    border: 1px solid var(--LINK-COLOR);
 }
 
 .notFoundLink:hover {

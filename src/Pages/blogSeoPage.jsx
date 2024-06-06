@@ -1,6 +1,6 @@
 import React from 'react'
 
-const blogSeoPage = () => {
+const BlogSeoPage = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const blogSeoPage = () => {
   )
 }
 
-export default blogSeoPage
+export default BlogSeoPage
