@@ -372,6 +372,58 @@ nav li:hover > .dropdown-menu {
     padding-top: 5px;
 }
 
+/* SECOND MAIN SECTION */
+.second-main-section {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(1, 1fr); */
+    gap: 1rem;
+}
+
+ .row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.readmore {
+    width: 30%;
+}
+
+.readmore3 {
+    width: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* NOT FOUND PAGE */
 .notFoundContainer {
     width: 100vw;
