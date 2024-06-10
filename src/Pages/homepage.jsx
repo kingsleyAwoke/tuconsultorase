@@ -2,6 +2,7 @@ import {useEffect} from 'react';
 import Hero from '../components/Hero';
 import Main from '../components/Main';
 import SecondMain from '../components/SecondMain';
+import Footer from '../components/Footer';
 
 const Homepage = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const Homepage = () => {
         <Hero />
         <Main />
         <SecondMain />
+        <Footer />
     </>
   )
 }

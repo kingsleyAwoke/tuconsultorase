@@ -8,9 +8,9 @@ import { Links } from '../components/Links';
 
 
 
-const Seo = () => {
+const Joomla = () => {
     useEffect(() => {
-        document.title = 'SEO - Consultoria SEO';
+        document.title = 'artículos útiles sobre joomla - Consultoria SEO';
     }, []);
   return (
     <section className='seo'>
@@ -176,4 +176,4 @@ const Seo = () => {
   );
 }
 
-export default Seo
+export default Joomla

@@ -357,13 +357,12 @@ nav li:hover > .dropdown-menu {
 }
 
 /*  QUICK ACCESS */
-.quick-access {
-    width: 110%;
+.quick-link {
+    width: 120%;
 }
 
 .quick-access-header {
-    text-align: center;
-    width: 60%;
+    width: 65%;
     padding: 1px;
     margin-bottom: 5px;
 }
@@ -422,7 +421,7 @@ nav li:hover > .dropdown-menu {
 
 /* BLOG SEO PAGE */
 .seo {
-    margin-top: 70px;
+    margin: 70px 0;
 }
 
 .ordered-list, .unordered-list  {

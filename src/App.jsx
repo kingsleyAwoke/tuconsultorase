@@ -3,6 +3,7 @@ import MainLayout from './Layouts/MainLayout';
 import Homepage from './Pages/Homepage';
 import Contact from './Pages/Contact';
 import Seo from './Pages/Seo';
+import Joomla from './Pages/Joomla';
 import NotFoundPage from './Pages/NotFoundPage';
 
 // APP CONTENT
@@ -13,6 +14,7 @@ const App = () => {
         <Route index element={<Homepage />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/blog/seo' element={<Seo />} />
+        <Route path='/blog/joomla' element={<Joomla />} />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
     )

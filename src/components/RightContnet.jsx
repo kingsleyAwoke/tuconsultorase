@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Links } from './Links';
+ 
 
-const RightContent = ({links, maxDisplayed = Infinity }) => {
+const RightContent = ({ maxDisplayed = Infinity }) => {
   return (
     <div className="quick-link">
-      <h3 className='primary-btn quick-access-header'>LosmásPopulares</h3>
+      <h4 className='primary-btn quick-access-header'>Los más Populares</h4>
       <ul>
-        { links.slice(0, maxDisplayed).map((link, index) => (
-          <li key={index}><Link to={link.url}>{link.title}</Link></li>
+        { Links.slice(0, maxDisplayed).map((link, index) => (
+          <li key={index}><Link to={link.url} className='primary-color'>{link.title}</Link></li>
         ))}
       </ul>
     </div>
