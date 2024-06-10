@@ -9,9 +9,9 @@ import NotFoundPage from './Pages/NotFoundPage';
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<MainLayout />}>      
+      <Route path='/' element={<MainLayout />}>        
         <Route index element={<Homepage />} />
-        <Route path='/contact' element={<Contact />} />      
+        <Route path='/contact' element={<Contact />} />
         <Route path='/blog/seo' element={<BlogSeoPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
