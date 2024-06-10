@@ -420,6 +420,31 @@ nav li:hover > .dropdown-menu {
     background: var(--FOOTER-BG);
 }
 
+/* BLOG SEO PAGE */
+.seo {
+    margin-top: 70px;
+}
+
+.ordered-list, .unordered-list  {
+    padding-left: 20px;
+}
+
+.ordered-list li {
+    list-style-position: inside;
+    list-style-type: decimal;    
+    padding-bottom: 5px;
+}
+
+.unordered-list li {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 
 

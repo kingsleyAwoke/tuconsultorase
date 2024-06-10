@@ -1,10 +1,10 @@
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
-import { FaCaretRight } from 'react-icons/fa';
 
 const Hero = () => {
-
+  // SEARCH BOX
   const [text, setText] = useState('');
+
   return (
     <section className='hero container'>
       <div className="hero-content">
@@ -24,15 +24,6 @@ const Hero = () => {
           <Link to="http://google.com" className='primary-color'>Búsqueda avanzada</Link>
         </div>
       </form>
-
-      <div className="breadcrumbs">
-        <span>Está aquí: </span>
-        <Link to="/" className='primary-color'>Inicio</Link>
-        <FaCaretRight className='warn-color' />
-        <Link to="/servicios" className='primary-color'>front</Link>
-        <FaCaretRight className='warn-color' />
-        <span>Eliminación de Malware</span>
-      </div>
     </section>
   );
 }
