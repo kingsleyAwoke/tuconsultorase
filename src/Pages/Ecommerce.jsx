@@ -12,9 +12,10 @@ const Ecommerce = () => {
     }, []);
   return (
     <>
-      <section className='seo'>
+      <section className='e-commerce seo'>
         <BreadCrumb />
         <div className='main-section container'>
+            
             <LeftContent />
 
             <div className="service-content">
