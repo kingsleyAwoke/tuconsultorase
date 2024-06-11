@@ -8,20 +8,18 @@ const BreadCrumb = () => {
   const location = useLocation();
   const pathSegments = location.pathname.split('/').filter(Boolean);
   return (
-    <>
-      <div className="breadcrumbs">
-        <span>Está aquí: </span>
-        <Link to="/" className='primary-color'>Inicio</Link>
-        {pathSegments.map((segment, index) => (
-          <React.Fragment key={index}>
-            <FaCaretRight className='warn-color' />
-            {index === pathSegments.length - 1 ? <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`}className='primary-color'>{segment}</Link>:(
-              <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`}className='primary-color'>{segment}</Link>
-              )}
-          </React.Fragment>
-        ))}
-      </div>
-    </>
+    <div className="breadcrumbs container">
+      <span>Está aquí: </span>
+      <Link to="/" className='primary-color'>Inicio</Link>
+      {pathSegments.map((segment, index) => (
+        <React.Fragment key={index}>
+          <FaCaretRight className='warn-color' />
+          {index === pathSegments.length - 1 ? <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`}className='primary-color'>{segment}</Link>:(
+            <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`}className='primary-color'>{segment}</Link>
+            )}
+        </React.Fragment>
+      ))}
+    </div>
   )
 }
 

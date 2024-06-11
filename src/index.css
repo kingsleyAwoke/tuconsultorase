@@ -259,7 +259,7 @@ nav li:hover > .dropdown-menu {
 .breadcrumbs {
     display: flex;
     gap: 5px;
-    margin: 3px 0;
+    margin: 3px 10px;
 }
 
 .search-box {
@@ -419,7 +419,7 @@ nav li:hover > .dropdown-menu {
     background: var(--FOOTER-BG);
 }
 
-/* BLOG SEO PAGE */
+/* SEO PAGE */
 .seo {
     margin: 70px 0;
 }
@@ -445,6 +445,38 @@ nav li:hover > .dropdown-menu {
     gap: 1rem;
 }
 
+/* JOOMLA PAGE */
+.joomla {
+    margin: 70px 0;
+}
+
+.service-content-h2 {
+    border-bottom: 2px solid rgb(20,40,73);
+    overflow: hidden;
+}
+
+.service-content-p {
+    position: relative;
+}
+
+.inner-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f6f6f6;
+    box-shadow: 1px 1px 8px rgb(204,204,204);
+    font-size: 15px;
+    padding: 20px;
+}
+
+.inner-div li {
+    color: var(--INFO);
+    margin-top: 3px;
+}
+
+.inner-div ul li:not(:first-child) {
+    margin-left: 20px;
+}
 
 
 
