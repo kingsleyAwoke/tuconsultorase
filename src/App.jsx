@@ -4,6 +4,7 @@ import Homepage from './Pages/Homepage';
 import Contact from './Pages/Contact';
 import Seo from './Pages/Seo';
 import Joomla from './Pages/Joomla';
+import Ecommerce from './Pages/Ecommerce';
 import NotFoundPage from './Pages/NotFoundPage';
 
 // APP CONTENT
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/blog/seo' element={<Seo />} />
         <Route path='/blog/joomla' element={<Joomla />} />
+        <Route path='/blog/e-commerce' element={<Ecommerce />} />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
     )
