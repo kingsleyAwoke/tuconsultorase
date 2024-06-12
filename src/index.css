@@ -287,7 +287,7 @@ nav li:hover > .dropdown-menu {
     padding: 3px;
 }
 
-.subscribe-form p:first-child {
+.subscribe-form p:first-child, .column .column-h2 {
     color: blue;
 }
 
@@ -334,6 +334,10 @@ nav li:hover > .dropdown-menu {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
+}
+
+.service-content-img {
+    float: left;
 }
 
 .service-content-txt p span{
@@ -437,6 +441,7 @@ nav li:hover > .dropdown-menu {
 .unordered-list li {
     list-style-position: inside;
     list-style-type: disc;
+    line-height: 18px;
 }
 
 .column {
@@ -455,18 +460,14 @@ nav li:hover > .dropdown-menu {
     overflow: hidden;
 }
 
-.service-content-p {
-    position: relative;
-}
-
 .inner-div {
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color: #f6f6f6;
     box-shadow: 1px 1px 8px rgb(204,204,204);
     font-size: 15px;
     padding: 20px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .inner-div li {
@@ -478,6 +479,48 @@ nav li:hover > .dropdown-menu {
     margin-left: 20px;
 }
 
+/* SEO IMAGNE */
+.seo-imgne {
+    margin-top: 70px;
+}
+
+.seo-imgne-container {
+    margin-bottom: 120px;
+}
+
+.service-content-ul li {
+    list-style-type: disc;    
+    color: #008080;
+}
+
+.service-content-li::marker {
+    color: var(--FONT-COLOR);
+}
+
+.underline-span {
+    text-decoration: underline;
+}
+
+.author-section {
+    background-color: #EFEFEF;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
+    color: var(--BLACK);
+}
+
+.author-section h1 {
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pagination-li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
 
 
 

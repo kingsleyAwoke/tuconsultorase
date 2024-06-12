@@ -107,9 +107,7 @@ const Joomla = () => {
 
                         <h3>Estrategia de palabras clave</h3>
 
-                        <p>Antes de &nbsp;empezar a crear su sitio Joomla es importante llevar a cabo un proyecto de investigaci&oacute;n de palabras clave para identificar cu&aacute;les son las principales palabras clave para su sitio y las palabras clave asociadas que complementan o son relevantes para las palabras clave principales. La raz&oacute;n de esto es que las palabras clave deben estar en el centro del dise&ntilde;o de su sitio web - la estructura del sitio (categor&iacute;as de contenido, grupos de productos y as&iacute; sucesivamente), elementos de men&uacute;, art&iacute;culos de contenido y as&iacute; sucesivamente todos deben ser optimizados para hacer el mejor uso de su n&uacute;cleo y palabras clave asociadas.
-
-                        <div lang="en" className='inner-div'>
+                        <p><span lang="en" className='inner-div'>
                             <h2>Contenido</h2>
                             
                             <ul>
@@ -120,7 +118,7 @@ const Joomla = () => {
                                 <li>1.4 Directrices sobre el uso de palabras clave</li>
                                 <li>1.5 C&oacute;mo agregar palabras clave a su sitio</li>
                             </ul>
-                        </div>
+                        </span>Antes de &nbsp;empezar a crear su sitio Joomla es importante llevar a cabo un proyecto de investigaci&oacute;n de palabras clave para identificar cu&aacute;les son las principales palabras clave para su sitio y las palabras clave asociadas que complementan o son relevantes para las palabras clave principales. La raz&oacute;n de esto es que las palabras clave deben estar en el centro del dise&ntilde;o de su sitio web - la estructura del sitio (categor&iacute;as de contenido, grupos de productos y as&iacute; sucesivamente), elementos de men&uacute;, art&iacute;culos de contenido y as&iacute; sucesivamente todos deben ser optimizados para hacer el mejor uso de su n&uacute;cleo y palabras clave asociadas.
                         </p>
 
                         <Link to='/blog/joomla' className='primary-color'>Leer más: Como usar palabras clave en joomla</Link>
