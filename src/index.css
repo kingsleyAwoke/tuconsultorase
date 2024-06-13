@@ -52,7 +52,7 @@ input, textarea, button {
     --BODY-BGCOLOR: #fff;
     --FONT-COLOR: #333;
     --BORDER-COLOR: #ccc;
-    --SUCCESS-COLOR: #3c763d;
+    --SUCCESS-COLOR: #008000;;
     --SUCCESS-HOVER: #2b542c;
     --LINK-COLOR: #428bca;
     --LINK-HOVER: #2a6496;
@@ -131,6 +131,10 @@ input, textarea, button {
 
 .warn-color {
     color: #e49503;
+}
+
+.success-color {
+    color: var(--SUCCESS-COLOR);
 }
 
 .padding-top {

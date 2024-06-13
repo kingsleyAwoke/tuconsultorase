@@ -8,6 +8,7 @@ import Ecommerce from './Pages/Ecommerce';
 import Seguridad from './Pages/Seguridad';
 import Diseon from './Pages/Diseon';
 import SeoImagne from './Pages/SeoImagne';
+import Herramienta from './Pages/Herramienta';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -30,6 +31,7 @@ const App = () => {
 
         {/* UTILIDADES PAGES */}
         <Route path='/utilidades/seo-imagen' element={<SeoImagne />} />
+        <Route path='/utilidades/herramienta' element={<Herramienta />} />
         
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />
