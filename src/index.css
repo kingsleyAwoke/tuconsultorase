@@ -340,9 +340,12 @@ nav li:hover > .dropdown-menu {
     gap: 0.7rem;
 }
 
+/* DISEON PAGE */
 .service-content-img {
     float: left;
+    margin: 0 10px 0 0;
 }
+/* DISEON PAGE */
 
 .service-content-txt p span{
     color: var(--FONT-COLOR);
@@ -526,10 +529,33 @@ nav li:hover > .dropdown-menu {
     list-style-position: inside;
 }
 
+/* COMPIROBAR PAGE */
+.h3-section {
+    background-color: whitesmoke;
+    border-top: 1px solid #cccccc;
+    padding: 10px 0px 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
+.paper-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    gap: 5px;
+}
 
+.h3-section ul {
+    margin-top: 20px;
+}
 
+.h3-section li {
+    margin-left: 20px;
+}
 
+#search-compirabar {
+    margin-top: 30px;
+}
 
 
 
