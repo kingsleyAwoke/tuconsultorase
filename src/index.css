@@ -121,6 +121,10 @@ input, textarea, button {
     text-align: center;
 }
 
+input[type='submit'] {
+    cursor: pointer;
+}
+
 .primary-btn:hover {
     background-color: var(--LINK-HOVER);
 }
@@ -557,9 +561,26 @@ nav li:hover > .dropdown-menu {
     margin-top: 30px;
 }
 
+/* ANALISIS */
+.search-analisis {
+    display: flex;
+    gap: 10px;
+}
 
+#search-box {
+    background-color: #EFE;
+    border: 2px solid #6C8;
+}
 
+#search-box:focus {
+    border-color: var(--BLACK);
+}
 
+#search-btn {
+    border: solid 1px #806666;
+    margin: 0 10px 0 0;
+    padding: 3px 10px 3px 10px;
+}
 
 
 

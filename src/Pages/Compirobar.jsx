@@ -14,7 +14,7 @@ const Compirobar = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'herramienta seo imagen - Consultoria SEO';
+        document.title = 'Comprobar-redireccion';
     }, []);
   return (
     <>
@@ -82,7 +82,7 @@ const Compirobar = () => {
                         </li>
 
                         <li className='pagination-li'>
-                            <Link to="/utilidades/analisis" className='primary-color'>Anterior&gt;</Link>
+                            <Link to="/utilidades/analisis" className='primary-color'>Siguiente&gt;</Link>
                         </li>
                     </ul>
                     </div>

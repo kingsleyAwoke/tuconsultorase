@@ -60,7 +60,7 @@ const Herramienta = () => {
                         </li>
 
                         <li className='pagination-li'>
-                            <Link to="/utilidades/compirobar" className='primary-color'>Anterior&gt;</Link>
+                            <Link to="/utilidades/compirobar" className='primary-color'>Siguiente&gt;</Link>
                         </li>
                     </ul>
                     </div>
