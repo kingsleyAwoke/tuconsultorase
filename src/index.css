@@ -85,6 +85,9 @@ input, textarea, button {
 }
 
 /* || UTILITY CLASSES */
+.center {
+    text-align: center;
+}
 
 .nowrap {
     white-space: nowrap;
@@ -591,7 +594,21 @@ nav li:hover > .dropdown-menu {
     margin-left: 20px;
 }
 
+/* PLANTILLA */
+.plantilla-img {
+    width: 50%;
+    margin: 30px auto;
+}
 
+.template-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template-img {
+    margin-left: 10px;
+}
 
 
 
