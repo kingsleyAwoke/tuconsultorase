@@ -11,6 +11,7 @@ import SeoImagne from './Pages/SeoImagne';
 import Herramienta from './Pages/Herramienta';
 import Compirobar from './Pages/Compirobar';
 import Analisis from './Pages/Analisis';
+import MapaDelSitio from './Pages/MapaDelSitio';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -36,6 +37,9 @@ const App = () => {
         <Route path='/utilidades/herramienta' element={<Herramienta />} />
         <Route path='/utilidades/compirobar' element={<Compirobar />} />
         <Route path='/utilidades/analisis' element={<Analisis />} />
+
+        {/* MAPA DEL SITIO */}
+        <Route path='/mapa-del-sitio' element={<MapaDelSitio />} />
         
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />

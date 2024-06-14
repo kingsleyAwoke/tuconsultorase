@@ -582,6 +582,14 @@ nav li:hover > .dropdown-menu {
     padding: 3px 10px 3px 10px;
 }
 
+/* MAPA DEL SITIO */
+.pages-link li {
+    margin-bottom: 10px;
+}
+
+.blog-pages {
+    margin-left: 20px;
+}
 
 
 

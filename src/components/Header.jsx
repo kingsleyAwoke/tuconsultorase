@@ -33,7 +33,7 @@ const Header = () => {
               </ul>
           </li>
 
-          <li><NavLink to="/maoa-del-sitio" className={linkClass}>Mapa del sitio</NavLink></li>
+          <li><NavLink to="/mapa-del-sitio" className={linkClass}>Mapa del sitio</NavLink></li>
 
           <li className='dropdown'>
             <NavLink to="/plantilla" className={linkClass}>Plantilla joomla gratis y de pago <FaCaretDown className='caretDown' /></NavLink>

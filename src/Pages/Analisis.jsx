@@ -29,8 +29,6 @@ const Analisis = () => {
                     </div>
                     <h3>Por favor, ingrese la url a analizar. Por ejemplo: "http://tuconsultoraseo.com"</h3>
                     <div className="service-content-txt">
-                        <p></p>
-
                         <form action="search" className='search-analisis'>
                         <input type="search" size="40" maxlength="255" name="URL" value={text} onChange={ (e) => setText(e.target.value) } id='search-box' />
                         
