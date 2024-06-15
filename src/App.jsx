@@ -13,6 +13,7 @@ import Compirobar from './Pages/Compirobar';
 import Analisis from './Pages/Analisis';
 import MapaDelSitio from './Pages/MapaDelSitio';
 import Plantilla from './Pages/Plantilla';
+import DemoPlanNavtilla from './Pages/DemoPlanNavtilla';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -44,6 +45,7 @@ const App = () => {
 
         {/* PLANTILLA JOOMLA */}
         <Route path='/plantilla/plantillas-joomla' element={<Plantilla />} />
+        <Route path='/plantilla/demo-plantilla' element={<DemoPlanNavtilla />} />
 
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />

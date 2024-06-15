@@ -6,7 +6,7 @@ import { Links } from './Links';
 const RightContent = ({ maxDisplayed = Infinity }) => {
   return (
     <div className="quick-link">
-      <h4 className='primary-btn quick-access-header'>Los más Populares</h4>
+      <h4 className='primary-btn quick-access-header nowrap'>Los más Populares</h4>
       <ul>
         { Links.slice(0, maxDisplayed).map((link, index) => (
           <li key={index}><Link to={link.url} className='primary-color'>{link.title}</Link></li>

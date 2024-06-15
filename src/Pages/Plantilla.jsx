@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import BreadCrumb from '../components/BreadCrumb';
 import LeftContent from '../components/LeftContent';
 import RightContent from '../components/RightContnet';
@@ -14,7 +14,7 @@ const Plantilla = () => {
     }, []);
   return (
     <>
-      <section className='seo-imgne analisis'>
+      <section className='seo-imgne plantilla'>
         <BreadCrumb />
         <div className='main-section container seo-imgne-container'>
             
