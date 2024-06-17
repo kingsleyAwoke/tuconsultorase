@@ -130,6 +130,10 @@ input[type='submit'] {
     cursor: pointer;
 }
 
+input[type='text']:focus, input[type='email']:focus, textarea:focus {
+    outline: none;
+}
+
 .primary-btn:hover {
     background-color: var(--LINK-HOVER);
 }
@@ -709,8 +713,27 @@ nav li:hover > .dropdown-menu {
     margin-bottom: 60px;
 }
 
+/* CONTACT */
+.contact {
+    margin: 0 300px 70px;
+}
 
+.contact-form {
+    padding: 20px;
+}
 
+.contact-form legend {
+    font-size: 1.5rem;
+}
+
+.list-text input {
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.contact-form img {
+    display: inline;
+}
 
 
 
