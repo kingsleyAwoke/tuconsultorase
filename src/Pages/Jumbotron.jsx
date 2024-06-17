@@ -1,6 +1,7 @@
 import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import BreadCrumb from '../components/BreadCrumb';
+import Footer from '../components/Footer';
 
 const Jumbotron = () => {
     useEffect(() => {
@@ -80,9 +81,10 @@ const Jumbotron = () => {
                     </span>
                 </div>
             </div>
-        </div>
-        </div>
+        </div>        
+        </div>        
       </section>
+      <Footer />
     </>
   );
 }
