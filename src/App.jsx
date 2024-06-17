@@ -16,6 +16,7 @@ import Plantilla from './Pages/Plantilla';
 import DemoPlanNavtilla from './Pages/DemoPlanNavtilla';
 import Jumbotron from './Pages/Jumbotron';
 import DemoModulo from './Pages/DemoModulo';
+import Bloque from './Pages/Bloque';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -52,6 +53,7 @@ const App = () => {
         {/* MODULOS */}
         <Route path='/modulos/jumbotron' element={<Jumbotron />} />
         <Route path='/modulos/demo-modulo' element={<DemoModulo />} />
+        <Route path='/modulos/bloque' element={<Bloque />} />
 
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />

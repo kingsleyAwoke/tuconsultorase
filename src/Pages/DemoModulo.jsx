@@ -23,7 +23,7 @@ const DemoModulo = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Demo modulo jumbotron</span>
+                        <span title="Demo modulo jumbotron">Demo modulo jumbotron</span>
                     </div>
 
                     <div className="service-content-txt">
@@ -51,11 +51,11 @@ const DemoModulo = () => {
 
                     <ul>
                         <li className='pagination-li'>
-                            <Link to="/modulos/demo-modulo" className='primary-color'>&lt;Anterior</Link>
+                            <Link to="/modulos/jumbotron" className='primary-color'>&lt;Anterior</Link>
                         </li>
 
                         <li className='pagination-li'>
-                            <Link to="/modulos/demo-modulo" className='primary-color'>Siguiente&gt;</Link>
+                            <Link to="/modulos/bloque" className='primary-color'>Siguiente&gt;</Link>
                         </li>
                     </ul>
                     </div>

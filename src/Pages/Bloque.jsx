@@ -7,10 +7,10 @@ import { Links } from '../components/Links';
 import Footer from '../components/Footer';
 
 
-const Jumbotron = () => {
+const Bloque = () => {
     //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Modulo jumbotron boostrap para joomla - Consultora SEO';
+        document.title = 'Modulo Bloque Boostrap para joomla - Consultoria SEO';
     }, []);
   return (
     <>
@@ -23,7 +23,7 @@ const Jumbotron = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Modulo Jumbotron Bootstrap para joomla">Modulo Jumbotron Bootstrap para joomla</span>
+                        <span title="Modulo Bloque Bootstrap para joomla">Modulo Bloque Bootstrap para joomla</span>
                     </div>
 
                     <div className="service-content-txt">
@@ -31,7 +31,7 @@ const Jumbotron = () => {
                             <li>M&oacute;dulo para joomla 2.5 y joomla 3.X</li>
                         </ul>
 <br /><br />
-                        <p>Modulo para mostrar el &nbsp;componente Jumbotron de bootstrap que permite exhibir contenidos de forma destacada. F&aacute;cil de instalar y usar.</p>
+                        <p>Coloque un bloque Bootstrap con contenido personalizado en cualquier posici &oacute;n de modulo. Imagen en miniatura (thumbnails) con enlace a articulo, bot &oacute;n con enlace a articulo e iconos Font Awesome en bot &oacute;n boostrap, titulo y p &aacute;rrafo con selector de colores, selector de clase de bot &oacute;n Bootstrap. Recuerde: su plantilla debe trabajar con bootstrap y Font Awesome. Programaci &oacute;n limpia y eficiente.</p>
 
                         <p>Una vez que el m&oacute;dulo est&aacute; instalado:</p>
 
@@ -53,7 +53,7 @@ const Jumbotron = () => {
 
                         <p><strong>Configuraci&oacute;n de opciones avanzadas:</strong></p>
 
-                        <img src="\images\opciones avanzadas del modulo jumbotron.png" alt="opciones avanzadas del modulo jumbotron" width='481' height='601' />
+                        <img src="\images\Modulo Bloque boostrap para joomla.jpg" alt="Modulo Bloque boostrap para joomla" width='481' height='569' />
 
                         <span><strong>Caracter&iacute;sticas Modulo Bootstrap Jumbotron para joomla</strong></span>
 
@@ -87,6 +87,10 @@ const Jumbotron = () => {
                         <li className='pagination-li'>
                             <Link to="/modulos/demo-modulo" className='primary-color'>&lt;Anterior</Link>
                         </li>
+
+                        <li className='pagination-li'>
+                            <Link to="/modulos/demo-modulo-bloque" className='primary-color'>Siguiente&gt;</Link>
+                        </li>
                     </ul>
                     </div>
                 </div>
@@ -101,4 +105,4 @@ const Jumbotron = () => {
   );
 }
 
-export default Jumbotron
+export default Bloque

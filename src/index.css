@@ -473,6 +473,7 @@ nav li:hover > .dropdown-menu {
     list-style-position: inside;
     list-style-type: disc;
     line-height: 18px;
+    margin-bottom: 5px;
 }
 
 .column {
