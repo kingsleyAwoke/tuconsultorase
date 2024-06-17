@@ -304,24 +304,19 @@ nav li:hover > .dropdown-menu {
     color: blue;
 }
 
-.tutor-img {
+.subscribe-window img {
     border: 1px solid var(--BORDER-COLOR);
 }
 
-.tutor-window h3 {
+.subscribe-window h3 {
     color: var(--LINK-HOVER);
 }
 
-.tutor-window-txt {
+.subscribe-window p {
     color: #4cb2cf;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-.tutor-window-link {
-    width: 80%;
-    text-align: center;
 }
 
 /* SERVICE */
@@ -694,7 +689,25 @@ nav li:hover > .dropdown-menu {
     font-size: 3rem;
 }
 
+/* MODULE BLOQUE */
+.module-bloque-h3 {
+    color: #ca52eb;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
+.module-bloque-img {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-shadow: var(--SHADOW);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.colored-paragraph {
+    color:#4cb2cf;
+    margin-bottom: 60px;
+}
 
 
 

@@ -14,20 +14,14 @@ const LeftContent = () => {
             <input type="submit" value="Subscribirme" className='submit-btn'/>
         </form>
 
-        <div className="tutor-window">
-            <h3>Tutorial SEO optimizacion para motores de busqueda</h3>
+        <h3>Tutorial SEO optimizacion para motores de busqueda</h3>
 
-            <div className="tutor-img">
-                <Link to='/blog/seo'>
-                <img src="\images\tutorial seo gratuito.jpg" alt="A s.e.o tutor" width='450' height='131' />
-                </Link>
-            </div>
-        </div>
+        <img src="\images\tutorial seo gratuito.jpg" alt="A s.e.o tutor" width='450' height='131' />
 
-        <div className='tutor-window-txt'>
-            <p>Tutorial SEO paso a paso con herramientas SEO gratuitas. Con metodología &quot;sombrero blanco &quot;que se    apega a las directrices de los motores de búsqueda, altamente ético.</p>
+        <p>Tutorial SEO paso a paso con herramientas SEO gratuitas. Con metodología &quot;sombrero blanco &quot;que se    apega a las directrices de los motores de búsqueda, altamente ético.</p>
 
-            <Link to='/blog/seo' className='primary-btn  tutor-window-link'>Leer mas sobre el tutorial SEO</Link>
+        <div>
+            <button to='/blog/seo' className='primary-btn  tutor-window-link'>Leer mas sobre el tutorial SEO</button>
         </div>
     </div>
   );
