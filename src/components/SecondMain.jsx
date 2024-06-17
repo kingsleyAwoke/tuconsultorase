@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom';
+import FormacionJoomla from './FormacionJoomla';
+import Desarrollo from './Desarrollo';
 
 const SecondMain = () => {
   return (
     <section className='second-main-section container'>
 
-      <div className="row">
-        <h3>Desarrollo de Plantillas</h3>
-        <img src="\images\desarrollo-web.png" alt="desarrollo de plantillas joomla responsitive" width='400' height='200' />
-        <p>En el diseño de paginas web joomla la salida visual es controlada por las plantillas. Existen 2 formas de desarrollar las plantillas: Personalizada y una plantilla adaptada a sus requerimientos. Nuestra meta es alcanzar sus objetivos de negocio, el <strong>diseño de página páginas web </strong>es inútil si no cumple con sus objetivos.</p>
-        <button className="primary-btn">Leer mas</button>
-      </div>        
+      <Desarrollo />
 
       <div className="row">
         <h3>Acelerar Joomla</h3>
@@ -68,15 +65,7 @@ const SecondMain = () => {
           <button className="primary-btn">Leer mas</button>
       </div>
 
-      <div className="row">
-        <h3>Formación Joomla</h3>
-
-          <img src="\images\formacion joomla1.jpg" alt="Cursos y formacion joomla" width='400' height='200' />
-
-          <p>Tenemos 3 modalidades de cursos de este excelente gestor de contenidos. La formación abarca temas desde porqué se recomienda este gestor de contenidos, como instalarlo y otras preguntas esenciales. Todos nuestros cursos de formación de CMS son 100% personalizables.</p>
-
-          <button className="primary-btn">Leer mas</button>
-      </div>
+      <FormacionJoomla />
 
       <div className="row">
         <h3>Limpieza sitio hackeado</h3>

@@ -47,7 +47,7 @@ const Header = () => {
             <NavLink to="/modulos" className={linkClass}>Modulos <FaCaretDown className='caretDown' /> </NavLink>
               <ul className='dropdown-menu'>
                 <li><NavLink to="/modulos/jumbotron" className={linkClass}>Jumbotron</NavLink></li>
-                <li><NavLink to="/modulos/deno-modulo" className={linkClass}>Deno Modulo Jumbotron</NavLink></li>
+                <li><NavLink to="/modulos/demo-modulo" className={linkClass}>Demo Modulo Jumbotron</NavLink></li>
                 <li><NavLink to="/modulos/bloque" className={linkClass}>Bloque</NavLink></li>
                 <li><NavLink to="/modulos/demo-modulo-bloque" className={linkClass}>Demo Modulo Bloque</NavLink></li>
               </ul>

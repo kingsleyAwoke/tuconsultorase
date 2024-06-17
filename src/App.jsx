@@ -14,6 +14,7 @@ import Analisis from './Pages/Analisis';
 import MapaDelSitio from './Pages/MapaDelSitio';
 import Plantilla from './Pages/Plantilla';
 import DemoPlanNavtilla from './Pages/DemoPlanNavtilla';
+import Jumbotron from './Pages/Jumbotron';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -47,6 +48,8 @@ const App = () => {
         <Route path='/plantilla/plantillas-joomla' element={<Plantilla />} />
         <Route path='/plantilla/demo-plantilla' element={<DemoPlanNavtilla />} />
 
+        {/* MODULOS */}
+        <Route path='/modulos/jumbotron' element={<Jumbotron />} />
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />
 
