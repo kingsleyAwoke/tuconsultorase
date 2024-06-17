@@ -18,6 +18,7 @@ import Jumbotron from './Pages/Jumbotron';
 import DemoModulo from './Pages/DemoModulo';
 import Bloque from './Pages/Bloque';
 import ModuleBloque from './Pages/ModuleBloque';
+import Portafolio from './Pages/Portafolio';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -59,6 +60,9 @@ const App = () => {
 
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />
+
+        {/* PORTAFOLIO */}
+        <Route path='/portafolio' element={<Portafolio />} />
 
         {/* NOT FOUND REOUTER */}
         <Route path='*' element={<NotFoundPage />} />
