@@ -53,23 +53,23 @@ const Plantilla = () => {
 
                         <p>Atomicai cuenta con 14 posiciones de m&oacute;dulo. Para ver todas las posiciones:</p>
 
-                        <ul className='ordered-list'>
+                        <ol className='ordered-list'>
                             <li>Haga clic en Extensiones &gt;Gestor de plantillas</li>
                             <li>Haga clic en Opciones</li>
                             <li>Habilitar vista previa del m &oacute;dulo Posiciones</li>
                             <li>Escriba el siguiente URL en su navegador para ver todas las posiciones de m &oacute;dulo: su-sitio.com/?tp=1</li>
-                        </ul>
+                        </ol>
 
                         <p><strong>Instalaci &oacute;n Atomicai:</strong></p>
                         
                         <p>Despu &eacute;s de descargar Atomicai</p>
 
-                        <ul className='ordered-list'>
+                        <ol className='ordered-list'>
                             <li>Vaya al Administrador de Joomla (www.su-sitio.com/administrator) -&gt;Extensiones -&gt;Instalar/Desinstalar</li>
                             <li>En el &quot;Gestor de Extensiones &quot;elija la primera opci &oacute;n &quot;Subir paquete &#39;.</li>
                             <li>Haga clic en el bot &oacute;n &quot;Examinar ...&quot;para seleccionar el archivo zip desde el computador.</li>
                             <li>Haga clic en el bot &oacute;n &quot;Subir e Instalar &quot;.</li>
-                        </ul>
+                        </ol>
 
                         <p>Instale el m &oacute;dulo bootstap Jumboron y coloquelo en la posici &oacute;n atomicai-jumbotron, lea la <Link to="/modulos/jumbotron" title="Documentación del modulo bootstrap Jumbotron" className='primary-color'>documentaci &oacute;n del modulo boostrap jumbotron</Link></p>
 

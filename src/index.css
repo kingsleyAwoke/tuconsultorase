@@ -679,37 +679,6 @@ nav li:hover > .dropdown-menu {
     margin-top: 10px;
 }
 
-/* JOMBOTRON */
-.jombotron-container {
-    margin: 70px;
-}
-
-.content-container {
-    margin-top: 10px;
-}
-
-.content-container ul li, .content-container ol li {
-    list-style-position: inside;
-    margin-top: 5px;
-}
-
-.content-container ul li {
-    list-style-type: disc;
-}
-
-.content-container ol li {
-    list-style-type: decimal;
-}
-
-.list-txt {
-    margin-top: 5px;
-    margin-left: 30px;
-}
-
-.demopage-pagination span {
-    display: block;
-    margin-top: 5px;
-}
 
 /* DEMO MODULO */
 .content-txt {
@@ -717,6 +686,7 @@ nav li:hover > .dropdown-menu {
     text-align: center;
     padding: 20px 50px;
     color: var(--WHITE);
+    margin-bottom: 30px;
 }
 
 .content-txt h1 {
