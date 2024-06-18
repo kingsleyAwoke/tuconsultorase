@@ -21,6 +21,7 @@ import ModuleBloque from './Pages/ModuleBloque';
 import Portafolio from './Pages/Portafolio';
 import DisenoDePagainas from './Pages/DisenoDePagainas';
 import Acelerar from './Pages/Acelerar';
+import AltaDeBuscadores from './Pages/AltaDeBuscadores';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -66,6 +67,7 @@ const App = () => {
         {/* SERVICE PAGES */}
         <Route path='/servicios/diseno-de-pagainas-web' element={<DisenoDePagainas />} />
         <Route path='/servicios/acelerar-joomla' element={<Acelerar />} />
+        <Route path='/servicios/alta-en-buscadores' element={<AltaDeBuscadores />} />
 
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />

@@ -50,7 +50,7 @@ const Acelerar = () => {
                         <p>Nuestro experimentado equipo de expertos profesionales de optimización de velocidad web puede ayudar haciendo cambios en su site para alcanzar la velocidad requerida para escalar posiciones en los resultados de búsqueda.</p>
 
                         <p>Tenemos un historial comprobado para <strong>acelerar </strong>
-                        webs<strong>Joomla </strong>
+                        webs <strong>Joomla </strong>
                         lentos como el suyo, por lo general con mejoras en la velocidad muy significativas y mejoras de rendimiento. Podemos ofrecer testimonios y se le pondrá en contacto con los clientes satisfechos que avalen el aumento de la velocidad de su sitioweb - resolvemos los problemas de velocidad sitio-Joomla. Ud. también puede evaluar la velocidad de TUConsultoraSeo utilizando GTmetrix.com, por ejemplo.-</p>
 
                         <h2 className='info-color'>Cómo mejorar el rendimiento de Joomla y acelerar su sitio Joomla Lento</h2>
@@ -97,7 +97,7 @@ const Acelerar = () => {
                         <p className='services-tel'>Ll &aacute;menos 584145142287 o <a href='tel:584145142287' title="Contactenos" className='primary-color'>cont&aacute;ctenos</a></p>
 
                         <div className="author-section ">
-                            <h1>Sobre la autora</h1>
+                            <h4>Sobre la autora</h4>
 
                             <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
 

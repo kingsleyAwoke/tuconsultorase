@@ -56,7 +56,7 @@ const DisenoDePagainas = () => {
                         <p className='services-tel'>Ll &aacute;menos 584145142287 o <a href='tel:584145142287' title="Contactenos" className='primary-color'>cont&aacute;ctenos</a></p>
 
                         <div className="author-section ">
-                            <h1>Sobre la autora</h1>
+                            <h4>Sobre la autora</h4>
 
                             <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
 

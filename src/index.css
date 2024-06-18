@@ -551,12 +551,6 @@ nav li:hover > .dropdown-menu {
     color: var(--BLACK);
 }
 
-.author-section h1 {
-    font-size: 120%;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 .pagination-li {
     list-style-type: disc;
     list-style-position: inside;
@@ -785,6 +779,16 @@ nav li:hover > .dropdown-menu {
 
 .acelerar-container li {
     padding-top: 10px;
+}
+
+/* ALTA DE BUSCADORES */
+.alta-debuscadores-container form {
+    margin: 20px 0;
+}
+
+.alta-debuscadores-container select {
+    padding: 3px;
+    margin: 10px 0;
 }
 
 
