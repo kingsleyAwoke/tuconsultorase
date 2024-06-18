@@ -12,12 +12,12 @@ const DisenoDePagainas = () => {
     <>
       <section className='services'>
         <BreadCrumb />
-        <div className='contact'>
+        <div className='service-container'>
 
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Dise &ntilde;o de paginas web Joomla">Dise &ntilde;o de paginas web Joomla</span>
+                        <span title="Dise&ntilde;o de paginas web Joomla">Dise&ntilde;o de paginas web Joomla</span>
                     </div>
 
                     <div className="service-content-txt">
@@ -34,10 +34,10 @@ const DisenoDePagainas = () => {
                         , nuestra manera preferida de dise &ntilde;o de un nuevo sitio web es tener una <strong>plantilla </strong>
                         extraordinaria, fuera de lo com &uacute;n y transformarla, en exactamente lo que quiere usted para el dise &ntilde;o de su presencia/sitio web en l &iacute;nea.</p>
 
-                        <p>Tuconsultoraseo puede dise &ntilde;ar y construir una nueva plantilla Joomla desde cero. Todo lo que necesitamos es el esquema de su empresa corporativa: color, su logotipo, una idea b &aacute;sica del tipo de men &uacute;(desplegable, men &uacute;superior de una sola planta, men &uacute;lateral de varios niveles, etc) y la estructura de su dise &ntilde;o preferido. A partir de esta informaci &oacute;n b &aacute;sica, utilizando nuestra amplia experiencia de creaci &oacute;n de <strong>plantillas</strong>
+                        <p>Tuconsultoraseo puede dise &ntilde;ar y construir una nueva plantilla Joomla desde cero. Todo lo que necesitamos es el esquema de su empresa corporativa: color, su logotipo, una idea b &aacute;sica del tipo de men &uacute;(desplegable, men &uacute;superior de una sola planta, men &uacute;lateral de varios niveles, etc) y la estructura de su dise &ntilde;o preferido. A partir de esta informaci &oacute;n b &aacute;sica, utilizando nuestra amplia experiencia de creaci &oacute;n de <strong>plantillas </strong>
                         Joomla, nuestro equipo de expertos crear &aacute;una plantilla a medida que ofrece, el estilo, la innovaci &oacute;n y lo m &aacute;s importante de todo, la satisfacci &oacute;n del visitante.</p>
 
-                        <p>Joomla Est &aacute;ndares de <strong>Dise &ntilde;o Web</strong><br />Todos nuestros <strong>dise &ntilde;os de paginas web/plantillas</strong>
+                        <p>Joomla Est &aacute;ndares de <strong>Dise &ntilde;o Web</strong><br />Todos nuestros <strong>dise &ntilde;os de paginas web/plantillas </strong>
                         son XHTML y CSS compatibles, nunca ponemos en marcha una p &aacute;gina web con errores de javascript o cualquier mala codificaci &oacute;n. Desarrollado para ser accesible a los que utilizan lectores de pantalla y otras tecnolog &iacute;as asistida.</p>
 
                         <p>Compatibilidad del navegador con nuestros <strong>dise &ntilde;os Web</strong></p>
@@ -50,7 +50,7 @@ const DisenoDePagainas = () => {
 
                         <p>Nuestro objetivo es alcanzar sus objetivos de negocio, el &nbsp;<strong>dise &ntilde;o de p &aacute;ginas web </strong>es in &uacute;til si no est &aacute;cumpliendo con sus objetivos:</p>
 
-                        <p>Si usted quiere un nuevo sitio web o una importante revisi &oacute;n de su sitio web existente, somos la empresa de <strong>dise &ntilde;o</strong>web para usted. Consulte nuestra p &aacute;gina de Joomla Web Design Portfolio y navegue por el resto del sitio para ver nuestra gama completa de servicios de <strong>dise &ntilde;o web </strong>
+                        <p>Si usted quiere un nuevo sitio web o una importante revisi &oacute;n de su sitio web existente, somos la empresa de <strong>dise &ntilde;o</strong> web para usted. Consulte nuestra p &aacute;gina de Joomla Web Design Portfolio y navegue por el resto del sitio para ver nuestra gama completa de servicios de <strong>dise &ntilde;o web </strong>
                         Joomla.</p>
 
                         <p className='services-tel'>Ll &aacute;menos 584145142287 o <a href='tel:584145142287' title="Contactenos" className='primary-color'>cont&aacute;ctenos</a></p>
@@ -65,11 +65,11 @@ const DisenoDePagainas = () => {
 
                         <ul className='pagination-ul'>
                             <li className='pagination-li'>
-                                <Link to="/modulos/demo-modulo" className='primary-color'>&lt;Anterior</Link>
+                                <Link to="/servicios/acelerar-joomla" className='primary-color'>&lt;Anterior</Link>
                             </li>
 
                             <li className='pagination-li'>
-                                <Link to="/modulos/demo-modulo" className='primary-color'>Siguiente&gt;</Link>
+                                <Link to="servicios/limpieze-sitio-hackeado" className='primary-color'>Siguiente&gt;</Link>
                             </li>
                         </ul>
                     </div>

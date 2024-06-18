@@ -98,6 +98,10 @@ input, textarea, button {
     font-size: 11px;
 }
 
+.info-color {
+    color: var(--LINK-COLOR);
+}
+
 .primary-color {
     color: var(--LINK-COLOR);
 }
@@ -481,6 +485,11 @@ nav li:hover > .dropdown-menu {
     gap: 1rem;
 }
 
+/* E-COMMERCE */
+.e-commerce .service-content {
+    width: 200%;
+}
+
 /* JOOMLA PAGE */
 .joomla {
     margin: 70px 0;
@@ -740,6 +749,10 @@ nav li:hover > .dropdown-menu {
     margin-top: 70px;
 }
 
+.service-container {
+    margin: 10px 400px 70px;
+}
+
 .services-tel {
     font-weight: bold;
     color: var(--BLACK);
@@ -761,11 +774,18 @@ nav li:hover > .dropdown-menu {
     padding-top: 5px;
 }
 
+.acelerar-container h2 {
+    font-weight: 500;
+    margin-top: 20px;
+}
 
+.acelerar-container ul {
+    margin-left: 40px;
+}
 
-
-
-
+.acelerar-container li {
+    padding-top: 10px;
+}
 
 
 
