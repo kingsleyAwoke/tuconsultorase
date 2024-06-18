@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BreadCrumb from '../components/BreadCrumb';
 
 
-const AltaDeBuscadores = () => {
+const AltaNeBuscadores = () => {
     //   PAGE TITLE
     useEffect(() => {
         document.title = 'Alta en buscadores - Consultoria SEO';
@@ -12,7 +12,7 @@ const AltaDeBuscadores = () => {
     <>
       <section className='services'>
         <BreadCrumb />
-        <div className='alta-debuscadores-container contact'>
+        <div className='alta-neBuscadores-container contact'>
 
             <div className="service-content">
                 <div className='column'>
@@ -37,6 +37,7 @@ const AltaDeBuscadores = () => {
                                 <option value='200 motores de b &uacute;squeda $25,00 USD' >200 motores de b &uacute;squeda $25,00 USD</option>
                                 <option value="400 motores de búsqueda">400 motores de b &uacute;squeda $50,00 USD</option>
                             </select>
+                            <br />
                             <Link to='https://www.paypalobjects.com' target='_blank'><img src="\images\btn_buynow_SM.gif" alt="Buy Button" /></Link>
                         </form>
 
@@ -66,4 +67,4 @@ const AltaDeBuscadores = () => {
   );
 }
 
-export default AltaDeBuscadores
+export default AltaNeBuscadores

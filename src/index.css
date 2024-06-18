@@ -781,15 +781,62 @@ nav li:hover > .dropdown-menu {
     padding-top: 10px;
 }
 
-/* ALTA DE BUSCADORES */
-.alta-debuscadores-container form {
+/* ALTA NE BUSCADORES */
+.alta-neBuscadores-container form, .alta-neDirectories-container form {
     margin: 20px 0;
 }
 
-.alta-debuscadores-container select {
+.alta-neBuscadores-container select, .alta-neDirectories-container select {
     padding: 3px;
     margin: 10px 0;
 }
+
+/* ALTA NE DIRECTORIES */
+.alta-neBuscadores-container img, .alta-neDirectories-container img {
+    display: inline;
+}
+
+.alta-neDirectories-container ul {
+    margin-left: 20px;
+}
+
+.alta-neDirectories-container ul li {
+    list-style-type: disc;
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -21,7 +21,21 @@ import ModuleBloque from './Pages/ModuleBloque';
 import Portafolio from './Pages/Portafolio';
 import DisenoDePagainas from './Pages/DisenoDePagainas';
 import Acelerar from './Pages/Acelerar';
-import AltaDeBuscadores from './Pages/AltaDeBuscadores';
+import AltaNeBuscadores from './Pages/AltaNeBuscadores';
+import AltaNeDirectories from './Pages/AltaNeDirectories';
+import Auditoria from './Pages/Auditoria';
+import Cursos from './Pages/Cursos';
+import Eliminacion from './Pages/Eliminacion';
+import Host from './Pages/Host';
+import Mejoras from './Pages/Mejoras';
+import Tiendas from './Pages/Tiendas';
+import Optimizacion from './Pages/Optimizacion';
+import PublicidadPago from './Pages/PublicidadPago';
+import Soporte from './Pages/Soporte';
+import Programadores from './Pages/Programadores';
+import Redaccion from './Pages/Redaccion';
+import Consultoria from './Pages/Consultoria';
+import Limpieze from './Pages/Limpieze';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -67,7 +81,21 @@ const App = () => {
         {/* SERVICE PAGES */}
         <Route path='/servicios/diseno-de-pagainas-web' element={<DisenoDePagainas />} />
         <Route path='/servicios/acelerar-joomla' element={<Acelerar />} />
-        <Route path='/servicios/alta-en-buscadores' element={<AltaDeBuscadores />} />
+        <Route path='/servicios/alta-en-buscadores' element={<AltaNeBuscadores />} />
+        <Route path='/servicios/alta-en-directories' element={<AltaNeDirectories />} />
+        <Route path='/servicios/auditoria-de-seguridad-joomla' element={<Auditoria />} />
+        <Route path='/servicios/cursos-joomla' element={<Cursos />} />
+        <Route path='/servicios/eliminacion-de-malware' element={<Eliminacion />} />
+        <Route path='/servicios/hosting-joomla' element={<Host />} />
+        <Route path='/servicios/mejoras-de-software' element={<Mejoras />} />
+        <Route path='/servicios/tiendas-online' element={<Tiendas />} />
+        <Route path='/servicios/optimizacion-para-motores' element={<Optimizacion />} />
+        <Route path='/servicios/publicidad-pago' element={<PublicidadPago />} />
+        <Route path='/servicios/soporte-joolmla' element={<Soporte />} />
+        <Route path='/servicios/programadores-PHP' element={<Programadores />} />
+        <Route path='/servicios/redaccion-de-contenido' element={<Redaccion />} />
+        <Route path='/servicios/consultoria-seo' element={<Consultoria />} />
+        <Route path='/servicios/limpieze-sitio-hackeado' element={<Limpieze />} />
 
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />
