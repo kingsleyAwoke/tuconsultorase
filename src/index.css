@@ -715,7 +715,7 @@ nav li:hover > .dropdown-menu {
 
 /* CONTACT */
 .contact {
-    margin: 0 300px 70px;
+    margin: 10px 300px 70px;
 }
 
 .contact-form {
@@ -735,13 +735,31 @@ nav li:hover > .dropdown-menu {
     display: inline;
 }
 
+/* SERVICES */
+.services {
+    margin-top: 70px;
+}
 
+.services-tel {
+    font-weight: bold;
+    color: var(--BLACK);
+}
 
+.services .author-section {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
 
+.services .pagination-ul {
+    margin-left: 40px;
+    margin-top: 20px;
+}
 
-
-
-
+.services .pagination-li {
+    padding-top: 5px;
+}
 
 
 

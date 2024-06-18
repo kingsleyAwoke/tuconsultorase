@@ -14,7 +14,7 @@ const BreadCrumb = () => {
       {pathSegments.map((segment, index) => (
         <React.Fragment key={index}>
           <FaCaretRight className='warn-color' />
-          {index === pathSegments.length - 1 ? <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`}className='primary-color'>{segment}</Link>:(
+          {index === pathSegments.length - 1 ? <span>{segment}</span>:(
             <Link to={`/${pathSegments.slice(0, index + 1).join('/')}`}className='primary-color'>{segment}</Link>
             )}
         </React.Fragment>

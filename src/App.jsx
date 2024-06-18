@@ -19,6 +19,7 @@ import DemoModulo from './Pages/DemoModulo';
 import Bloque from './Pages/Bloque';
 import ModuleBloque from './Pages/ModuleBloque';
 import Portafolio from './Pages/Portafolio';
+import DisenoDePagainas from './Pages/DisenoDePagainas';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -48,21 +49,24 @@ const App = () => {
         {/* MAPA DEL SITIO */}
         <Route path='/mapa-del-sitio' element={<MapaDelSitio />} />
 
-        {/* PLANTILLA JOOMLA */}
+        {/* PLANTILLA JOOMLA PAGES */}
         <Route path='/plantilla/plantillas-joomla' element={<Plantilla />} />
         <Route path='/plantilla/demo-plantilla' element={<DemoPlanNavtilla />} />
 
-        {/* MODULOS */}
+        {/* MODULOS PAGES */}
         <Route path='/modulos/jumbotron' element={<Jumbotron />} />
         <Route path='/modulos/demo-modulo' element={<DemoModulo />} />
         <Route path='/modulos/bloque' element={<Bloque />} />
-        <Route path='/modulos/demo-modulo-bloque' element={<ModuleBloque />} />
-
-        {/* CONTACT PAGE */}
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/modulos/demo-modulo-bloque' element={<ModuleBloque />} />        
 
         {/* PORTAFOLIO */}
         <Route path='/portafolio' element={<Portafolio />} />
+
+        {/* SERVICE PAGES */}
+        <Route path='/servicios/diseno-de-pagainas-web' element={<DisenoDePagainas />} />
+
+        {/* CONTACT PAGE */}
+        <Route path='/contact' element={<Contact />} />
 
         {/* NOT FOUND REOUTER */}
         <Route path='*' element={<NotFoundPage />} />
