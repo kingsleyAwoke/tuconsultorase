@@ -13,7 +13,7 @@ const Cursos = () => {
         <BreadCrumb />
         <div className='cursos-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>Formaci&oacute;n joomla</span>
@@ -73,7 +73,7 @@ const Cursos = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

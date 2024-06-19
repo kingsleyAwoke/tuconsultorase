@@ -816,8 +816,10 @@ nav li:hover > .dropdown-menu {
     margin-top: 20px;
 }
 
-
-
+/* ELIMINACION */
+.eliminacion-container input {
+    padding: 3px;
+}
 
 
 
