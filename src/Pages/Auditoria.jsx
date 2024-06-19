@@ -52,9 +52,9 @@ const Auditoria = () => {
                 </div>
 
                 <ul className='pagination-ul'>
-                  <li className='pagination-li'><Link to='' className='primary-color'>&lt;Anterior</Link></li>
+                  <li className='pagination-li'><Link to='/servicios/cursos-joomla' className='primary-color'>&lt;Anterior</Link></li>
 
-                  <li className='pagination-li'><Link to='' className='primary-color'>Siguiente&gt;</Link></li>
+                  <li className='pagination-li'><Link to='/servicios/alta-en-directories' className='primary-color'>Siguiente&gt;</Link></li>
                 </ul>
               </div>
             </div>

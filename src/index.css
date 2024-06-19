@@ -800,11 +800,21 @@ nav li:hover > .dropdown-menu {
     padding-top: 5px;
 }
 
+/* CURSOS */
+.cursos-container ul {
+    margin-left: 20px;
+}
 
+.cursos-container li {
+    list-style-position: inside;
+    list-style-type: disc;
+    padding-top: 5px;
+}
 
-
-
-
+.cursos-container h2 {
+    font-weight: 500;
+    margin-top: 20px;
+}
 
 
 
