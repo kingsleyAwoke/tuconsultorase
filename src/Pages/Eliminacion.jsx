@@ -26,7 +26,7 @@ const Eliminacion = () => {
 
                 <p>Pocas cosas son más desesperantes para un propietario de un sitio que el mismo haya sido hackeado o infectado con malware. Esto significa que alguien ha secuestrado su sitio web y a Ud. le cuesta tiempo, dinero y clientes.</p>
 
-                <p>Podemos eliminar el malware para lograr que su sitio funcione correctamente de nuevo, y le ayudamos  a <strong>asegurar</strong>
+                <p>Podemos eliminar el malware para lograr que su sitio funcione correctamente de nuevo, y le ayudamos  a <strong>asegurar </strong>
                 que el intruso no pueda recuperar el accesso a su sitio. Podemos desinfectar su sitio y asegurar que su computadora también esté segura. Eliminamos el malware a un precio razonable en función del tamaño y complejidad del sitio web.-</p>
 
                 <p>Cuando su sitio se ve afectado por malware y ha sido hackeado ahuyenta a los visitantes, potenciales clientes y daña la reputación de su empresa. Se cobra $50.00 por una inspección inicial y diagnóstico. El costo final dependerá de la naturaleza y el alcance de la infección.</p>

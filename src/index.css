@@ -821,8 +821,11 @@ nav li:hover > .dropdown-menu {
     padding: 3px;
 }
 
-
-
+/* HOSTING */
+.hosting-container img {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
