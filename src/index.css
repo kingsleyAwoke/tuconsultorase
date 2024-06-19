@@ -827,14 +827,21 @@ nav li:hover > .dropdown-menu {
     margin-right: auto;
 }
 
+/* OPTIMIZACION */
+.optimizacion-container iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.optimizacion-container ul {
+    margin-left: 20px;
+}
 
-
-
-
-
-
-
+.optimizacion-container li {
+    list-style-position: inside;
+    list-style-type: disc;
+    padding-top: 3px;
+}
 
 
 

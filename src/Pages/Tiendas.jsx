@@ -16,7 +16,7 @@ const Tiendas = () => {
           <dir className="service-content">
             <div className='column'>
               <div className="service-content-head">
-                <span>Tiendas onlin</span>
+                <span>Tiendas online</span>
               </div>
 
               <div className="service-content-txt">
