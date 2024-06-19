@@ -12,7 +12,7 @@ const DisenoDePagainas = () => {
     <>
       <section className='services'>
         <BreadCrumb />
-        <div className='service-container'>
+        <div className='contact'>
 
             <div className="service-content">
                 <div className='column'>

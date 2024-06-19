@@ -36,7 +36,7 @@ const Acelerar = () => {
 
                         <p>¿Cómo acelerar - Optimizar el rendimiento Joomla?</p>
 
-                        <p>Una razón importante para <strong>acelerar</strong>
+                        <p>Una razón importante para <strong>acelerar </strong>
                         un sitioweb lento <strong>Joomla </strong>
                         es que Google y otros motores de búsqueda utilizan ahora la velocidad como factor en sus algoritmos para ayudar a decidir el orden en que su sitio web se inserta en los resultados de búsqueda. Los websites lentos aparecen más abajo en los resultados del motor de búsqueda. Sitios web más rápidos, con el tiempo, subirán a la cima y ganarán más visitantes.-</p>
 

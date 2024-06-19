@@ -553,7 +553,6 @@ nav li:hover > .dropdown-menu {
 
 .pagination-li {
     list-style-type: disc;
-    list-style-position: inside;
 }
 
 /* COMPIROBAR PAGE */
@@ -741,10 +740,6 @@ nav li:hover > .dropdown-menu {
 /* SERVICES */
 .services {
     margin-top: 70px;
-}
-
-.service-container {
-    margin: 10px 400px 70px;
 }
 
 .services-tel {
