@@ -13,7 +13,7 @@ const Redaccion = () => {
         <BreadCrumb />
         <div className='redaccion-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>Servicio de redacci &oacute;n de contenido</span>
@@ -21,7 +21,7 @@ const Redaccion = () => {
 
               <div className="service-content-txt">
 
-                <p><font><font>Tener contenido adecuado, relevante, pertinente y de calidad para un sitio web se ha convertido en una muy importante herramienta de marketing.</font><font> Un contenido de calidad establece una marca como ninguna otra manera al tiempo que otorga reconocimiento en su&aacute;rea de marketing.</font><font> Un buen contenido es la mejor oportunidad que su sitio web tiene de estar en el codiciado primer puesto en los resultados naturales de b&uacute;squeda de Google u otro importante motor de b&uacute;squeda.</font><font>Usted tiene que escribir el texto que apele a su p&uacute;blico objetivo inmediato.</font><font> Se ve a menudo que los redactores independientes han fracasado al momento de estar a la altura de las expectativas de muchos marketing y gerentes de empresas.</font><font> Despu&eacute;s de todo su sitio web tiene un contenido potente que llevar&aacute;a sus clientes a su sitio web al instante y los persuadir&aacute;a comprar.</font></font></p>
+                <p><font><font>Tener contenido adecuado, relevante, pertinente y de calidad para un sitio web se ha convertido en una muy importante herramienta de marketing.</font> <font> Un contenido de calidad establece una marca como ninguna otra manera al tiempo que otorga reconocimiento en su&aacute;rea de marketing.</font> <font> Un buen contenido es la mejor oportunidad que su sitio web tiene de estar en el codiciado primer puesto en los resultados naturales de b&uacute;squeda de Google u otro importante motor de b&uacute;squeda.</font> <font>Usted tiene que escribir el texto que apele a su p&uacute;blico objetivo inmediato.</font> <font> Se ve a menudo que los redactores independientes han fracasado al momento de estar a la altura de las expectativas de muchos marketing y gerentes de empresas.</font> <font> Despu&eacute;s de todo su sitio web tiene un contenido potente que llevar&aacute;a sus clientes a su sitio web al instante y los persuadir&aacute;a comprar.</font></font></p>
 
                 <p><font>Si usted necesita contenido de alta calidad, art&iacute;culos originales para promover su sitio web, entonces usted est&aacute;en el lugar correcto para comprar art&iacute;culos!</font> <font>Aqu&iacute;creamos s&oacute;lo los mejores art &iacute;culos para ayudar a dirigir el tr&aacute;fico, conseguir backlinks y promover sus productos y servicios en l&iacute;nea.</font></p>
 
@@ -56,7 +56,7 @@ const Redaccion = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

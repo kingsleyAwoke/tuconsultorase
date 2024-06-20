@@ -13,7 +13,7 @@ const Host = () => {
         <BreadCrumb />
         <div className='hosting-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>Hosting Joomla</span>
@@ -45,7 +45,7 @@ const Host = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

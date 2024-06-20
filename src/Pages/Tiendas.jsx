@@ -13,7 +13,7 @@ const Tiendas = () => {
         <BreadCrumb />
         <div className='tiendas-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>Tiendas online</span>
@@ -55,7 +55,7 @@ const Tiendas = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

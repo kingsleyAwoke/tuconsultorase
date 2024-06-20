@@ -13,7 +13,7 @@ const Soporte = () => {
         <BreadCrumb />
         <div className='soporte-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>Soporte Joomla</span>
@@ -46,7 +46,7 @@ const Soporte = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

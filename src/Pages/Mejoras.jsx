@@ -13,7 +13,7 @@ const Mejoras = () => {
         <BreadCrumb />
         <div className='contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>Mejoras de software</span>
@@ -49,7 +49,7 @@ const Mejoras = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

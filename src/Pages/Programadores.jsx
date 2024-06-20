@@ -13,7 +13,7 @@ const Programadores = () => {
         <BreadCrumb />
         <div className='programadores-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>&iquest;Necesita Programadores php?</span>
@@ -59,7 +59,7 @@ const Programadores = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

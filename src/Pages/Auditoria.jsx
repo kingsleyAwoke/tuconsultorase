@@ -13,7 +13,7 @@ const Auditoria = () => {
         <BreadCrumb />
         <div className='auditoria-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>Auditoria de seguridad joomla-joomla expertos</span>
@@ -58,7 +58,7 @@ const Auditoria = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

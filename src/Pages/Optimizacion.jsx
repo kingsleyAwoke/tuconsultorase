@@ -13,7 +13,7 @@ const Optimizacion = () => {
         <BreadCrumb />
         <div className='optimizacion-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <iframe allowfullscreen frameborder="0" height="215" src="http://www.youtube.com/embed/El3IZFGERbM" width="360" className='center'></iframe>
 
@@ -68,7 +68,7 @@ const Optimizacion = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>

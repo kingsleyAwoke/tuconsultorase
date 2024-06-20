@@ -872,6 +872,51 @@ nav li:hover > .dropdown-menu {
     margin: 10px 0;
 }
 
+/* CONSULTORIA */
+.sub-header {
+    padding: 8px 13px 8px 11px;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid #cacaca;
+    border-radius: 6px;
+}
+
+.sub-header h4 {
+    color: #000;
+    font-weight: 400;
+}
+
+.consultoria-container img {
+    display: inline;
+}
+
+.consultoria-container ul {
+    margin-left: 20px;
+}
+
+.consultoria-container li {
+    padding-top: 5px;
+}
+
+.translation-p {
+    margin: 20px 0;
+}
+
+.translation-link {
+    color: var(--BLACK);
+}
+
+.translation-link:hover  {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
 
 
 
