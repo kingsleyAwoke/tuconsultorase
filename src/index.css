@@ -909,12 +909,16 @@ nav li:hover > .dropdown-menu {
     text-decoration: underline;
 }
 
+/* LIMPIEZE */
+.limpieze-container h2, .limpieze-container h3, .limpieze-container h4 {
+    font-weight: 500;
+    margin: 10px 0;
+}
 
-
-
-
-
-
+.limpieze-container li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
 
 
 
