@@ -13,7 +13,7 @@ const Limpieze = () => {
         <BreadCrumb />
         <div className='limpieze-container contact'>
 
-          <dir className="service-content">
+          <div className="service-content">
             <div className='column'>
               <div className="service-content-head">
                 <span>Limpieza sitio hackeado</span>
@@ -90,7 +90,7 @@ const Limpieze = () => {
                 </ul>
               </div>
             </div>
-          </dir>
+          </div>
         </div>
       </section>
     </>
