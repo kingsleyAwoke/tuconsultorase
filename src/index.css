@@ -862,10 +862,15 @@ nav li:hover > .dropdown-menu {
     max-width: 100%;
 }
 
+/* REDACCION */
+.redaccion-container form {
+    margin: 40px 0;
+}
 
-
-
-
+.redaccion-container select {
+    padding: 3px;
+    margin: 10px 0;
+}
 
 
 
