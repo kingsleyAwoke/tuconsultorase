@@ -15,7 +15,7 @@ const Homepage = () => {
         <SecondMain />
         <Footer />
     </>
-  )
+  );
 }
 
 export default Homepage

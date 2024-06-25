@@ -15,7 +15,7 @@ const SecondMain = () => {
 
           <p>¿Necesita ayuda para acelerar su sitio web? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como Google, Yahoo,etc.</p>
 
-          <button className="primary-btn">Leer mas</button>
+          <Link to='/servicios/acelerar-joomla'><button className="primary-btn">Leer mas</button></Link>
       </div>
 
       <div className="row">
@@ -26,7 +26,7 @@ const SecondMain = () => {
           <p>La seguridad puede ser complicada. Desde el momento en que su sitio está en línea, los hackers comienzan a sondearlo en busca de vulnerabilidades de seguridad.  Hay sitios web hackeados todos los días - sitios como el suyo.</p>
           <p>Es un aspecto que los propietarios de sitios pasan por alto con frecuencia y debe ser un prioritario en cualquier organización.</p>
 
-          <button className="primary-btn">Leer mas</button>
+          <Link to='/blog/seguridad'><button className="primary-btn">Leer mas</button></Link>
       </div>
 
       <div className="row">
@@ -52,7 +52,7 @@ const SecondMain = () => {
 
         <p>Somos especialistas o <strong>consultores <abbr title="Search Engine Optimization, optimización para motores de búsqueda">SEO</abbr></strong>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso.</p>
 
-        <button className="primary-btn">Leer mas</button>
+        <Link  to='/blog/seo'><button className="primary-btn">Leer mas</button></Link>
       </div>
 
       <div className="row">
@@ -62,7 +62,7 @@ const SecondMain = () => {
 
           <p>Una tienda en línea puede ser un medio increíblemente eficaz para la venta de productos y servicios a clientes de todo el mundo que de otro modo nunca conocerían su empresa. En términos más básicos una tienda online o carrito de compras es un software que le permite mostrar los productos de su sitio web y recoge automáticamente el dinero cuando el cliente compra sus productos.</p>
 
-          <button className="primary-btn">Leer mas</button>
+          <Link  to='/servicios/tiendas-online'><button className="primary-btn">Leer mas</button></Link>
       </div>
 
       <FormacionJoomla />
@@ -74,7 +74,7 @@ const SecondMain = () => {
 
           <p>El equipo de expertos en seguridad de tu consultora SEO limpia su sitio hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitio, discretamente. Disponemos de dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de  los archivos de forma nueva y limpia.</p>
 
-          <button className="primary-btn">Leer mas</button>
+          <Link  to='/servicios/limpieze-sitio-hackeado'><button className="primary-btn">Leer mas</button></Link>
       </div>
     </section>
   );
