@@ -261,17 +261,6 @@ nav li:hover > .dropdown-menu {
 }
 
 /* HERO */
-.hero-content {
-    background-image: url('images/jumbotron5.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: var(--WHITE);
-    padding: 65px 60px;
-    margin-bottom: 30px;
-    font-size: 21px;
-    margin-top: 10px;
-}
-
 .hero-content h1 {
     font-size: 55px;
     margin-bottom: 15px;

@@ -15,7 +15,7 @@ const SecondMain = () => {
 
           <p>¿Necesita ayuda para acelerar su sitio web? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como Google, Yahoo,etc.</p>
 
-          <Link to='/servicios/acelerar-joomla'><button className="primary-btn">Leer mas</button></Link>
+          <Link to='https://www.joomla.org/'><button className="primary-btn">Leer mas</button></Link>
       </div>
 
       <div className="row">
@@ -72,9 +72,9 @@ const SecondMain = () => {
 
           <img src="\images\limpieza sitio hackeado.jpg" alt="Servicios de limpieza de sitio hackeado" width='400' height='200' />
 
-          <p>El equipo de expertos en seguridad de tu consultora SEO limpia su sitio hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitio, discretamente. Disponemos de dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de  los archivos de forma nueva y limpia.</p>
+          <p>El equipo de expertos en seguridad de tu consultora SEO limpia su sitio hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitio, discretamente. Disponemos de dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de  los archivos de forma nueva y limpia. También incluimos gratis una licencia de 12 meses de Immunify.</p>
 
-          <Link  to='/servicios/limpieze-sitio-hackeado'><button className="primary-btn">Leer mas</button></Link>
+          <Link  to='https://immunefi.com/'><button className="primary-btn">Leer mas</button></Link>
       </div>
     </section>
   );
