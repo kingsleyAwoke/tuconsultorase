@@ -72,7 +72,7 @@ const SecondMain = () => {
 
           <img src="\images\limpieza sitio hackeado.jpg" alt="Servicios de limpieza de sitio hackeado" width='400' height='200' />
 
-          <p>El equipo de expertos en seguridad de tu consultora SEO limpia su sitio hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitio, discretamente. Disponemos de dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de  los archivos de forma nueva y limpia. También incluimos gratis una licencia de 12 meses de Immunify.</p>
+          <p>El equipo de expertos en seguridad de tu consultora SEO limpia su sitio hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitio, discretamente. Disponemos de dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de  los archivos de forma nueva y limpia. También incluimos gratis una licencia de 12 meses de <Link to='https://immunefi.com/' className="primary-color">Immunify</Link>.</p>
 
           <Link  to='https://immunefi.com/'><button className="primary-btn">Leer mas</button></Link>
       </div>
