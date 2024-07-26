@@ -50,52 +50,52 @@ const App = () => {
         <Route index element={<Homepage />} />
 
         {/* BLOG PAGES */}
-        <Route path='/blog/seo' element={<Seo />} />
-        <Route path='/blog/joomla' element={<Joomla />} />
-        <Route path='/blog/e-commerce' element={<Ecommerce />} />
-        <Route path='/blog/seguridad' element={<Seguridad />} />
-        <Route path='/blog/diseon' element={<Diseon />} />
+        <Route path='/seo' element={<Seo />} />
+        <Route path='/joomla' element={<Joomla />} />
+        <Route path='/e-commerce' element={<Ecommerce />} />
+        <Route path='/seguridad' element={<Seguridad />} />
+        <Route path='/diseon' element={<Diseon />} />
 
         {/* UTILIDADES PAGES */}
-        <Route path='/utilidades/seo-imagen' element={<SeoImagne />} />
-        <Route path='/utilidades/herramienta' element={<Herramienta />} />
-        <Route path='/utilidades/compirobar' element={<Compirobar />} />
-        <Route path='/utilidades/analisis' element={<Analisis />} />
+        <Route path='/seo-imagen' element={<SeoImagne />} />
+        <Route path='/herramienta' element={<Herramienta />} />
+        <Route path='/compirobar' element={<Compirobar />} />
+        <Route path='/analisis' element={<Analisis />} />
 
         {/* MAPA DEL SITIO */}
         <Route path='/mapa-del-sitio' element={<MapaDelSitio />} />
 
         {/* PLANTILLA JOOMLA PAGES */}
-        <Route path='/plantilla/plantillas-joomla' element={<Plantilla />} />
-        <Route path='/plantilla/demo-plantilla' element={<DemoPlanNavtilla />} />
+        <Route path='/plantillas-joomla' element={<Plantilla />} />
+        <Route path='/demo-plantilla' element={<DemoPlanNavtilla />} />
 
         {/* MODULOS PAGES */}
-        <Route path='/modulos/jumbotron' element={<Jumbotron />} />
-        <Route path='/modulos/demo-modulo' element={<DemoModulo />} />
-        <Route path='/modulos/bloque' element={<Bloque />} />
-        <Route path='/modulos/demo-modulo-bloque' element={<ModuleBloque />} />        
+        <Route path='/jumbotron' element={<Jumbotron />} />
+        <Route path='/demo-modulo' element={<DemoModulo />} />
+        <Route path='/bloque' element={<Bloque />} />
+        <Route path='/demo-modulo-bloque' element={<ModuleBloque />} />        
 
         {/* PORTAFOLIO */}
         <Route path='/portafolio' element={<Portafolio />} />
 
         {/* SERVICE PAGES */}
-        <Route path='/servicios/diseno-de-pagainas-web' element={<DisenoDePagainas />} />
-        <Route path='/servicios/acelerar-joomla' element={<Acelerar />} />
-        <Route path='/servicios/alta-en-buscadores' element={<AltaNeBuscadores />} />
-        <Route path='/servicios/alta-en-directories' element={<AltaNeDirectories />} />
-        <Route path='/servicios/auditoria-de-seguridad-joomla' element={<Auditoria />} />
-        <Route path='/servicios/cursos-joomla' element={<Cursos />} />
-        <Route path='/servicios/eliminacion-de-malware' element={<Eliminacion />} />
-        <Route path='/servicios/hosting-joomla' element={<Host />} />
-        <Route path='/servicios/mejoras-de-software' element={<Mejoras />} />
-        <Route path='/servicios/tiendas-online' element={<Tiendas />} />
-        <Route path='/servicios/optimizacion-para-motores' element={<Optimizacion />} />
-        <Route path='/servicios/publicidad-pago' element={<PublicidadPago />} />
-        <Route path='/servicios/soporte-joolmla' element={<Soporte />} />
-        <Route path='/servicios/programadores-PHP' element={<Programadores />} />
-        <Route path='/servicios/redaccion-de-contenido' element={<Redaccion />} />
-        <Route path='/servicios/consultoria-seo' element={<Consultoria />} />
-        <Route path='/servicios/limpieze-sitio-hackeado' element={<Limpieze />} />
+        <Route path='/diseno-de-pagainas-web' element={<DisenoDePagainas />} />
+        <Route path='/acelerar-joomla' element={<Acelerar />} />
+        <Route path='/alta-en-buscadores' element={<AltaNeBuscadores />} />
+        <Route path='/alta-en-directories' element={<AltaNeDirectories />} />
+        <Route path='/auditoria-de-seguridad-joomla' element={<Auditoria />} />
+        <Route path='/cursos-joomla' element={<Cursos />} />
+        <Route path='/eliminacion-de-malware' element={<Eliminacion />} />
+        <Route path='/hosting-joomla' element={<Host />} />
+        <Route path='/mejoras-de-software' element={<Mejoras />} />
+        <Route path='/tiendas-online' element={<Tiendas />} />
+        <Route path='/optimizacion-para-motores' element={<Optimizacion />} />
+        <Route path='/publicidad-pago' element={<PublicidadPago />} />
+        <Route path='/soporte-joolmla' element={<Soporte />} />
+        <Route path='/programadores-PHP' element={<Programadores />} />
+        <Route path='/redaccion-de-contenido' element={<Redaccion />} />
+        <Route path='/consultoria-seo' element={<Consultoria />} />
+        <Route path='/limpieze-sitio-hackeado' element={<Limpieze />} />
 
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />

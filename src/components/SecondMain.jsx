@@ -50,7 +50,7 @@ const SecondMain = () => {
 
         <img src="\images\seo.jpg" alt="Coloque su sitio en los primeros lugares en los resultados de los motores de busqueda"  width='400' height='200' />
 
-        <p>Somos especialistas o <strong>consultores <abbr title="Search Engine Optimization, optimización para motores de búsqueda">SEO</abbr></strong>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso.</p>
+        <p>Somos especialistas o consultores SEO, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. Para ofrecer servicios SEO de calidad utilizamos el <Link  to='https://seosmmpanel.com/' className='primary-color'>SEOSMMPanel</Link> y <Link to='https://www.semrush.com/' className='primary-color'>SemRush</Link>, dos de las mejores herramientas SEO.</p>
 
         <Link  to='/blog/seo'><button className="primary-btn">Leer mas</button></Link>
       </div>
