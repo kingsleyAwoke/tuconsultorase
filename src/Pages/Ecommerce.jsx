@@ -27,7 +27,7 @@ const Ecommerce = () => {
 
                         <p><strong>1. Cosas que harán que los compradores potenciales lo piensen antes de ir más allá en el proceso de compra en su tienda online.</strong></p>
 
-                        <Link to='/' className='primary-color'>Leer más: Tips Consejos SEO para sitios e-commerce</Link>
+                        <Link to='#' className='primary-color'>Leer más: Tips Consejos SEO para sitios e-commerce</Link>
                     </div>
                 </div>
 <br />                
@@ -37,7 +37,7 @@ const Ecommerce = () => {
                     <div className="service-content-txt">
                         <p>Entre los <strong>principios</strong> para un buen <strong>dise&ntilde;o de paginas web</strong> o sitios es importante tener en cuenta la experiencia del usuario; factores como la usabilidad, navegaci&oacute;n, b&uacute;squedas, formularios, de all&iacute; que tenemos que tomar en cuenta las siguientes secciones:</p>
 
-                        <Link to='/' className='primary-color'>Leer más: Principios de diseño de paginas web</Link>
+                        <Link to='#' className='primary-color'>Leer más: Principios de diseño de paginas web</Link>
                     </div>
                 </div>
 <br />
@@ -47,7 +47,7 @@ const Ecommerce = () => {
                     <div className="service-content-txt">
                         <p><strong>He encontrado&nbsp;empresas de comercio electrónico</strong><strong>&nbsp;qu</strong>e eligen su tecnología basada principalmente en la estética y en segundo lugar en la funcionalidad.&nbsp;Los aspectos del negocio en cuanto a tecnología de comercio electrónico a menudo se pasan por alto.</p>
 
-                        <Link to='/' className='primary-color'>Leer más: Que aspectos considerar en e-commerce para garantizar su exito</Link>
+                        <Link to='#' className='primary-color'>Leer más: Que aspectos considerar en e-commerce para garantizar su exito</Link>
                     </div>
                 </div>                
             </div>

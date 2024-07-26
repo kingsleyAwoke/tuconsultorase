@@ -25,7 +25,7 @@ const Diseon = () => {
                     <div className="service-content-txt">
                         <p>A pesar de que los sitios web desarrollados y diseñados en flash son hermosos, desafortunadamente <strong>la tecnología Flash es una mala elección</strong> para la mayoría de los websites comerciales. Esta tecnología rompe estándares y convenciones web. L os sitiosweb flash son generalmente agradables a la vista, pero no cumplen con una serie de criterios mínimos para los sitios web orientados a negocios.</p>
 
-                        <Link to='/' className='primary-color'>Leer más: Problemas de Diseño de Paginas Flash</Link>
+                        <Link to='#' className='primary-color'>Leer más: Problemas de Diseño de Paginas Flash</Link>
                     </div>
                 </div>
 <br />                
@@ -45,7 +45,7 @@ const Diseon = () => {
 
                         <p>Aquí están los errores más comunes que los diseñadores web cometen:</p>
 
-                        <Link to='/' className='primary-color'>Leer más: Centrarse en el Diseño o en la Optimizacion para Motores de Busqueda</Link>
+                        <Link to='#' className='primary-color'>Leer más: Centrarse en el Diseño o en la Optimizacion para Motores de Busqueda</Link>
                     </div>
                 </div>
 <br />
@@ -59,7 +59,7 @@ const Diseon = () => {
 
                         <p>Aquí están los fundamentos absolutos que todos los buenos <strong>diseñadores</strong> web deben poseer si quieren llegar a niveles sublimes. No todo implica técnica, es saber hacer.</p>
 
-                        <Link to='/' className='primary-color'>Leer más: Fundamentos de un Buen Diseñador Web</Link>
+                        <Link to='#' className='primary-color'>Leer más: Fundamentos de un Buen Diseñador Web</Link>
                     </div>
                 </div>                
             </div>

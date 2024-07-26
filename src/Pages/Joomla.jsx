@@ -27,7 +27,7 @@ const Joomla = () => {
                     <div className="service-content-txt">
                         <p>El buscador de K2 que lleva por default se configura con el <strong>módulo K2 tools. </strong>Luego de seleccionar la funcionalidad del módulo como caja de búsqueda, configuramos sus parámetros:</p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más: Buscador para el componente K2</Link>
+                        <Link to='#' className='primary-color'>Leer más: Buscador para el componente K2</Link>
                     </div>
                 </div>
 <br />
@@ -37,7 +37,7 @@ const Joomla = () => {
                     <div className="service-content-txt">
                         <p>Millones de usuarios utilizan este magnifico y potente gestor de contenidos en todo el mundo. Es un sistema de gestión de contenidos de código abierto. Puede crear y controlar el sitio de manera efectiva; por otra parte, usted puede personalizarlo! Puede incorporar numerosas extensiones de terceros que están fácilmente disponibles. Algunas de pago y muchas gratuitas. La disponibilidad de numerosas <strong>plantillas</strong> es otra ventaja añadida, y el proceso de actualización puede hacerse de manera efectiva.</p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más: ¿Por qué debe escoger Joomla Como Su Gestor de Contenido?</Link>
+                        <Link to='#' className='primary-color'>Leer más: ¿Por qué debe escoger Joomla Como Su Gestor de Contenido?</Link>
                     </div>
                 </div>
 <br />                
@@ -47,7 +47,7 @@ const Joomla = () => {
                     <div className="service-content-txt">
                         <p>Los sistemas operativos como Unix y Linux utilizan <strong>permisos de acceso</strong>, esto significa que saben cómo hacer frente a las solicitudes de acceso a los<strong> archivos y carpetas</strong>. Hay tres tipos de acceso:</p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más: Tutorial permisos correctos de archivos y carpetas joomla</Link>
+                        <Link to='#' className='primary-color'>Leer más: Tutorial permisos correctos de archivos y carpetas joomla</Link>
                     </div>
                 </div>
 <br />
@@ -59,7 +59,7 @@ const Joomla = () => {
                         
                         <p>El uso de moviles o celulares para navegar por la web est&aacute; creciendo de forma astron&oacute;mica y, sin embargo, la mayor&iacute;a de las webs no est&aacute;n optimizadas para estos dispositivos. Los m&oacute;viles suelen tener un tama&ntilde;o de pantalla limitado y deber&iacute;a cambiar la forma de presentar el contenido en estas pantallas.</p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más:  Es Mi Sitio Joomla Movil Facil</Link>
+                        <Link to='#' className='primary-color'>Leer más:  Es Mi Sitio Joomla Movil Facil</Link>
                     </div>
                 </div>
 <br />
@@ -71,7 +71,7 @@ const Joomla = () => {
 
                         <p>Es informaci&oacute;n sobre la p&aacute;gina web y se define en la secci&oacute;n &lt;head&gt; del documento.&nbsp;La secci&oacute;n &lt;head&gt; es un contenedor de <strong>metadatos</strong>.&nbsp;Esta informaci&oacute;n es utilizada por los motores de b&uacute;squeda para determinar la relevancia que las p&aacute;ginas dan a la solicitud de b&uacute;squeda que se est&aacute; procesando en un momento dado en un determinado buscador.</p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más: Como ingresar metadatos joomla</Link>
+                        <Link to='#' className='primary-color'>Leer más: Como ingresar metadatos joomla</Link>
                     </div>
                 </div>
 <br />
@@ -95,7 +95,7 @@ const Joomla = () => {
                         
                         <p> <strong>Hacer un dise&ntilde;o de pagina web efectivo</strong> no consiste solo en que tan bien se ve, es importante como funciona y debe funcionar perfectamente bien.</p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más: Como hacer un diseño web efectivo</Link>
+                        <Link to='#' className='primary-color'>Leer más: Como hacer un diseño web efectivo</Link>
                     </div>
                 </div>
 <br />
@@ -121,7 +121,7 @@ const Joomla = () => {
                         </span>Antes de &nbsp;empezar a crear su sitio Joomla es importante llevar a cabo un proyecto de investigaci&oacute;n de palabras clave para identificar cu&aacute;les son las principales palabras clave para su sitio y las palabras clave asociadas que complementan o son relevantes para las palabras clave principales. La raz&oacute;n de esto es que las palabras clave deben estar en el centro del dise&ntilde;o de su sitio web - la estructura del sitio (categor&iacute;as de contenido, grupos de productos y as&iacute; sucesivamente), elementos de men&uacute;, art&iacute;culos de contenido y as&iacute; sucesivamente todos deben ser optimizados para hacer el mejor uso de su n&uacute;cleo y palabras clave asociadas.
                         </p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más: Como usar palabras clave en joomla</Link>
+                        <Link to='#' className='primary-color'>Leer más: Como usar palabras clave en joomla</Link>
                     </div>
                 </div>
 <br />
@@ -131,7 +131,7 @@ const Joomla = () => {
                     <div className="service-content-txt">
                         <p>Gracias a una interfaz de salida basada en la <strong>plantilla</strong> y un mont&oacute;n de potentes opciones de personalizaci&oacute;n, Joomla es uno de los sistema de gesti&oacute;n de contenidos (CMS) m&aacute;s populares en uso hoy en d&iacute;a. Millones de si tios alrededor de la Web se han construido usando Joomla, y un grupo de herramientas libres, plug-ins y <strong>plantillas</strong> hacen que sea a&uacute;n m&aacute;s f&aacute;cil para casi cualquier persona crear un sitio profesional e interesante.</p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más: Cómo quitar los enlaces ocultos de las plantillas Joomla</Link>
+                        <Link to='#' className='primary-color'>Leer más: Cómo quitar los enlaces ocultos de las plantillas Joomla</Link>
                     </div>
                 </div>
 <br />
@@ -141,7 +141,7 @@ const Joomla = () => {
                     <div className="service-content-txt">
                         <p>Este tutorial pretende ser una introducci&oacute;n a la creaci&oacute;n de <strong>plantillas</strong> en joomla. Se centrar&aacute; en los archivos indispensables y el c&oacute;digo que debe tener una <strong>plantilla</strong> b&aacute;sica.</p>
 
-                        <Link to='/blog/joomla' className='primary-color'>Leer más: Tutorial como crear una plantilla joomla básica</Link>
+                        <Link to='#' className='primary-color'>Leer más: Tutorial como crear una plantilla joomla básica</Link>
                     </div>
                 </div>
 <br />
