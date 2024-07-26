@@ -16,11 +16,6 @@ const MiddleContent = () => {
             <p className='service-content-head-second'>Joomla Diseño de Paginas Web</p>
             <p>Especialistas Joomla en <strong>diseño de paginas web</strong>, desarrollo de sitios web específicos a medida, para las necesidades de nuestros clientes. Nuestros <strong>especialistas </strong><strong>Joomla</strong>en diseño web, se encargarán de abrir un segundo canal de marketing a su negocio, vea nuestro portafolio de <strong>diseño web</strong>. Totalmente compatible con todos los estándares de <strong>diseño web</strong>, nuestros sitios web diseñados a medida funcionan exactamente como sea necesario debido a nuestros estándares de desarrollo y plataforma extensible de Joomla.</p>
 
-            <p>Para ofrecer servicios SEO de calidad utilizamos el SEOSMMPanel y SemRush, dos de las mejores herramientas SEO.</p>
-
-            <Link to='https://seosmmpanel.com/' className='primary-color'>https://seosmmpanel.com/</Link>
-            <Link to='https://www.semrush.com/' className='primary-color'>https://www.semrush.com/</Link>
-
             <Link to='/servicios/diseno-de-pagainas-web' className='primary-color nowrap'>Leer más: Diseño de paginas web y seo. Acelerar sitio Joomla</Link>
         </div>
     </div>
