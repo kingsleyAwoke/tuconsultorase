@@ -111,6 +111,14 @@ input, textarea, button {
     text-decoration: underline;
 }
 
+.green {
+    color: #008000;
+}
+
+.gray-bg {
+    background-color: rgb(200, 195, 195);
+}
+
 .container {
     margin: 0 10px;
 }

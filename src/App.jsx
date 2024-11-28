@@ -36,6 +36,7 @@ import Programadores from './Pages/Programadores';
 import Redaccion from './Pages/Redaccion';
 import Consultoria from './Pages/Consultoria';
 import Limpieze from './Pages/Limpieze';
+import { Donde, Importancia, OptimizacionInterna, LasDirectories, Causesa, Htaccess } from './Pages/index.js';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -99,6 +100,14 @@ const App = () => {
 
         {/* CONTACT PAGE */}
         <Route path='/contact' element={<Contact />} />
+
+        {/* ARTICULOS */}
+        <Route path='/donde' element={<Donde />} />
+        <Route path='/importancia' element={<Importancia />} />
+        <Route path='/optimizacion-interna' element={<OptimizacionInterna />} />
+        <Route path='/las-directories' element={<LasDirectories />} />
+        <Route path='/causesa' element={<Causesa />} />
+        <Route path='/htaccess' element={<Htaccess />} />
 
         {/* NOT FOUND REOUTER */}
         <Route path='*' element={<NotFoundPage />} />
