@@ -26,7 +26,7 @@ const LasDirectories = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Las directrices para webmaster de Google</span>
+                        <span title="Tips Consejos para sitios e-commerce">Las directrices para webmaster de Google</span>
                     </div>
 
                     <div className="service-content-txt">

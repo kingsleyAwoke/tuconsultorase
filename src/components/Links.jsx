@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const Links = [
     { title: 'Importancia del archivo robots.txt para la seguridad y el seo', url:'/importancia'},
     { title: 'Optimización interna de una pagina web', url:'/optimizacion-interna'},

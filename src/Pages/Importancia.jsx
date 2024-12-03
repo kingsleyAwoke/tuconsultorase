@@ -26,7 +26,7 @@ const Importancia = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Importancia del archivo robots.txt para la seguridad y el seo</span>
+                        <span title="Tips Consejos para sitios e-commerce">Importancia del archivo robots.txt para la seguridad y el seo</span>
                     </div>
 
                     <div className="service-content-txt">

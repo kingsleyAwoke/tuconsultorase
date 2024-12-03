@@ -36,7 +36,12 @@ import Programadores from './Pages/Programadores';
 import Redaccion from './Pages/Redaccion';
 import Consultoria from './Pages/Consultoria';
 import Limpieze from './Pages/Limpieze';
-import { Donde, Importancia, OptimizacionInterna, LasDirectories, Causesa, Htaccess } from './Pages/index.js';
+
+// HOME PAGE LINKS
+import { Donde, Importancia, OptimizacionInterna, LasDirectories, Causesa, Htaccess } from './Pages/index';
+
+// READMORE LINKS
+import { LeeMas_Seguridad, LeeMas_Consultoria, LeeMas_Tiendas, LeeMas_Desarrollo } from './Pages/index';
 import NotFoundPage from './Pages/NotFoundPage';
 
 
@@ -108,6 +113,14 @@ const App = () => {
         <Route path='/las-directories' element={<LasDirectories />} />
         <Route path='/causesa' element={<Causesa />} />
         <Route path='/htaccess' element={<Htaccess />} />
+
+        {/* READMORE LINKS */}
+        <Route path='/leemas_seguridad' element={<LeeMas_Seguridad /> } />
+        <Route path='/leemas_consultoria' element={<LeeMas_Consultoria /> } />
+        
+        <Route path='/leemas_desarrollo' element={<LeeMas_Desarrollo /> } />
+
+        <Route path='/leemas_tiendas' element={<LeeMas_Tiendas /> } />
 
         {/* NOT FOUND REOUTER */}
         <Route path='*' element={<NotFoundPage />} />

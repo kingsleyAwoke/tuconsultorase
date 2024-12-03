@@ -26,7 +26,7 @@ const SecondMain = () => {
           <p>La seguridad puede ser complicada. Desde el momento en que su sitio está en línea, los hackers comienzan a sondearlo en busca de vulnerabilidades de seguridad.  Hay sitios web hackeados todos los días - sitios como el suyo.</p>
           <p>Es un aspecto que los propietarios de sitios pasan por alto con frecuencia y debe ser un prioritario en cualquier organización.</p>
 
-          <Link to='/blog/seguridad'><button className="primary-btn">Leer mas</button></Link>
+          <Link to='/leemas_seguridad'><button className="primary-btn">Leer mas</button></Link>
       </div>
 
       <div className="row">
@@ -52,7 +52,7 @@ const SecondMain = () => {
 
         <p>Somos especialistas o consultores SEO, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. Para ofrecer servicios SEO de calidad utilizamos el <Link  to='https://seosmmpanel.com/' className='primary-color'>SEOSMMPanel</Link> y <Link to='https://www.semrush.com/' className='primary-color'>SemRush</Link>, dos de las mejores herramientas SEO.</p>
 
-        <Link  to='/blog/seo'><button className="primary-btn">Leer mas</button></Link>
+        <Link  to='/leemas_consultoria'><button className="primary-btn">Leer mas</button></Link>
       </div>
 
       <div className="row">
@@ -62,7 +62,7 @@ const SecondMain = () => {
 
           <p>Una tienda en línea puede ser un medio increíblemente eficaz para la venta de productos y servicios a clientes de todo el mundo que de otro modo nunca conocerían su empresa. En términos más básicos una tienda online o carrito de compras es un software que le permite mostrar los productos de su sitio web y recoge automáticamente el dinero cuando el cliente compra sus productos.</p>
 
-          <Link  to='/servicios/tiendas-online'><button className="primary-btn">Leer mas</button></Link>
+          <Link  to='/leemas_tiendas'><button className="primary-btn">Leer mas</button></Link>
       </div>
 
       <FormacionJoomla />

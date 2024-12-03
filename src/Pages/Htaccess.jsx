@@ -26,7 +26,7 @@ const Htaccess = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Consejos y trucos para mejorar Joomla! la seguridad. Htaccess en Joomla!</span>
+                        <span title="Tips Consejos para sitios e-commerce">Consejos y trucos para mejorar Joomla! la seguridad. Htaccess en Joomla!</span>
                     </div>
 
                     <div className="service-content-txt">

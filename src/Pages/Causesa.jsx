@@ -26,7 +26,7 @@ const Causesa = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Causas de disminucion de visitas o trafico web</span>
+                        <span title="Tips Consejos para sitios e-commerce">Causas de disminucion de visitas o trafico web</span>
                     </div>
 
                     <div className="service-content-txt">

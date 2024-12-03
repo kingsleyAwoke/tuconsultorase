@@ -984,3 +984,7 @@ nav li:hover > .dropdown-menu {
     background-color: transparent;
     border: 1px solid var(--LINK-COLOR);
 }
+
+@media screen {
+    
+}
