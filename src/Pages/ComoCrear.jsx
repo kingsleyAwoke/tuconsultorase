@@ -7,13 +7,13 @@ import { Links } from '../components/Links';
 import Footer from '../components/Footer';
 
 
-const Enlaces = () => {
+const ComoCrear = () => {
     // SEARCH BOX
   const [text, setText] = useState('http://tuconsultoraseo.com');
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = '';
     }, []);
   return (
     <>
@@ -26,7 +26,7 @@ const Enlaces = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce"></span>
                     </div>
 
                     <div className="service-content-txt">
@@ -43,10 +43,13 @@ const Enlaces = () => {
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>
@@ -70,4 +73,4 @@ const Enlaces = () => {
   );
 }
 
-export default Enlaces;
+export default ComoCrear;

@@ -138,4 +138,4 @@ const Importancia = () => {
   );
 }
 
-export default Importancia
+export default Importancia;

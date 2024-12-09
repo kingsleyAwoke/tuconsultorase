@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
-import jumbotron5 from '../../public/images/jumbotron5.png';
+import jumbotron5 from '/images/jumbotron5.png';
 
 const Hero = () => {
   // SEARCH BOX

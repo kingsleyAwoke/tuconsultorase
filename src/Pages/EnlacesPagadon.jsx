@@ -7,7 +7,7 @@ import { Links } from '../components/Links';
 import Footer from '../components/Footer';
 
 
-const Enlaces = () => {
+const EnlacesPagadon = () => {
     // SEARCH BOX
   const [text, setText] = useState('http://tuconsultoraseo.com');
 
@@ -70,4 +70,4 @@ const Enlaces = () => {
   );
 }
 
-export default Enlaces;
+export default EnlacesPagadon;

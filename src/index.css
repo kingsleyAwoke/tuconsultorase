@@ -45,7 +45,7 @@ input, textarea, button {
 :root {
     /* FONTS */
     --FF: Roboto, sans-serif;
-    --FF-HEADINGS: sans-serif;
+    --FF-HEADINGS: sans-serif;  
     --FS: clamp(1rem, 2.2vh, 1.5rem);    
 
     /* COLORS */
@@ -983,8 +983,4 @@ nav li:hover > .dropdown-menu {
     color: var(--LINK-COLOR);
     background-color: transparent;
     border: 1px solid var(--LINK-COLOR);
-}
-
-@media screen {
-    
 }

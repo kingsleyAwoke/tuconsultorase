@@ -38,7 +38,7 @@ import Consultoria from './Pages/Consultoria';
 import Limpieze from './Pages/Limpieze';
 
 // HOME PAGE LINKS
-import { Donde, Importancia, OptimizacionInterna, LasDirectories, Causesa, Htaccess } from './Pages/index';
+import * as Articulos from './Pages/index';
 
 // READMORE LINKS
 import { LeeMas_Seguridad, LeeMas_Consultoria, LeeMas_Tiendas, LeeMas_Desarrollo } from './Pages/index';
@@ -107,12 +107,58 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
 
         {/* ARTICULOS */}
-        <Route path='/donde' element={<Donde />} />
-        <Route path='/importancia' element={<Importancia />} />
-        <Route path='/optimizacion-interna' element={<OptimizacionInterna />} />
-        <Route path='/las-directories' element={<LasDirectories />} />
-        <Route path='/causesa' element={<Causesa />} />
-        <Route path='/htaccess' element={<Htaccess />} />
+        <Route path='/donde' element={<Articulos.Donde />} />
+        <Route path='/importancia' element={<Articulos.Importancia />} />
+        <Route path='/optimizacion-interna' element={<Articulos.OptimizacionInterna />} />
+        <Route path='/las-directories' element={<Articulos.LasDirectories />} />
+        <Route path='/como-construir' element={<Articulos.ComoConstruir />} />
+        <Route path='/htaccess' element={<Articulos.Htaccess />} />
+        <Route path='/como-encontrar' element={<Articulos.ComoEncontrar />} />
+        <Route path='/inline-small' element={<Articulos.InlineSmall />} />
+        <Route path='/causesa' element={<Articulos.Causesa />} />
+        <Route path='/que-aspectos' element={<Articulos.QueAspectos />} />
+        <Route path='/como-quitra' element={<Articulos.ComoQuitar />} />
+        <Route path='/Enlaces' element={<Articulos.Enlaces />} />
+        <Route path='/tutorial-seo' element={<Articulos.TutorialSEO />} />
+        <Route path='/como-agregar' element={<Articulos.ComoAgregar />} />
+        <Route path='/que-significa' element={<Articulos.QueSignifica />} />
+        <Route path='/como-las' element={<Articulos.ComoLas />} />
+        <Route path='/Como-especifcar' element={<Articulos.ComoEspecifcar />} />
+        <Route path='/que-características' element={<Articulos.QueCaracteristicas />} />
+        <Route path='/que-hacer' element={<Articulos.QueHacer />} />
+        <Route path='/configuracion' element={<Articulos.Configuracion />} />
+        <Route path='/enlaces-pagados' element={<Articulos.EnlacesPagadon />} />
+        <Route path='/recursos' element={<Articulos.Recursos />} />
+        <Route path='/resireccionamientos' element={<Articulos.Redireccionamientos />} />
+        <Route path='/como-usar' element={<Articulos.ComoUsar />} />
+        <Route path='/tutorial-permisos' element={<Articulos.TutorialPermisos />} />
+        <Route path='/porque-minimizer' element={<Articulos.PorqueMinimizer />} />
+        <Route path='/importancia' element={<Articulos.Importancia />} />
+        <Route path='/Como-crear' element={<Articulos.ComoCrear />} />
+        <Route path='/importancia-de-usar' element={<Articulos.ImportanciaDeusar />} />
+        <Route path='/como-afecta' element={<Articulos.ComoAfecta />} />
+        <Route path='/Como-configurar' element={<Articulos.ComoConfigurar />} />
+        <Route path='/por-que' element={<Articulos.PorQue />} />
+        <Route path='/como-quitar' element={<Articulos.ComoQuitar />} />
+        <Route path='/problemas' element={<Articulos.Problemas />} />
+        <Route path='/como-puedo' element={<Articulos.ComoPuedo />} />
+        <Route path='/joomla-contenido' element={<Articulos.JoomlaContenido />} />
+        <Route path='/Como-probar-el' element={<Articulos.ComoProbarEl />} />
+        <Route path='/tutorial-como-crear' element={<Articulos.TutorialComoCrear />} />
+        <Route path='/porque-mi-sitio' element={<Articulos.PorqueMiSitio />} />
+        <Route path='/procedimientos' element={<Articulos.Procedimientos />} />
+        {/* <Route path='/procesar-paginas' element={<Articulos.pr />} /> */}
+        <Route path='/como-recperarse' element={<Articulos.ComoRecperarse />} />
+        <Route path='/importancia-palabras' element={<Articulos.ImportanciaPalabras />} />
+        <Route path='/como-recuperarse-del' element={<Articulos.ComoRecuperarseDel />} />
+        <Route path='/proteja-su-sitio' element={<Articulos.ProtejaSuSition />} />
+        <Route path='/como-proteger' element={<Articulos.ComoProteger />} />
+        <Route path='/las-vulnerabilidades' element={<Articulos.LasVulnerabilidades />} />
+        <Route path='/como-crear-un' element={<Articulos.ComoCrearUn />} />
+        <Route path='/por-que-disminuya' element={<Articulos.PorQueDisminuya />} />
+
+
+
 
         {/* READMORE LINKS */}
         <Route path='/leemas_seguridad' element={<LeeMas_Seguridad /> } />
