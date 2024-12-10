@@ -13,7 +13,7 @@ const TutorialComoCrear = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Tutorial como crear una plantilla joomla básica - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,231 @@ const TutorialComoCrear = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Tutorial como crear una plantilla joomla b &aacute;sica">Tutorial como crear una plantilla joomla b &aacute;sica</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>Este tutorial pretende ser una introducci &oacute;n a la creaci &oacute;n de <strong>plantillas</strong>
+                        en joomla. Se centrar &aacute;en los archivos indispensables y el c &oacute;digo que debe tener una <strong>plantilla</strong>
+                        b &aacute;sica.</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <h2><strong>Estructura de directorios o carpetas de una plantilla joomla b &aacute;sica</strong>
+                        :</h2>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <ul className="unordered-list">
+                            <li> Deber &aacute;crear una nueva carpeta en la carpeta templates y darle el nombre &ldquo;nueva<strong>plantilla </strong>
+                            &rdquo;.</li>
+                            <li>Puede utilizar un editor de texto y crear 2 archivos: index.php y templateDetails.xml.</li>
+                            <li>
+                            Deber &aacute;crear 2 carpetas en la carpeta &ldquo;nueva<strong>plantilla </strong>
+                            &rdquo;: images y css.
+                            </li>
+                            <li>Dentro de la carpeta css debe crear el archivo template.css.</li>
+                        </ul>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>A pesar de que est &aacute;muy bien para colocar todo el c &oacute;digo CSS directamente en el archivo index.php, muchos desarrolladores web prefieren colocar su c &oacute;digo CSS en un archivo independiente que puede ser enlazada desde varias p &aacute;ginas. Esto adem &aacute;s puede acortar el tiempo de carga de las paginas. Ya que el archivo independiente se puede almacenar en cach &eacute;.</p>
+
+                        <h3><strong>La estructura de nuestra plantilla b &aacute;sica</strong>
+                        :</h3>
+                        
+                        <ul>
+                            <li>/Nuevaplantilla</li>
+                            <li>/CSS</li>
+                            <li>Template.css</li>
+                            <li>/images</li>
+                            <li>index.php</li>
+                            <li>templateDetails.xml.</li>
+                        </ul>
+
+                        <p>El Archivo <strong>templateDetails.xml </strong>
+                        sirve para instalar la <strong>plantilla </strong>
+                        en el CMS. Posee la siguiente informaci &oacute;n:</p>
+
+                        <ul className="unordered-list">
+                            <li>Datos relacionados con la <strong>plantilla</strong>
+                        : nombre de la <strong>plantilla</strong>
+                        , autor, licencia, versi &oacute;n, etc;</li>
+                            <li><strong>Estructura de carpetas, archivos y lenguajes;</strong> plantilla admite;</li>
+                            <li>Opciones de configuraci &oacute;n de la<strong>plantilla</strong>
+                            .</li>
+                        </ul>
+
+                        <p><strong>Creaci &oacute;n del archivo templateDetails.xm</strong> l con su editor de texto favorito, puede utilizar el bloc de notas.</p>
+
+                        <p>&lt;?xml version=&quot;1.0 &quot;encoding=&quot;utf-8 &quot;?&gt;</p>
+                        <p>&lt;!DOCTYPE install PUBLIC &quot;-//Joomla! 1.6//DTD template 1.0//EN &quot;&quot;http://www.joomla.org/xml/dtd/1.6/template-install.dtd &quot;&gt;</p>
+                        <p>&lt;extension</p>
+                        <p>version=&quot;2.5 &quot;</p>
+                        <p>type=&quot;template &quot;</p>
+                        <p>client=&quot;site &quot;&gt;</p>
+                        <p>name &gt;AtomicaI &lt;/name &gt;</p>
+                        <p>&lt;creationDate &gt;17/09/2014 &lt;/creationDate &gt;</p>
+                        <p>&lt;author &gt;Estela Silva &lt;/author &gt;</p>
+                        <p>&lt;authorEmail &gt;Esta dirección de correo electrónico está siendo protegida contra los robots de spam. Necesita tener JavaScript habilitado para poder verlo.</p>
+                        <p>authorUrl &gt;http://tuconsultoraseo.com &lt;/authorUrl &gt;</p>
+                        <p>&lt;copyright &gt;Estela Silva &lt;/copyright &gt;</p>
+                        <p>&lt;license &gt;GNU / GPL &lt;/license &gt;</p>
+                        <p>&lt;version &gt;1.0.2 &lt;/version &gt;</p>
+                        <p>&lt;description &gt;Mi nueva <strong>plantilla</strong>
+                        &lt;/description &gt;</p>
+                        <p>&lt;files &gt;</p>
+                        <p>&lt;filename &gt;index.php &lt;/filename &gt;</p>
+                        <p>&lt;filename &gt;templateDetails.xml &lt;/filename &gt;</p>
+                        <p>&lt;folder &gt;images &lt;/folder &gt;</p>
+                        <p>&lt;folder &gt;css &lt;/folder &gt;</p>
+                        <p>&lt;/files &gt;</p>
+                        <p>&lt;positions &gt;</p>
+                        <p>&lt;position &gt;breadcrumb &lt;/position &gt;</p>
+                        <p>&lt;position &gt;left &lt;/position &gt;</p>
+                        <p>&lt;position &gt;right &lt;/position &gt;</p>
+                        <p>&lt;position &gt;top &lt;/position &gt;</p>
+                        <p>&lt;position &gt;user1 &lt;/position &gt;</p>
+                        <p>&lt;position &gt;user2 &lt;/position &gt;</p>
+                        <p>&lt;position &gt;user2 &lt;/position &gt;</p>
+                        <p>&lt;position &gt;user3 &lt;/position &gt;</p>
+                        <p>&lt;position &gt;user4 &lt;/position &gt;</p>
+                        <p>&lt;position &gt;footer &lt;/position &gt;</p>
+                        <p>&lt;/positions &gt;</p>
+                        <p>&lt;/extension &gt;</p>
+                        <p> Copie el c &oacute;digo anterior, peguelo en su editor de texto, cambie los &iacute;tems relacionados con la <strong>plantilla</strong>
+                        &nbsp;y gu &aacute;rdelo con extensi &oacute;n .xml:</p>
+                        <p>&lt;name &gt;<strong>plantilla</strong>
+                        &lt;/name &gt;</p>
+                        <p>&lt;creationDate &gt;17/09/2014 &lt;/creationDate &gt;</p>
+                        <p>&lt;author &gt;Estela Silva &lt;/author &gt;</p>
+                        <p>Esta dirección de correo electrónico está siendo protegida contra los robots de spam. Necesita tener JavaScript habilitado para poder verlo.</p>
+                        <p>&lt;authorUrl &gt;http://tuconsultoraseo.com &lt;/authorUrl &gt;</p>
+                        <p>&lt;copyright &gt;Estela Silva &lt;/copyright &gt;</p>
+                        <p>&lt;license &gt;GNU / GPL &lt;/license &gt;</p>
+                        <p>&lt;version &gt;1.0.2 &lt;/version &gt;</p>
+                        <p>&lt;description &gt;Mi nueva <strong>plantilla</strong>
+                        &lt;/description &gt;</p>
+                        <p>El texto entre las etiquetas &lt;name &gt;&lt;/name &gt;es el nombre de la <strong>plantilla</strong>
+                        .</p>
+
+                        <p>La secci &oacute;n &lt;files &gt;debe contener todos los archivos que se utilizar &aacute;n y que muy posiblemente a &uacute;n no conoce todav &iacute;a. &ndash;puede actualizarlo despu &eacute;s.</p>
+
+                        <p>Deje las posiciones como est &aacute;n, luego podr &aacute;actualizarlas</p>
+
+                        <p><strong>Creaci &oacute;n del archivo index.php b &aacute;sico</strong>
+                        :</p>
+
+                        <p>El archivo index.php es el n &uacute;cleo de cada p &aacute;gina que joomla entrega. Consiste en hacer una p &aacute;gina HTML, pero se coloca c &oacute;digo php en el lugar del contenido donde deber &aacute;ir. Contiene llamadas a archivos CSS y JavaScript llamadas a archivos CSS y JavaScript. Su contenido est &aacute;formado por etiquetas HTML y PHP.</p>
+
+                        <h4>&iquest;C &oacute;mo trabaja la <strong>plantilla</strong>
+                        joomla?</h4>
+
+                        <p>El c &oacute;digo de Joomla se coloca en las posiciones de m &oacute;dulo y la secci &oacute;n de componentes de la <strong>plantilla</strong>
+                        . &nbsp;Cualquier cosa agregada a la <strong>plantilla</strong>
+                        aparecer &aacute;en todas las p &aacute;ginas a no ser que se a &ntilde;ada a una de estas secciones a trav &eacute;s de Joomla (o c &oacute;digo personalizado).</p>
+
+                        <p>Esta p &aacute;gina le mostrar &aacute;el c &oacute;digo escueto listo para cortar y pegar en su propio dise &ntilde;o.</p>
+
+                        <p>Una <strong>plantilla</strong>
+                        Joomla comienza con las siguientes l &iacute;neas que se colocan en el archivo index.php:</p>
+
+                        <p>&lt;?php defined( &#39;_JEXEC &#39;) or die( &#39;Restricted access &#39;);?&gt;</p>
+
+                        <p>&lt;!DOCTYPE html &gt;</p>
+                        <p>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml &quot;</p>
+                        <p>xml:lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot;lang=&quot;&lt;?php echo $this-&gt;language; ?&gt;&quot;&gt;</p>
+                        <p>La primera l &iacute;nea &lt;?php defined( &#39;_JEXEC &#39;) or die( &#39;Restricted access &#39;);?&gt;</p>
+                        <p>se incorpora por motivos de seguridad, su objetivo es asegurar que el archivo PHP est &aacute;siendo ejecutado dentro de la sesi &oacute;n y contexto del CMS (de forma tal que si un usuario quiere vulnerar el sitio ejecutando un archivo en particular, le sea dif &iacute;cil realizarlo). Es por tanto altamente recomendable su uso en toda <strong>plantilla</strong>
+                        joomla.</p>
+                        <p>La segunda l &iacute;nea se refiere a la declaraci &oacute;n del tipo de documento (<span className='primary-color'>DOCTYPE</span>
+                        ), &nbsp;la cual le dice al navegador (y rastreadores web) el tipo de p &aacute;gina HTML que est &aacute;utilizando. El tipo de documento utilizado anteriormente es HTML5 , una nueva versi &oacute;n de HTML que es en gran medida compatible con versiones anteriores, pero contiene muchas caracter &iacute;sticas nuevas. &nbsp;Es posible que desee investigar esta situaci &oacute;n y los deseos de sus clientes antes de decidir que DOCTYPE que desea utilizar. Sin embargo, esto se utiliza en Joomla &nbsp;y m &aacute;s alto.</p>
+                        <p>La tercera l &iacute;nea comienza nuestro documento HTML y describe en que &nbsp;lenguaje est &aacute;la p &aacute;gina web. Un documento HTML se divide en dos partes, la cabecera (head) y el cuerpo (body). El head contendr &aacute;la informaci &oacute;n sobre el documento y el body contendr &aacute;el c &oacute;digo del sitio web que controla el dise &ntilde;o.</p>
+                        <p><strong>El Head &nbsp;</strong></p>
+                        <p>&lt;head &gt;</p>
+                        <p>&lt;?php $app = JFactory::getApplication();?&gt;</p>
+                        <p>&lt;jdoc:include type=&quot;head &quot;/&gt;</p>
+                        <p>&lt;link rel=&quot;stylesheet &quot;href=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/&lt;?php echo $this-&gt;template; ?&gt;/css/template.css &quot;type=&quot;text/css &quot;/&gt;</p>
+                        <p>&lt;/head &gt;</p>
+                        <p>Utilizando la l &iacute;nea &nbsp;&lt;?php $app = JFactory::getApplication();?&gt;es posible obtener informaci &oacute;n del sitio para mostrar dentro de la<strong>plantilla</strong>
+                        (por ejemplo: nombre del sitio, t &iacute;tulo de la p &aacute;gina, nombre del template, etc).</p>
+                        <p>La segunda l &iacute;nea crea e incorpora las etiquetas necesarias para rellenar la cabecera de la <strong>plantilla</strong>
+                        :</p>
+                        <p>Etiqueta &lt;base /&gt;;</p>
+                        <p>Etiquetas &lt;meta /&gt;:</p>
+                        <p>content-type;</p>
+                        <p>robots;</p>
+                        <p>keywords;</p>
+                        <p>rights;</p>
+                        <p>language;</p>
+                        <p>generator;</p>
+                        <p>Etiqueta &lt;title /&gt;;</p>
+                        <p>Etiquetas &lt;link /&gt;para cargar estilos CSS predeterminados, favicon y RSS;</p>
+                        <p>Etiquetas &lt;script /&gt;para cargar archivos y funciones JavaScript predeterminados.</p>
+                        <p>La tercera l &iacute;nea crea un enlace a su propia hoja de estilos, &nbsp;si se llama template.css y est &aacute;situado en la carpeta css.</p>
+                        <p><strong>El BODY</strong></p>
+                        <p>&lt;body &gt;</p>
+                        <p>&lt;img src=&quot;&lt;?php echo $this-&gt;baseurl ?&gt;/templates/&lt;?php echo $this-&gt;template; ?&gt;/images/logo.png &quot;/&gt;</p>
+                        <p>&lt;h1 &gt;&lt;?php echo $app-&gt;getCfg(&#39;sitename &#39;); ?&gt;&lt;/h1 &gt;</p>
+                        <p>&lt;jdoc:include type=&quot;message &quot;/&gt;</p>
+                        <p>&lt;?php if($this-&gt;countModules(&#39;breadcrumb &#39;)) : ?&gt;</p>
+                        <p>&lt;div id=&quot;breadcrumb &quot;&gt;</p>
+                        <p>&lt;jdoc:include type=&quot;modules &quot;name=&quot;breadcrumb &quot;style=&quot;xhtml &quot;/&gt;</p>
+                        <p>&lt;/div &gt;</p>
+                        <p>&lt;?php endif; ?&gt;</p>
+                        <p>&lt;?php if($this-&gt;countModules(&#39;left &#39;)) : ?&gt;</p>
+                        <p>&lt;div id=&quot;left &quot;&gt;</p>
+                        <p>&lt;jdoc:include type=&quot;modules &quot;name=&quot;left &quot;style=&quot;none &quot;/&gt;</p>
+                        <p>&lt;/div &gt;</p>
+                        <p>&lt;?php endif; ?&gt;</p>
+                        <p>&lt;jdoc:include type=&quot;component &quot;/&gt;</p>
+                        <p>&lt;?php if($this-&gt;countModules(&#39;right &#39;)) : ?&gt;</p>
+                        <p>&lt;div id=&quot;right &quot;&gt;</p>
+                        <p>&lt;jdoc:include type=&quot;modules &quot;name=&quot;right &quot;style=&quot;none &quot;/&gt;</p>
+                        <p>&lt;/div &gt;</p>
+                        <p>&lt;?php endif; ?&gt;</p>
+                        <p>&lt;/body &gt;</p>
+                        <p>&lt;/html &gt;</p>
+
+                        <p>La primera l &iacute;nea del body o cuerpo sirve para insertar una imagen en la p &aacute;gina, en este caso, el logo de la <strong>plantilla</strong>
+                        .</p>
+
+                        <p>La segunda l &iacute;nea, entre etiquetas H1 se utiliza $app para mostrar el nombre del sitio. Dicho nombre es obtenido de la configuraci &oacute;n del CMS.</p>
+
+                        <p>La tercera l &iacute;nea: &lt;jdoc:include type=&quot;message &quot;/&gt;</p>
+
+                        <p>Se utiliza para mostrar diferentes mensajes del CMS (por ejemplo: cuando un usuario se registra en el sitio, el CMS le informa que el registro fue exitoso o err &oacute;neo). Dichos mensajes aparecen en la zona en donde se incorpore la directiva. Aparecer &aacute;solo una vez en la <strong>plantilla</strong>
+                        .</p>
+
+                        <p>Las siguientes l &iacute;neas varian dependiendo de la posici &oacute;n del modulo</p>
+                        <p>&lt;?php if($this-&gt;countModules(&#39;posicion &#39;)) : ?&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;posicion &quot;&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;jdoc:include type=&quot;modules &quot;name=&quot;posicion &quot;style=&quot;xhtml &quot;/&gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div &gt;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&lt;?php endif; ?&gt;</p>
+
+                        <p>La function $this-&gt;countModules(&#39;posicion &#39;) lo que hace es contar la cantidad de m &oacute;dulos &nbsp;publicados en una determinada posici &oacute;n de la <strong>plantilla</strong>
+                            . Si es mayor o &nbsp;igual &nbsp;a 1, se </p>
+
+                        <p>ejecuta el c &oacute;digo siguiente. Esto se suele hacer para que no se muestre c &oacute;digo HTML vac &iacute;o en caso que un m &oacute;dulo no est &eacute;publicado.</p>
+                        <p>Por &uacute;ltimo, la sentencia &lt;jdoc:include type=&quot;component &quot;/&gt;. Esta l &iacute;nea permite mostrar el contenido de un componente. El contenido de los componentes suelen ocupar la zona principal de la <strong>plantilla</strong>
+                        .</p>
+
+                        <p>Para probarlo cree un art &iacute;culo y un &iacute;tem de men &uacute;que enlace a &ldquo;Mostrar un solo art &iacute;culo &rdquo;, el art &iacute;culo se mostrar &aacute;en la zona del componente. Vea el sitio.</p>
+
+                        <p>Elimine la sentencia y vea el sitio.</p>
+
+                        <p>Nota: Esta es una <strong>plantilla </strong>
+                        b &aacute;sica con algunas sentencias de utilidad para ayudarte a entender la creaci &oacute;n de <strong>plantillas </strong>
+                        joomla.</p>
+                        <p>Recuerda incluir las posiciones que faltan en el index.php.</p>
+                        <p className="primary-color">Descargar Plantilla Basica Joomla</p>
+                        <p>Si te ha parecido &uacute;til el art &iacute;culo comp &aacute;rtelo.</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

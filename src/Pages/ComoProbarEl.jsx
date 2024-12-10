@@ -13,7 +13,7 @@ const ComoProbarEl = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Como Probar el Archivo robots.txt - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,61 @@ const ComoProbarEl = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Como Probar el Archivo robots.txt">DComo Probar el Archivo robots.txt</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>Las herramientas para webmaster de Google, conocidas ahora como la Consola de búsqueda de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la<span className='primary-color'>
+                            importancia del archivo robots.txt para la seguridad y el <strong>SEO.</strong></span></p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>Puedes probar si el rastreador Googlebot-Video puede rastrear la url de un video que quieres bloquear en la búsqueda de videos de Google o si el rastreador Adsbot-Google puede rastrear la url de un anuncio que quieres bloquearle.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Estos son los <span className='primary-color'>rastreadores de Google</span>
+                        :</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>Veamos el siguiente ejemplo: si quieres que todas tus páginas aparezcan en la Búsqueda de Google, pero no quieres que se rastreen imágenes de tu directorio images, puedes configurar el archivo robots.txt <span>del siguiente modo </span>
+                        para evitar que el agente de usuario Googlebot-image rastree los archivos de tu directorio /images (pero permitir que Googlebot rastree todos los archivos):</p>
+
+                        <pre>
+                        User-agent: Googlebot <br />
+                        Disallow: <br />
+                        User-agent: Googlebot-Image <br />
+                        Disallow: /images<br/>
+                        Puedes enviar una URL al <span className="primary-color">Probador de robots.txt.</span>
+                        </pre>
+
+                        <p>Como Probar el Archivo robots.txt</p>
+                        <p>1. Desde la <span className="primary-color">página de inicio de Search Console, elige el sitio cuyo archivo robots.txt quieras probar.</span></p>
+
+                        <p>2. Despliega el título Rastreo que hay en el panel de la izquierda y selecciona la herramienta Probador de robots.txt.</p>
+
+                        <p>3. Haz cambios en el archivo robots.txt publicado en el editor de texto.</p>
+
+                        <p>4. Desplázate por el código del archivo <code>robots.txt</code>
+                        para localizar las advertencias de sintaxis y los errores de lógica. El número de advertencias de sintaxis y de errores de lógica se muestra inmediatamente en la parte inferior del editor.</p>
+
+                        <p>5. Escribe una extensión de la URL o la ruta en el cuadro de texto, en la parte inferior de la página.</p>
+
+                        <p>6. Selecciona el agente de usuario que quieras simular en la lista desplegable que hay a la derecha del cuadro de texto</p>
+
+                        <img src="\images\agentes de usuario de Google.jpg" alt="agentes de usuario de Google" title="agentes de usuario de Google" width="189" height="147" />
+
+                        <p>7. Haz clic en el botón PROBAR que hay junto a la lista desplegable de agentes de usuario para ejecutar la simulación.</p>
+
+                        <p>8. Comprueba si en el botón PROBAR ahora pone ACEPTADA o BLOQUEADA para averiguar si la URL que ha introducido es bloqueado y rastreadores web de Google.</p>
+
+                        <p>Resulta muy útil probar el archivo robots.txt para todos los agentes de usuario. Muy aconsejable.</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

@@ -13,7 +13,7 @@ const JoomlaContenido = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Joomla contenido duplicado - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,41 @@ const JoomlaContenido = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Joomla contenido duplicado">Joomla contenido duplicado</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>Al instalar el sistema Joomla los iconos de PDF y de impresi &oacute;n se muestran en la esquina superior de las p &aacute;ginas de los art &iacute;culos. Los motores de b &uacute;squeda siguen sus v &iacute;nculos, desde el contenido de la <strong>p &aacute;gina web </strong>
+                            de &nbsp;&nbsp;cada uno de estos enlaces y es evaluado de diferentes maneras por el motor de b &uacute;squeda;&nbsp;&iquest;C &oacute;mo funciona? el texto ancla, el &nbsp;t &iacute;tulo de la p &aacute;gina destino, los metadatos de la p &aacute;gina destino, el contenido de la <strong>p &aacute;gina </strong>
+                            de destino.&nbsp;Todos estos se comparan con la p &aacute;gina de origen y su propio t &iacute;tulo, metadatos, el contenido. A los motores de b &uacute;squeda no les gusta el contenido duplicado.</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                            <p>Las <strong>p &aacute;ginas web </strong>
+                            con t &iacute;tulo id &eacute;ntico y descripciones meta id &eacute;nticas se consideran contenido id &eacute;ntico, el contenido duplicado a Google y otros motores de b &uacute;squeda, no les gusta esto y estas p &aacute;ginas ser &aacute;n relegados al &iacute;ndice complementario.&nbsp;El &iacute;ndice complementario es la segunda base de datos de &nbsp;google - y ocupan lugares m &aacute;s bajo que la base de datos principal.&nbsp;Entonces, &iquest;c &oacute;mo puedo comprobar si alguna de mis p &aacute;ginas se enumeran en este &iacute;ndice complementario?&nbsp;Ir a google y &quot;site: sudominio &quot;.&nbsp;Mira hacia abajo en la lista y que est &aacute;n etiquetados con &quot;Resultado Suplementario &quot;.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                            <h4 className='primary-color'>En este punto Ud. me dice: Muy bien, &iquest;qu &eacute;debo hacer para remediar esto en Joomla?</h4>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                            <p>No muestre los iconos de impresi &oacute;n ni PDF.&nbsp;Este es el buen comienzo, pero no es completo porque podr &iacute;a haber otras razones para que sus <strong>p &aacute;ginas web </strong>
+                        est &aacute;n atrapados en el &iacute;ndice suplementario.&nbsp;En pocos d &iacute;as cubro otras t &aacute;cticas para <strong>p &aacute;ginas web </strong>
+                        de Joomla que figuran en el &iacute;ndice de resultados suplementarios cuando no est &aacute;n all &iacute;porque muestran iconos de PDF y de impresi &oacute;n.</p>
+
+                        <p>Si quiere saber m &aacute;s sobre contenido duplicado puede leer &nbsp;&nbsp;<span className='primary-color'>Como proteger su contenido</span>
+                        .</p>
+
+                        <p>Si quiere saber m &aacute;s sobre <span className='primary-color'>el indice suplementario</span>
+                        .</p>
+
+                        <p>&iquest;Que opinan? &iexcl;compartan!</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

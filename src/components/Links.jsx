@@ -34,7 +34,7 @@ export const Links = [
     { title: 'Cómo quitar los enlaces ocultos de las plantillas Joomla', url:'/como-quitar'},
     { title: 'problemas de seguridad de Joomla', url:'/problemas'},
     { title: 'Como proteger un directorio usando cpanel', url:'/como-proteger'},
-    { title: 'Cómo puedo saber si mi sitio está infectado?', url:'/como-puedo'},
+    { title: '¿Cómo puedo saber si mi sitio está infectado?', url:'/como-puedo'},
     { title: 'Joomla contenido duplicado', url:'/joomla-contenido'},
     { title: 'Como Probar el Archivo robots.txt', url:'/como-probar-el'},
     { title: 'Tutorial como crear una plantilla joomla básica', url:'/tutorial-como-crear'},

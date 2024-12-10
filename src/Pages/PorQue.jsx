@@ -13,7 +13,7 @@ const PorQue = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Por que son malos los enlaces rotos - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,43 @@ const PorQue = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Por que son malos los enlaces rotos">Por que son malos los enlaces rotos</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>Ellos no solo brindan una mala experiencia de navegaci &oacute;n al usuario sino que &nbsp;impiden a las ara &ntilde;as el rastreo de todo el sitio, por lo que afectan el <strong>seo</strong>
+                        . Si su sitio tiene enlaces rotos, las ara &ntilde;as se abstendr &aacute;n de rastrear el sitio.</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>Tienen un impacto negativo en los motores de b &uacute;squeda como Yahoo, Google, Altavista etc.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Los sitios que tienen enlaces rotos, las ara &ntilde;as lo consideran sitios de spam. Un sitio de spam tiene mala navegaci &oacute;n. Los visitantes no quieren regresar a un &nbsp;sitio con mala navegaci &oacute;n.</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>Los enlaces rotos influyen en su reputaci &oacute;n.</p>
+
+                        <p>Tendr &aacute;problemas para conseguir nuevos clientes ya que los enlaces rotos no funcionan para la informaci &oacute;n que est &aacute;n buscando.</p>
+
+                        <h2>Naturaleza de los enlaces rotos</h2>
+
+                        <p>Con el tiempo muchos sitios web cambian, se eliminan p &aacute;ginas, desaparecen dominios, estas situaciones generan que muchos enlaces se conviertan en obsoletos, ya que no llevan a p &aacute;ginas v &aacute;lidas y generan un c &oacute;digo http 404, la conocida p &aacute;gina no encontrada.</p>
+
+                        <p>Esto ocurre con mucha frecuencia en enlaces internos de sitios. Con los enlaces externos la situaci &oacute;n es peor ya que la p &aacute;gina destino puede cambiar de ubicaci &oacute;n o nombre sin previo aviso. Los servidores externos pueden reducirse o extinguirse para siempre o sus dominios expirar o venderse.</p>
+
+                        <p>Frente a todo esto se hace vital contar con herramientas que permitan hacer un seguimiento a los enlaces para constatar su estado. Existen infinidad de &uacute;tiles herramientas en l &iacute;nea que le facilitan este trabajo, si coloca en los motores de b &uacute;squeda &ldquo;comprobar enlaces rotos &rdquo;, &ldquo;herramienta para comprobar enlaces rotos &rdquo;, &ldquo;validar enlaces rotos &rdquo;, los podr &aacute;encontrar y utilizar.</p>
+
+                        <p>Este proceso de comprobaci &oacute;n debe hacer regularmente y los resultados negativos deben corregirse a la brevedad posible.</p>
+
+                        <p>No olvides compartir este art &iacute;culo.</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

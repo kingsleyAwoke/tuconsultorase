@@ -13,7 +13,7 @@ const ComoUsar = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Como usar el atributo alias en joomla - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,38 @@ const ComoUsar = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Como usar el atributo alias en Joomla">Como usar el atributo alias en Joomla</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>El atributo alias se usa en elementos de menú, categorías y artículos. El alias es el nombre interno de estos elementos. Joomla utiliza los alias para crear URLs amigables a los buscadores cuando SEF está activado. Existen limitaciones técnicas en relación al tipo de caracteres que pueden incluirse en las URLs. El alias debe estar formado por letras minúsculas y guiones altos (-).</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>Puede dejar el alias en blanco y joomla lo llenará con un valor predeterminado, el cual es el título. También puede ingresar el alias manualmente, de esta manera usted tendrá mayor control sobre la url generada:</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Podrá controlar &nbsp;la longitud de la url generada.</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>Hace más fácil para los motores de búsqueda como google mostrar toda la URL en los resultados de busqueda sin tener que acortarla.</p>
+
+                        <p>Los usuarios pueden comprender más sobre el contenido de la página. Cuando los motores de búsqueda indexan una página también pueden utilizar la URL como fuente de información acerca del contenido de la página.</p>
+
+                        <p>Los caracteres no latinos son aquellos que forman parte del alfabeto hebreo, cirílico, chino, árabe etc. Estos caracteres son permitidos en el alias si se establece la opción unicode en Sí en la configuración global.Ejemplo. Si la opción unicode está establecida en No y el título incluye caracteres no latinos, el alías será por defecto la fecha y la hora actual, por ejemplo "2014-09-31-15-45-30".</p>
+
+                        <p>Si usted deja espacios en blanco en el alias y/o guiones bajos en el alias, Joomla eliminará el espacio en blanco y el guión bajo (_) lo reemplazará con el guión alto (-).</p>
+
+                        <p>Si modifica el título de un artículo, categoría o elemento de menú pero no modifica su viejo alias, el alias y la url que se crea a partir del alias no cambiará. En este caso cambie el título y deje en blanco su alias para generar uno nuevo de manera automática después de guardar el artículo. También puede modificar el alias manualmente.</p>
+
+                        <p>Es recomendable incluir palabras clave en el alias y en el título para generar url con palabras clave y títulos con palabras clave.</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>
