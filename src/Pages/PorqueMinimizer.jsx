@@ -13,7 +13,7 @@ const PorqueMinimizer = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Porque minimizar redirecciones - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,55 @@ const PorqueMinimizer = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Porque minimizar redirecciones">Porque minimizar redirecciones</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>Porque minimizar redirecciones: Hay muchas buenas razones para tener redirecciones, pero hay que tener en cuenta que estropean la experiencia del usuario y causan problemas de velocidad. La utilización de un redireccionamiento obliga al navegador a buscar nuevamente la página web perdiendo un tiempo, a veces, notable.</p>
+                        <p>Las redirecciones web se consiguen utilizando los códigos de estado 301 y 302. He aquí un ejemplo de las cabeceras HTTP 301 en una respuesta:</p>
+                        <p>HTTP/1.1 301 Moved Permanently</p>
+                        <p>Location: http://ejemplo.com/nuevauri</p>
+                        <p>Content-Type: text/html</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>Un redireccionamiento 301 es permanente y una redirección 302 es temporal.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Tal vez una de las redirecciones más usadas ​​en la web es la redirección 301 permitiendo redirigir todo el sitio de la no-www a la versión www de una página web.</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>El navegador automáticamente lleva al usuario a la página especificada en el campo Location. Toda la información necesaria para el redireccionamiento está en el encabezado. Ni un archivo con 301 ni uno con 302 es cacheado en la práctica a menos que tenga otras cabeceras, como Expires o Cache-Control.</p>
 
-                        <Link to='/' className='primary-color'>Inicio</Link>
+                        <p> La etiqueta meta refresh y JavaScript son otras formas de dirigir a los usuarios a una URL diferente, pero si usted tiene que hacer un redireccionamiento. Conozca otros tipos de redirecciones.</p>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <p>¿Cómo afectan las redirecciones la velocidad de la <strong>pagina web</strong>
+                        ?</p>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        <p>Hacen que sus páginas se cargan más lentamente, ya que se pierde tiempo para ir a un lugar sólo para ser redirigido a otro.</p>
+
+                        <p>Google sugiere eliminar redirecciones que no sean absolutamente necesarios. Google sugiere la eliminación de ellas port:</p>
+
+                        <ul className="unordered-list">
+                            <li>Nunca enlace a una página que sabes que tiene una redirección en ella. Esto sucede cuando se ha creado manualmente la redirección, pero no se actualizo el vínculo en el código HTML para que apunte a la nueva ubicación.</li>
+                            <li>No requieren más de una redirección para llegar a cualquiera de sus destinos.</li>
+                        </ul>
+
+                        <h2><em>No olvide que su <strong>página web </strong>
+                        no carga solo HTML</em></h2>
+
+                        <p>Prácticamente todas las <strong>páginas web </strong>
+                        requieren otras cosas para cargar. Usted puede pensar que no vuelve a dirigir en el código HTML, pero ¿qué pasa con los archivos CSS, imágenes o secuencias de comandos externos?</p>
+
+                        <p>Por otra parte, asegúrese de que todos los enlaces internos a su <strong>página  web </strong>
+                        utilizan sistemáticamente la URL canónica.</p>
+
+                        <p>Quiza le interese leer Redireccionamientos engañosos</p>
+
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
+
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

@@ -13,7 +13,7 @@ const ComoCrear = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = '';
+        document.title = 'Cómo crear un mapa del sitio - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,20 +26,51 @@ const ComoCrear = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce"></span>
+                        <span title="Como crear pagina personalizada 404 en joomla">Como crear pagina personalizada 404 en joomla</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>Crear una pagina personalizada en joomla involucra 4 pasos:</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <ol className="ordered-list">
+                            <li><strong>Como crear una pagina personalizada 404 en joomla. </strong>Crear un articulo descategorizado que sirve como su pagina &quot;404 &quot;. En la sessi &oacute;n robots colocamos &quot;no seguir, no indexar &quot;.</li>
+                            <li><strong>Como crear una pagina personalizada 404 en joomla</strong>. Cree un item de men &uacute;asociado al art &iacute;culo creado en el paso 1. El tipo de elemento de men &uacute;es &quot;Mostrar un solo art &iacute;culo &quot;y copiamos su alias. Por ejemplo si el t &igrave;tulo del art &iacute;culo es &quot;pagina 404 &quot;, copiamos su alias &quot;pagina-404 &quot;</li>
+                            <li><strong>Como crear una pagina personalizada 404 en joomla</strong>
+                            .Ubicamos el archivo error.php de la <strong>plantilla </strong>
+                            que est &aacute;usando en el sitio. Por ejemplo si la plantilla que esta usando es &quot;clean &quot;la ubicaci&oacute;n del archivo es templates/clean. Si no existe el archivo error. php solo copiamos el archivo error. phpdesde el directorio template/system de <strong>joomla</strong>
+                            , al directorio de la plantilla que est &aacute;usando.</li>
+                            <li><strong>Como crear una pagina personalizada 404 en joomla. </strong>Modificamos el archivo error.php, a&ntilde;adiendo el siguiente c&oacute;digo inmediatamente debajo de la l&iacute;nea de&quot; restricted access &quot;: (&quot;acceso restringido &quot;):</li>
+                        </ol>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <code>if (($this-&gt;error-&lt;code) === '404') &#123; 
+                            header('Location: /index.php?option=com_content&view=article&id=75');  exit;
+                            &#125;
+                        </code>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>Donde debe sustituir el id=75 por el id del arculo personalizado del error 404 creado en el paso 1.</p>
+
+                        <p>Esta soluci &oacute;n no es la mejor ya que no es tan personalizada y la url no es amigable.</p>
+
+                        <p>La mejor soluci &oacute;n es la siguiente:</p>
+
+                        <code>if (($this-&gt;error-&lt;code) === '404') &#123; 
+                            header('Location: /pagina=404');  exit;
+                            &#125;
+                        </code>
+
+                        <p>No olvide agregar a su archivo robots.txt las siguientes l&iacute;neas en caso de que haya optado por la primera soluci&oacute;n :</p>
+
+                        <p>User-agent: *</p>
+                        <p>Disallow: /index.php?option=com_content &amp;view=article &amp;id=75</p>
+                        <p>En caso de haber optado por la segunda soluci &oacute;n deber &aacute;agregar a su archivo robos.txt las siguientes l&iacute;neas:</p>
+                        <p>User-agent: *</p>
+                        <p>Disallow:/pagina-404</p>
+                        <p>Esto&uacute;ltimo con el fin de bloquear todos los robots de los buscadores para visitar la <strong>pagina web </strong>
+                        en su sitio, no puedan indexarla y aparecer en los resultados de b &uacute;squeda:</p>
+                        <p>http://su-sitio.com/pagina-404</p>
+
+                        <p>Quiza le interese leer sobre &quot;Importancia del archivo robots.txt para la seguridad y el seo &quot;.</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
