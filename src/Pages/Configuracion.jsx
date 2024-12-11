@@ -13,7 +13,7 @@ const Configuracion = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Configuracion seo en Joomla - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,46 @@ const Configuracion = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Configuracion seo en Joomla">Configuracion seo en Joomla</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <img src="\images\configuracin seo en joomla.png" alt="Como configurar seo en joomla" width='459' height='103' />
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p><strong>SEO </strong>
+                                son las siglas de &nbsp;
+                                <strong>
+                                    <i>Search Engine Optimization.</i>
+                                </strong></p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Las opciones de esta secci&oacute;n pueden cambiar el formato de las direcciones URL de <strong>p&aacute;ginas web</strong> del sitio, y esto puede tener un efecto significativo en los rankings de b&uacute;squeda de p&aacute;ginas individuales, as&iacute;como la creaci&oacute;n de URLs m&aacute;samigables.</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p><b>Sugerencia:</b> &nbsp;despu &eacute;s de realizar cualquier cambio en la configuraci &oacute;n de <strong>seo</strong>
+                        , actualice cualquiera de las p &aacute;ginas del sitio web que ya est &aacute;n abiertos en su navegador web (generalmente con Ctrl + R &nbsp;puede hacer esto). De no hacerlo, podr &iacute;a significar que el formato de los enlaces web interno para el sitio ya no coincida con el que Joomla est &aacute;a la espera y por lo tanto dar la apariencia de los enlaces rotos.</p>
 
-                        <Link to='/' className='primary-color'>Inicio</Link>
+                        <p><b>Consejo:</b>  &nbsp;Evitar si es posible alterar la configuraci&oacute;n de <strong>SEO</strong>
+                        , una vez se haya establecido un sitio web. Los cambios en cualquiera de los tres primeros par&aacute;metros siguientes significa que casi la totalidad de las direcciones URL de un sitio tambi&eacute;n va a cambiar y dar lugar a v&iacute;nculos rotos y tal vez una ca&iacute;da temporal en los buscadores.</p>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <ul className="unordered-list">
+                            <li>Representaci&oacute;n interna &nbsp;&nbsp;Las URL &acute;s de Joomla tienden a ser largas y dif&iacute;ciles de interpretar por los seres humanos y los motores de b&uacute;squeda. Este es un ejemplo t&iacute;pico de la direcci &oacute;n URL interna de una p&aacute;gina que muestra un elemento de contenido: www.ejemplo.com/index.php?option=com_contente&amp;view=articulo&amp;id=48&amp;iditem. Si esta opci&oacute;n de configuraci &oacute;n global est &aacute;ajustado a&quot;s&iacute;&quot;, la URL es modificada en una forma m&aacute;s corta y m&aacute;s f&aacute;cil de entender:&nbsp;www.ejemplo.com/index.php/inicio. El texto que identifica la direcci&oacute;n URL (en este caso &quot;inicio &quot;) se deriva del texto Alias ​​establecido para cada categor&iacute;a, elemento de contenido, y el elemento del men &uacute;. La configuraci&oacute;n por defecto es &quot;No &quot;.</li>
+                            <li><b>Usar Apache mod_rewrite.</b> &nbsp;Cuando este par&aacute;metro se establece en&quot;S &iacute;, Joomla utilizar&aacute;la funci&oacute;n mod_rewrite de servidores web Apache para eliminar la parte &nbsp;<i>index.php</i>
+                            &nbsp;del URL. As&iacute;, cuando este est &aacute;habilitado la URL mostrada anteriormente se convertir &aacute;en:&nbsp; www.ejemplo.com/inicio <b>Nota: </b>Este par&aacute;metro se establece en&quot;No &quot;de forma predeterminada. No debe estar ajustado a&quot;S &iacute;&quot;a menos que el servidor web utilice el software de Apache y se ha instalado el m&oacute;dulo mod_rewrite en su sitio web. Para que  &nbsp;funcione, el archivo&nbsp;<i>htaccess.txt</i>
+                            &nbsp;instalado en el directorio ra&iacute;z del sitio web (o preferiblemente una copia de la misma) debe ser renombrado a .htaccess. Una m ala configuraci&oacute;n del archivo &nbsp;<i>htaccess</i>&nbsp;puede causar f&aacute;cilmente los principales errores de servidor, por lo que no modifique el archivo <i>htaccess a </i>  menos que entienda c &oacute;mo funciona. Si desea saber m&aacute;s sobre el archivo .htaccess puede leer htaccess en joomla</li>
+                            <li><b>A&ntilde;ade sufijo a la URL</b>. Cuando se ajusta en&quot;S&iacute;&quot;, Joomla a&ntilde;ade .html al final de la mayor &iacute;a de las direcciones URL. Las direcciones URL que se muestran arriba se convertir&aacute;n entonces en:&nbsp;www.ejemplo.com/index.php/inicio.html  o&nbsp;www.ejemplo.com/inicio.html. Esta configuraci&oacute;n es en gran medida una cuesti&oacute;n de preferencia personal, pero teniendo en cuenta que es f&aacute;cil &nbsp;<i>confundir .htm</i>
+                            &nbsp;y sufijos .<i>html</i>
+                            &nbsp;al escribir las direcciones URL, es m &aacute;s conveniente tener esta funci &oacute;n desactivada. La configuraci&oacute;n por defecto es &quot;No &quot;.</li>
+                            <li><b>Alias ​​Unicode.</b> (S &oacute;lo presentes en Joomla v1.6.x y posteriores.) Elija entre alias &quot;Unicode&quot;&quot;transliteraci&oacute;n &quot;.  &nbsp;Si se configura en s &iacute;, los caracteres no latinos est &aacute;n permitidos en el al&iacute;as &nbsp;y URL, si no, el t&iacute;tulo que incluye caracteres no latinos generar&aacute;un alias predeterminado de fecha y hora actuales por ejemplo &quot;2014-08-12-16-53 &quot;. El ajuste predeterminado es no. El cambio de este par&aacute;metro no cambia de forma retrospectiva los alias, s&oacute;lo cambia el comportamiento de la generaci &oacute;n autom&aacute;tica de alias para la creaci&oacute;n y edici&oacute;n de futuros contenidos. &quot;Transliteraci&oacute;n&quot;es el ajuste predeterminado. Quizas le interese Como usar el atributo alias en Joomla!.</li>
+                            <li><b>A&ntilde;adir Nombre del sitio Para los t&iacute;tulos de p &aacute;gina.</b>&nbsp;(S &oacute;lo presente en Joomla v1.6.x y posteriores.) Anexa el nombre del sitio a los t&iacute;tulos de p&aacute;gina en la etiqueta &nbsp;<i>&lt;title &gt;</i>&nbsp;de cada encabezado de la <strong>p &aacute;gina web</strong>. (Este texto aparece en la barra superior de la ventana del navegador web y/o en la pesta&ntilde;a del navegador.).</li>
+                        </ul>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
+
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

@@ -13,7 +13,7 @@ const Recursos = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Recursos bloqueados Herramientas Para Webmaster de Google - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,50 @@ const Recursos = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Recursos bloqueados Herramientas Para Webmaster de Google. Mejora tu <strong>SEO </strong>">Recursos bloqueados Herramientas Para Webmaster de Google. Mejora tu <strong>SEO </strong></span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <h2>Herramientas para Webmaster de Google agrega hoy 11/03/2015, el Informe Recursos Bloqueados y actualizaciones en Obtener y Procesar de la Herramienta Explorar como Google.</h2>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>Google ha anunciado esta mañana que han puesto en marcha un nuevo informe en Herramientas para webmasters de Google llamado Informe de Recursos Bloqueados. Si las imágenes vinculadas, CSS y los archivos JavaScript en páginas web están bloqueadas, es decir; les impide ser rastreados por el robot, no podrá ver la página. En otras palabras; Googlebot no puede acceder a los archivos css y js.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Para más detalles sobre el nuevo informe de recursos bloqueados, haga clic aquí.</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>El informe muestra inicialmente las páginas con recursos bloqueados. A continuación, haga clic en las filas, se le dará la lista de los recursos bloqueados dentro de ese host. Al hacer clic le mostrará las páginas específicas que incluyen dichos recursos bloqueados, en última instancia un último clic le llevará a través de "los pasos para diagnosticar y resolver", dice John Mueller de Google .</p>
 
-                        <Link to='/' className='primary-color'>Inicio</Link>
+                        <p>Aquí está una foto del informe, tenga en mente, usted puede ir más profundo haciendo clic en el nombre del host.</p>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <img src="\images\recursos bloqueados en la pagina.jpg" alt="recursos bloqueados" title="recursos bloqueadoS" width="448" height="213" />
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        <p>Si el archivo robots.txt de un sitio no permite el rastreo de estos recursos, puede afectar la forma en que Google rastrea, ve e indexa la página, lo que puede afectar el ranking de la página de búsqueda de Google. Ahora mostrará como Google ve la página frente a como un usuario ve la página, uno al lado del otro.</p>
+
+                        <p>Google ha dicho:</p>
+
+                        <cite>Cuando usted solicita una URL debe ser obtenida y procesada, ahora muestra tanto como la ve Googlebot, como también, como la ve un usuario típico. Esto hace que sea más fácil reconocer las cuestiones que influyen significativamente en qué páginas se ven de manera diferente por Googlebot.</cite>
+
+                        <p>Aquí está una foto de este sitio que muestran los dos al lado del otro:</p>
+
+                        <img src="\images\obtener y procesar visto por google y usuarios.jpg" alt="obtener y procesar visto por google y usuarios.jpg" title="obtener y procesar visto por google y usuarios.jpg" width="713" height="221" />
+
+                        <p>Artículos estrechamente relacionados para resolver el problema "<strong>Googlebot no puede acceder a los archivos CSS y JS</strong>" o recursos bloqueados:</p>
+
+                        <p>Como probar el archivo robots.txt</p>
+
+                        <p>Cual es la importancia del archivo robots.txt para la seguridad y el SEO</p>
+
+                        <p>Como procesar páginas como Explorar cómo Google</p>
+
+                        <p>Como configurar Herramientas para webmaster</p>
+
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
+
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

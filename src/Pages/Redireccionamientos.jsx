@@ -13,7 +13,7 @@ const Redireccionaminetos = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Redireccionamientos engañosos - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,76 @@ const Redireccionaminetos = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Redireccionamientos engañosos">Redireccionamientos engañosos</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>Redireccionamientos engañosos: El auto-redireccionamiento es la técnica de enviar automáticamente a un visitante del sitio a otra página distinta de la que &nbsp;aterrizó inicialmente. La otra <strong>página web</strong>
+                        está a menudo en el mismo sitio web, pero puede estar en un sitio diferente. De hecho, la auto-redirección se utiliza cuando un sitio web se ha creado con el único propósito de clasificar en los motores de búsqueda. Cuando los visitantes llegan a una página, a partir de una lista de los resultados de los motores de búsqueda, es redirigido automáticamente a la página principal.</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>Esto es común cuando una página dentro del sitio ha sido creada específicamente para clasificar en los primeros lugares en los motores de búsqueda, pero ha sido tan altamente optimizada que la gente no la ve en realidad. La auto-reorientación lleva a los visitantes a la página "adecuada" en el sitio.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Esto no es bien visto por los motores de búsqueda, que a veces sancionan una <strong>página web</strong>
+                        o un sitio por hacerlo. Los motores de búsqueda no son capaces de detectar automáticamente la mayoría de los métodos de auto-redireccionamiento.</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p><strong>Esta práctica es engañosa porque intenta mostrar contenido diferente a los usuarios y al robot de Google.</strong></p>
 
-                        <Link to='/' className='primary-color'>Inicio</Link>
+                        <h2>Métodos Auto-redireccionamiento</h2>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <p><strong>El método "Refresh Meta Tag"&nbsp;</strong></p>
+                        <p>Este es el método de auto-redireccionamiento que los motores pueden detectar automáticamente, o al menos eso se cree. También es el método que los motores aceptan como un plazo de tiempo razonable entre la &nbsp;página de aterrizaje y su redireccionamiento. Se recomiendan al menos 5 segundos.</p>
+                        <p>El código debe estar en la sección head de la página, y se parece a esto:&nbsp;</p>
+                        <p>&lt;head &gt;&nbsp;&lt;meta http-equiv="refresh" content="5;url=pagename.html"&gt;&lt;/ head &gt;&nbsp;</p>
+                        <p>El parámetro "content" consta de dos partes, separadas por un punto y coma. La primera parte es el retardo, en segundos, antes de que ocurra la redirección. La segunda parte es la URL a cual se redirigirá, como cualquier hipervínculo, puede ser una dirección URL relativa o una URL absoluta. &nbsp;</p>
+                        <p>
+                        <strong>El método redirecciones &nbsp;</strong>
+                        <strong>automáticos</strong>
+                        <strong>&nbsp;javascript &nbsp;</strong>
+                        </p>
+                        <p>
+                        Las redirecciones &nbsp;<strong>&nbsp;</strong>
+                        automáticos &nbsp;Javascript &nbsp;no pueden ser detectados automáticamente por los motores de búsqueda, ya que aún no analizan Javascript. El script se puede colocar en cualquier lugar de la página, pero lo mejor es colocarlo en la sección head para que se ejecute tan pronto como la página empieza a cargarse. Este es un ejemplo típico:&nbsp;&nbsp;
+                        </p>
+                        <p>&lt;head &gt;</p>
+                        <p>&lt;script language="JavaScript"&gt;&nbsp;</p>
+                        <p>function replaceLocation()&#123; &nbsp;&nbsp;location.replace('nuevapagina.html');&nbsp;&nbsp;&#125;&nbsp;</p>
+                        <p>&lt;/script &gt;</p>
+                        <p>&lt;/head &gt;&nbsp;</p>
+                        <p>"nuevapagina.html" puede ser cualquier URL relativa o absoluta, al igual que un hipervínculo URL. &nbsp;</p>
+                        <p>El uso de la función "reemplazar" de Javascript elimina la dirección URL del documento actual en el historial del documento, lo que significa que no es posible usar el botón "atrás" para navegar de vuelta al documento original. &nbsp;</p>
+                        <p>Esta práctica constituye a todas luces un engaño al usuario. &nbsp;</p>
+                        <p>Muchos usan este redireccionamiento en la sección action de la declaración de un formulario: &nbsp;</p>
+                        <p>&lt;form name="myform" action="nuevapagina.html" method="get"&gt;&lt;/form &gt;&nbsp;</p>
+                        <p>En la documentación de ayuda de Google dice esto acerca de redirecciones engañosas: &nbsp;</p>
+                        <p>"JavaScript: coloca el mismo contenido JavaScript en una etiqueta &lt;noscript &gt;. Si utilizas este método, asegúrate de que el contenido sea exactamente igual al de JavaScript y que se muestre a los usuarios que no tengan JavaScript habilitado en el navegador."</p>
+                        <h3>Motivaciones para redirecciones</h3>
+                        <p>Existen redireccionamiento lícitos y engañosos, en todo caso piense acerca de la motivación para hacerlo. Pregúntese porque necesita ese redireccionamiento. ¿mejora la experiencia del usuario? ¿el usuario se sentirá satisfecho con la página donde le está redirigiendo? &nbsp;</p>
+                        <p>
+                            <strong>Lo importante sobre redirecciones:</strong>
+                        </p>
+                        <p>Siempre envie a los usuarios y motores de búsqueda al mismo lugar.</p>
+                        <p>Si utiliza redireccionamientos engañosos tendrá que enfrentar las penalizaciones de Google.</p>
+                        <p>La redirección es "engañosa" si envia al usuario a un sitio diferente del que esperaba. &nbsp;</p>
+                        <p>
+                            <strong>¿Como podemos detectar redireccionamientos engañosos?</strong>
+                        </p>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        <img src="\images\detectar redireccionamientos engaosos.jpg" height='142' width='356px' title="Observar la url del enlace es una técnica para saber el destino real del link" alt=" detectar redireccionamientos engañosos" />
+
+                        <p>
+                        Tambien es muy útil la extensión de Chrome link-revealer que mostrará la URL del enlace al que vas a hacer clic.
+                        </p>
+
+                        <p>Lea: Porque minimizar redirecciones</p>
+
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
+
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>
