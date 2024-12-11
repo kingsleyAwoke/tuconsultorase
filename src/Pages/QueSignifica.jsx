@@ -13,7 +13,7 @@ const QueSignifica = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Que significa Minify CSS - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,20 +26,25 @@ const QueSignifica = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Que significa Minify CSS">Que significa Minify CSS</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p>&iexcl;Sencillo! simplemente que debe comprimir el CSS para que la carga sea m &aacute;s r &aacute;pida.</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>Minificaci&oacute;n &nbsp;o compresi&oacute;n de c&oacute;digo css es la pr&aacute;ctica de eliminar caracteres innecesarios para reducir su tama&ntilde;o, la eliminaci&oacute;n de espacios innecesarios, y la optimizaci&oacute;n del c&oacute;digo CSS; mejorando de este modo los tiempos de carga.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Cuando los archivos Javascript y CSS se comprimen, todos los comentarios son retirados, as&iacute;como &quot;espacios en blanco&quot;innecesarios, como tambi&eacute;n los enter (nueva l&iacute;nea) y tabuladores. Adem&aacute;s el c&oacute;digo puede ser formateado a &uacute;n m&aacute;s en una sola l&iacute;nea en lugar de varias.</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>En el caso de CSS, esto mejora el rendimiento del tiempo de carga debido a que el tama&ntilde;o del archivo descargado se reduce significativamente. Existen dos herramientas populares para minifying, reducir o comprimir el c&oacute;digo CSS son&nbsp;CSS Compressor Google Minify. Muchas herramientas tambi&eacute;n permiten minify/comprimir c&oacute;digo Javascript, aprende m&aacute;s en MinifyJS.com.</p>
+
+                        <p>El c&oacute;digo CSS correctamente minimizado (comprimido) mejora la velocidad de la <strong>p&aacute;gina web </strong>
+                            y ya sabemos que la velocidad de carga es uno de los m&aacute;s de 200 factores de <strong>seo o posicionamiento en buscadores</strong>
+                            .</p>
+
+                        <p>No importa c&oacute;mo usted utiliza su CSS (<Link to='/inline-small' className='primary-color'>inline small css</Link>, archivos externos, archivo externo combinado) mientras m&aacute;s peque&ntilde;o, mejor y contribuir&aacute;a que sus <strong>p&aacute;ginas web </strong>
+                        se cargan m&aacute;s r&aacute;pido.</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 

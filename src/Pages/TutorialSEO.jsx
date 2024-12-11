@@ -13,7 +13,7 @@ const TutorialSEO = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Tutorial SEO Optimización Para Motores de Búsqueda - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,105 @@ const TutorialSEO = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Tutorial SEO Optimización Para Motores de Búsqueda">Tutorial SEO Optimización Para Motores de Búsqueda</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <img src="\images\En sus marcas listosya.jpg" alt="Tutorial SEO. La carrera por las primeras posiciones en los resultados de busqueda" title="Tutorial SEO. La carrera por las primeras posiciones en los resultados de busqueda" height='228' width='340' />
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p><strong>Tutorial SEO. Optimización Para Motores de Búsqueda:</strong> esta es una guía paso a paso de SEO que le enseñará cómo optimizar un sitio web para la búsqueda, con <em>completas herramientas <strong>SEO</strong>
+                        gratuitas!</em> ¿Eres propietario de un sitio web y te preocupa que tu sitio no aparece en Google? ¿Planea un sitio web y desea hacerlo fácil de buscar desde el principio? Sea cual sea su situación, este tutoríal le enseñará todo lo básico de <strong>SEO</strong>
+                            y le propondrá consejos importantes de <strong>SEO</strong>
+                            para ayudarle a optimizar sus <strong>páginas web</strong>
+                            para ser encontrado en los motores de búsqueda.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                            <p>Nuestro tutoríal <strong>SEO</strong>
+                            cubre una metodología "sombrero blanco" que se adhiere a las directrices de los motores de búsqueda. uestra empresa ofrece servicios de Internet marketing, herramientas de software y formación de <strong>SEO</strong>
+                            . De hecho, cientos de personas han asistido a los cursos de formación en salones de clases y aulas virtuales tanto a nivel local como internacional. Esta experiencia combinada hace a Estela Silva y su equipo de consultores especialmente cualificados para presentar este útil <strong>Tutorial SEO Optimización Para Motores de Búsqueda</strong> altamente ético y así enseñarte las mejores prácticas que reflejan los últimos avances en consultas de búsqueda.</p>
+                            <p>¿Qué es SEO?</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                            <p><strong>La optimización de motores de búsqueda (SEO) es la ciencia y el arte de aumentar el tráfico a un sitio web, ayudando a que su clasificación en los resultados de búsqueda orgánica (no pagados) sea más alta. Incluye consejos de <strong>SEO</strong>
+                            y estrategias que son dignas de confianza para mejorar tanto los factores internos y externos de su sitio web que influyen en su clasificación (conocidos como factores o elementos "en la página" y "fuera de la página") para SEO.</strong> La optimización implica algunos conocimientos de programación web combinado con la escritura, la comercialización, la marca y otras habilidades del rompecabezas y de este modo clasificar competitivamente en los resultados de las consultas de búsqueda. Si usted hace todo de este modo (o al menos, mejor que sus competidores), se puede lograr un mejor posicionamiento en las secciones orgánicas de resultados de los buscadores de páginas. Y usted puede tener un sitio web capaz de mantener sus objetivos de ingreso.</p>
+
+                            <h2>¿Cómo funciona el ranking o clasificación de página web?</h2>
+
+                            <p>Los motores de búsqueda quieren mostrar los "mejores" resultados posibles - los expertos más relevantes y más páginas web de calidad que satisfagan al buscador. Para ello, los motores de búsqueda analizan más de 200 factores para determinar la relevancia y la pertinencia de un sitio con respecto a la consulta de búsqueda. Algunos de estos factores se tejen en la página web (factores «on-page"). Otros son señales de confianza basados en enlaces de sitios de buena reputación y (en algunos casos) la participación en medios sociales. No hay una sola <strong>página web</strong>
+                            , incluso con la mejor optimización de motores de búsqueda en el mundo, que pueda ser perfecta en todos los más de 200 factores de clasificación. Por otra parte, nadie sabe <em>con precisión cuáles son los factores que incluyen o cómo se ponderan para determinar los resultados de búsqueda para una palabra clave o consulta dada. Entonces, ¿Cómo se hace <strong>SEO</strong>
+                            ?</em> En este tutorial <strong>SEO </strong>
+                            te enseñamos un enfoque de "ganarle al líder" para buscar la mejor clasificación en un motor de búsqueda. Cuando Google o Bing piensan que un sitio es altamente gratificante para los usuarios, les premia con una alta clasificación en los resultados de las consultas de búsqueda. Una vez que sepa qué opciones estructurales y de contenido trabajaban para los "líderes", Ud. puede hacerlo aún mejor al hacer sus páginas lo "menos imperfectas"!</p>
+
+                            <p>No hay secretos en la optimización de motores de búsqueda o trucos - sólo las metodologías a seguir con el fin de ayudar a un sitio que ofrece valor a los usuarios para convencerles de ser elegido en los resultados de búsqueda. El <strong>SEO</strong>
+                            de hoy debe estar comprometido no sólo a la optimización de un sitio web, sino también con lo que es un sitio de calidad que atrae los enlaces de forma natural y es digno de la clasificación. Vale la pena repetirlo:</p>
+
+                            <blockquote>
+                                <p><strong>El trabajo de optimización de motores de búsqueda no puede hacer a un sitio cutre volar.</strong></p>
+                                <p>El trabajo </p>
+                                <p><strong>SEO</strong></p>
+                                <p><strong>consiste en rediseñar el sitio web para que sea un águila.</strong></p>
+                                <p><strong>- Estela Silva</strong></p>
+                            </blockquote>
+
+                            <p>La creación de un sitio web que pueda alcanzar una alta clasificación implica más que conocimientos técnicos, o la escritura de contenido, o enlaces, o la presentación a los motores de búsqueda por sí solo; se requiere un esfuerzo integral. una metodología SEO probada formal fuertes herramientas de optimización de motores de búsqueda. Este tutorial <strong>SEO </strong>
+                            es una guía de instrucciones que abarca todo eso y más. <em>Es como tomar un curso de formación</em> <strong><em>SEO gratis!</em></strong></p>
+
+                            <p>Antes de empezar, usted debe entender que estar entre los 3 primeros lugares en los resultados del motor de búsqueda se puede lograr, pero no sin un gran esfuerzo. Sus <strong>páginas web </strong>
+                            deben obtener alta clasificación de contenido de muy alta calidad <em>y</em>
+                            la implementación de las mejores prácticas de los conceptos básicos de optimización <strong>SEO</strong>
+                            . Sin embargo, incluso los mejores sitios, manteniendo una <strong>clasificación superior SEO orgánica</strong> requieren un seguimiento constante de palabras clave y reelaboración de contenidos. El posicionamiento en buscadores nunca descansa - pero tampoco lo hace su competencia.</p>
+
+                            <h2>¿Qué hay en este tutorial SEO?</h2>
+
+                            <p>Esta guía <strong>SEO</strong> de instrucciones sigue la metodología de colocación de palabra clave demostrada que Estela Silva ha enseñado a cientos de estudiantes de todo el mundo en nuestros renombrados <strong>cursos de formación de SEo</strong>. Y también hemos proporcionado <strong>herramientas SEO gratuitas, presentaciones, infografias y videos</strong> para ayudarle en cada paso del camino.</p>
+
+                            <p>Para asegurarse de que su educación está bien fundamentada y es eficaz, estas páginas abarcan una amplia gama de temas relacionados con el marketing en Internet. Aquí aprenderás consejos de <strong>SEO </strong>
+                            para:</p>
+
+                            <ul>
+                                <li>Paso 1: <strong>Búsqueda de palabras clave - Cómo Seleccionar Palabras clave</strong></li>
+                                <li>Paso 2: <strong>Investigación Competitiva - ¿Quién es su competencia en SEO?</strong></li>
+                                <li>Paso 3: <strong>Análisis de la competencia SEO - Como espiar a su competencia</strong></li>
+                                <li>Paso 4: <strong>Elegir Palabras clave para SEO</strong></li>
+                                <li>Paso 5: <strong>Consideraciones clave al escribir contenido</strong></li>
+                                <li>Paso 6: <strong>Cómo utilizar palabras clave en contenido</strong></li>
+                                <li>Paso 7: <strong>Cómo optimizar el contenido del sitio web para SEO</strong></li>
+                                <li>Paso 8: <strong>Cómo presentar un sitio Web en los motores de búsqueda</strong></li>
+                                <li>Paso 9: <strong>Sitemaps - ¿Cómo crear un mapa del sitio?</strong></li>
+                                <li>Paso 10: <strong>El uso de Rich Media</strong></li>
+                                <li>Paso 11: <strong>Cómo optimizar el contenido multimedia para el SEO</strong></li>
+                                <li>Paso 12: <strong>Cómo estructurar tu página web</strong></li>
+                                <li>Paso 13: <strong>Construcción de Enlaces - Cómo atraer enlaces de calidad</strong></li>
+                                <li>Paso 14: <strong>Cómo evitar sanciones de Google</strong></li>
+                                <li>Paso 15: <strong>Seguimiento de Backlinks y Poda de Enlaces</strong></li>
+                                <li>Paso 16: <strong>Consejos Técnicos SEO</strong></li>
+                                <li>Paso 17: <strong>SEO Movil</strong></li>
+                                <li>Paso 18: <strong>Cómo controlar el posicionamiento en buscadores y el progreso SEO</strong></li>
+                                <li>Conclusión: <strong>Repetir - SEO: El trabajo que nunca termina</strong></li>
+                            </ul>
+
+                            <p><strong>Listo para aprender?</strong> <em>Vamos al comienzo del Tutorial <strong>SEO </strong>
+                                de Tu Consultora <strong>SEO</strong>
+                                !</em> Comienza con la investigación de palabras clave
+                                .</p>
+
+                                <p>Si te parece útil este tutorial gratuito de <strong>SEO </strong>
+                                copia (Ctrl+C) y pega (Ctrl+V) este código en tu sitio web:</p>
+
+                                <p>
+                        <textarea rows="4" cols="50">
+                            <a href="https://web.archive.org/web/20160312113831/http://tuconsultoraseo.com/blog/seo/155-tutorial-seo-optimizacion-para-motores-de-busqueda">tutorial gratuito para optimización de motores de búsqueda"</a>
+                        </textarea>
+                        </p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

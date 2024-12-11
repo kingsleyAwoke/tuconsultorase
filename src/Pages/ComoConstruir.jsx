@@ -13,7 +13,7 @@ const ComoConstruir = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Como construir un cotizador, calculadora o formula en joomla - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,61 @@ const ComoConstruir = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Como construir un cotizador, calculadora o formula en joomla">DComo construir un cotizador, calculadora o formula en joomla</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p> En la siguiente página usted podrá construir su propio  modulo calculadora para su sitio joomla: http://andrewart.net/jcg/.  Ud. podrá crear calculadoras o cotizadores en línea sin tener conocimientos en PHP. CSS o HTML.</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>Es importante que entienda que usted sólo deberá generar su propio módulo personalizado que incluya los calculos que necesita con los parámetros adecuados, una vez haya creado el módulo, solo deberá probarlo, descargarlo e instalarlo en su sitio joomla.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>Para generar su módulo personalizado, solo deberá ingresar en la página http://andrewart.net/jcg y efectuar 3 sencillos pasos:</p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>Paso1:</p>
+                        <img src="\images\Paso 1 del generador de mdulo de calculadora para joomla.png" alt="Paso 1 del generador de módulo de calculadora para joomla" title="Paso 1 del generador de módulo de calculadora para joomla" width="480" height="114" />
+
+                        <p>Paso 2:</p>
+                        <img src="\images\Paso 2del generador de mdulo de calculadora para joomla.png" alt="Paso 2 del generador de módulo de calculadora para joomla" title="Paso 2del generador de módulo de calculadora para joomla" width="473" height="149" />
+
+                        <p>Paso 3:</p>
+
+                        <img src="\images\Paso 3 del generador de mdulo de calculadora para joomla .png" alt="Paso 3 del generador de módulo de calculadora para joomla" title="Paso 3 del generador de módulo de calculadora para joomla" width="463" height="102" />
+
+                        <p>Finalmente Ud. podrá probar el funcionamiento de su módulo, incluir un botón reset para limpiar los campos, darle un nombre a su módulo y si está satisfecho con el comportamiento del mismo lo podrá descargar.</p>
+
+                        <img src="\images\permisos correctos en archivos y carpetas joomla.jpg" alt="Probando y dando un nombre al módulo de calculadora para descargarlo" title="Probando y dando un nombre al módulo de calculadora para descargarlo" width="466" height="77" />
+
+                        <p>Puede crear largas y complejas calculadoras, fórmulas o cotizadores en línea con muy pocos clics. También puede ver los módulos de demostración.</p>
+
+                        <p>El siguiente es un cotizador de tiendas on line utilizado el módulo generado con este magnífico modulo de calculadora:</p>
+
+                        <form action="">
+                                <ul className="unordered-list">
+                                    <li>
+                                        <label>Seleccione su solución de e-commerce</label>
+                                        <select>
+                                            <option value="1">Magento</option>
+                                            <option value="2">OpenCart</option>
+                                            <option value="3">PrestaShop</option>
+                                        </select>
+                                    </li>
+                                    <div>
+                                        <label>Este Cotizador de aplicaciones de e-commerce es para efectos de prueba.</label>
+                                    </div>
+                                </ul>
+                            <input type="submit" id="calc-button" name="submit_cotizacin_tienda_online" value="Obtener precio!"/>
+                        </form>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

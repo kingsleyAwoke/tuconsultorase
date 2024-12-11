@@ -13,7 +13,7 @@ const ComoEspecifcar = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Como especificar dimensiones de imagen. - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,49 @@ const ComoEspecifcar = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Como especificar dimensiones de imagen.">Como especificar dimensiones de imagen.</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <h2>¿Por qué declarar el alto y ancho de las imágenes? Porque esto es necesario.</h2>
 
-                        <br />
-                        <br />
-                        <br />  
+                        <p>
+                        <strong>Cómo especificar dimensiones de imagen: </strong>
+                        Cuando un navegador Web muestra su <strong>página web</strong>
+                        tiene que averiguar muchas cosas antes de que pueda ver su contenido. Una de las cosas más simples e importantes que debe hacer es insertar sus imagenes con suficiente información en torno a ellas. Usted sólo puede hacer esto si sabe de qué tamaño son sus imágenes.
+                        </p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                        <p>
+                        Si usted no le dice al navegador el tamaño de las imágenes, éste debe "construir" la página no una vez, sino dos veces (o más veces dependiendo de la cantidad de imágenes que tenga en la página). Se construirá una vez para mostrar todo el texto, y luego se va a esperar hasta que cada imagen se haya descargado. Cuando una imagen se descarga, el navegador puede determinar el tamaño de la imagen y reconstruirá la <strong>página web</strong>
+                        para ajustar el texto alrededor de esa imagen. Este proceso va a suceder para cada imagen en su página.
+                        </p>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                        <p>Si especifica las dimensiones de la imagen, ya se sabe el tamaño de las imágenes y se puede utilizar esa información para dar forma a la página. No tendrá que reconstruir la página tantas veces como imagenes tenga.</p>
+                    <p>
+                        <strong>Cómo especificar dimensiones de imagen</strong>
+                    </p>
+                    <p>Para especificar las dimensiones de la imágen, se inserta un pequeño trozo de código en las etiquetas de imagen.</p>
+                    <p>Aquí está un ejemplo etiqueta de imagen sin dimensiones de la imagen ...</p>
+                    <p>&lt;img src="/image.jpg"/&gt;</p>
+                    <p>El siguiente es un ejemplo etiqueta de imagen con dimensiones de imagen incluidos (alto y ancho) ...</p>
+                    <p>&lt;IMG SRC="imagen.jpg" WIDTH=178 HEIGHT=180 &gt;</p>
+                    <p>
+                        La adición de la altura y la anchura de las imágenes puede realmente ayudar a sus <strong>páginas web</strong>
+                        para que se carguen más rápido y se ven mejor.
+                    </p>
+
+                    <p>Para saber más sobre como diseñar una <strong>pagina web</strong>  para seo lea Diseño de páginas web para seo</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>

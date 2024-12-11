@@ -13,7 +13,7 @@ const InlineSmall = () => {
 
 //   PAGE TITLE
     useEffect(() => {
-        document.title = 'Dónde se inserta el código de Google Analytics en Joomla! 2.5 - Consultoria SEO';
+        document.title = 'Inline small CSS - Consultoria SEO';
     }, []);
   return (
     <>
@@ -26,27 +26,61 @@ const InlineSmall = () => {
             <div className="service-content">
                 <div className='column'>
                     <div className="service-content-head">
-                        <span title="Tips Consejos <strong>SEO</strong> para sitios e-commerce">Dónde se inserta el código de Google Analytics en Joomla! 2.5</span>
+                        <span title="Inline small CSS">Inline small CSS</span>
                     </div>
 
                     <div className="service-content-txt">
 
-                        <p>Generalmente, en cada <strong>plantilla</strong> hay un espacio reservado para incrustar c&oacute;digo especial, incluso en algunas hay espacio para Google Analytics. Haga clic en extensiones --&gt; gestor de <strong>plantilla</strong>s, y una vez all&iacute;, seleccionar su <strong>plantilla</strong> predeterminada. Entre sus par&aacute;metros suele haber una casilla para incrustar all&iacute; el c&oacute;digo que debemos colocar de Google analitycs.</p>
+                        <p> Los <strong>peque &ntilde;os archivos CSS en l &iacute;nea</strong>
+                        &nbsp;(<strong>Inline small CSS</strong>
+                        ) significan simplemente que usted debe embeber el contenido de su archivo css en el HTML en lugar de guardarlo en un archivo externo CSS. Esto reduce la cantidad de archivos que el navegador tiene que descargar antes de mostrar la p&aacute;gina web, por tanto contribuyen a <strong>acelerar </strong>
+                        la carga de la <strong>p&aacute;gina web</strong>.</p>
 
-                        <br />
-                        <br />
-                        <br />  
+                    <p>Si usted est &aacute;usando un archivo CSS externo, el navegador primero debe cargar el archivo HTML, y luego descargar el archivo CSS. Una vez en el c&oacute;digo del html el CSS, el navegador s&oacute;lo tiene que descargar su archivo HTML. La descarga de un archivo es m&aacute;s r&aacute;pido que la descarga de dos.</p>
 
-                        <p>Otras veces, las <strong>plantillas</strong> no son profesionales, no poseen esta casilla para insertar el c&oacute;digo de Google Analytics, por lo que debermos hacerlo a mano en el archivo index.php de Joomla! en la secci&oacute;n head, justo antes de la etiqueta &lt;/head&gt;. Esto, adem&aacute;s de ser delicado, puede generar un error 500, debemos tener en cuenta que en cuanto actualicemos el software de Joomla!, es muy probable que debamos volver, nuevamente, a ingresar el c&oacute;digo en el index.php.&nbsp;</p>
+                    
+                    <h2>C&oacute;mo colocar CSS en l&iacute;nea</h2>
+                    
+                    <p>Usted copia el contenido de su archivo CSS externo y lo pega entre las etiquetas de estilo en la secci&oacute;n de&lt;head &gt;de su archivo HTML.</p>
+                    
+                    <p>
+                        <div>&lt;style type=&quot;text/css &quot;&gt;</div>
+                        <div>&lt;/style &gt;</div>
+                    </p>
+                    
+                    <p>Lo importante es recordar que este c&oacute;digo debe colocarse en la secci&oacute;n head del HTML. Tambi&eacute;n debe utilizar las etiquetas de estilo apropiadas HTML. Copie y pege el contenido de su archivo CSS externo entre las etiquetas de estilo:</p>
+                    
+                    <pre>&lt;HEAD &gt;<br />&lt;STYLE type=&quot;text/css &quot;&gt;<br />H1 
+                        &#123;border-width: 1; border: solid; text-align: center7&#125;<br />
+                    &lt;/STYLE &gt;<br />&lt;/HEAD &gt;</pre>
 
-                        <p><strong>Esta soluci&oacute;n no es recomendable. </strong>Implica recordar constantemente que debemos ingresarlo para cada actualizaci&oacute;n y corremos el riesgo de equivocarnos, borrando parte del c&oacute;digo de la <strong>plantilla</strong> o introducirlo en la secci&oacute;n equivocada. En tuconsultoraseo.com recomendamos, si la <strong>plantilla</strong> no permite la opci&oacute;n de incrustar este c&oacute;digo, usar alg&uacute;n plugin o extensi&oacute;n que permita a&ntilde;adir el c&oacute;digo de Google Analytics.-</p>
+                    <p><b>&iquest;Que gana con esto?</b>
+                    </p>
+                    
+                    <p>
+                        Poner su CSS en la secci&oacute;n head del HTML de su <strong>pagina web</strong>
+                        evitar&aacute;que el navegador tenga que realizar dos descargas, ya que el navegador no est &aacute;solicitando un archivo externo para cargar el CSS. Es decir; el navegador ahorrar&aacute;una solicitud http adicional por cada hoja de estilo externa.
+                    </p>
+
+                    <h3>Ventajas y desventajas</h3>
+
+                    <p>Si bien esto ahorra que el navegador tenga que ir y volver al servidor una vez m &aacute;s (ventaja) tambi&eacute;n significa que el archivo CSS ya no se almacenan en cach &eacute;(desventaja).</p>
+                    
+                    <p>Los c&oacute;digos JavaScript y CSS que est &aacute;n embebidos en el documento HTML son descargados cada vez que el documento HTML es llamado. Esto reduce el n&uacute;mero de peticiones HTTP, pero incrementa el tama&ntilde;o del documento HTML.</p>
+
+                    <p>Si el c&oacute;digo JavaScript y CSS est &aacute;n en archivos externos cacheados por el navegador, el tama&ntilde;o de el documento HTML se reduce sin incrementar el n&uacute;mero de peticiones HTTP.</p>
+                    
+                    <p>Si su CSS es peque&ntilde;o y simple no importa que sea descargado cada vez que la p&aacute;gina es cargada. Si el CSS es grande y complejo, lo que a menudo tienden a ser, entonces es posible que desee considerar la posibilidad de almacenar en cach&eacute;el archivo CSS como una mejor opci&oacute;n.</p>
 
                         <Link to='/' className='primary-color'>Inicio</Link>
 
-                        <span>Sobre la autora</span>
-                        <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
+                        <div className="author-section">
+                            <h4>Sobre la autora</h4>
 
-                        <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                            <p>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></p>
+
+                            <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
+                        </div>
 
                     <ul>
                         <li className='pagination-li'>
