@@ -118,16 +118,6 @@ const ComoAgregar = () => {
                         <span>Author: <Link to="/contact" title='Estela Silva' className='primary-color'>Estela Silva</Link></span>
 
                         <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
-
-                    <ul>
-                        <li className='pagination-li'>
-                            <Link to="importancia" className='primary-color'>&lt;Anterior</Link>
-                        </li>
-
-                        <li className='pagination-li'>
-                            <Link to="optimizacion-interna" className='primary-color'>Siguiente&gt;</Link>
-                        </li>
-                    </ul>
                     </div>
                 </div>
             </div>

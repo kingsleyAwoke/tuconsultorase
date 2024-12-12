@@ -67,12 +67,6 @@ const Consultoria = () => {
 
                   <p>Estela Silva es fundadora y desarrollador principal en Tu Consultora Seo, su función principal es el diseño y desarrollo de sitios web Joomla. Ella también es apasionada del posicionamiento en buscadores. Estela ha construido sitios web basados ​​en CMS Joomla desde el año 2000, así como tiendas en línea, cuando no está escribiendo PHP, Javascript o CSS.</p>
                 </div>
-
-                <ul className='pagination-ul'>
-                  <li className='pagination-li'><Link to='/servicios/limpieze-sitio-hackeado' className='primary-color'>&lt;Anterior</Link></li>
-
-                  <li className='pagination-li'><Link to='/servicios/redaccion-de-contenido' className='primary-color'>Siguiente&gt;</Link></li>
-                </ul>
               </div>
             </div>
           </div>

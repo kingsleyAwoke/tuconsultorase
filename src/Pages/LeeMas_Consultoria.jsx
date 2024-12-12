@@ -36,8 +36,6 @@ const LeeMas_Consultoria = () => {
 
                     <p>Analizando todos estos aspectos juntos y le presentamos un plan de acción integral, diseñado para ayudarle a llevar su negocio al siguiente nivel - una alta clasificación para los términos de búsqueda preferidos y la conversión de visitantes en clientes.</p>
 
-                    <Link to='#' className='primary-color'>Leer más: Como la Consultoria Seo Aumenta la Eficacia de su sitio Web</Link>
-
                 </div>
             </div>
 

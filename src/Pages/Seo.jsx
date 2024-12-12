@@ -119,41 +119,6 @@ const Seo = () => {
                     <div className="ordered-list-head">
                         <h3>Más artículos...</h3>
                     </div>
-
-                    <div className="ordered-list">
-                        <ol>
-                            <li><Link to='#' className='primary-color'>Cómo saber cuanto tráfico recibe desde moviles</Link></li>
-                            <li><Link to='#' className='primary-color'>Sitio Web Móvil Amigable y la Actualización de Google</Link></li>
-                            <li><Link to='#' className='primary-color'>Consideraciones Vitales para Crear Backlinks</Link></li>
-                            <li><Link to='#' className='primary-color'>Puro Spam</Link></li>
-                            <li><Link to='#' className='primary-color'>Como Configurar Google Analytics</Link></li>
-                            <li><Link to='#' className='primary-color'>Como y Cuando Usar rel="nofollow"</Link></li>
-                            <li><Link to='#' className='primary-color'>Importancia de Ser un Experto en Creacion de Vinculos</Link></li>
-                            <li><Link to='#' className='primary-color'>Dominios Puerta y Paginas Puerta</Link></li>
-                            <li><Link to='#' className='primary-color'>Como Utilizar el Esquema de Marcado Para Mejorar su Visibilidad</Link></li>
-                            <li><Link to='#' className='primary-color'>Encubrimiento en SEO</Link></li>
-                            <li><Link to='#' className='primary-color'>Como Crear un Mapa del sitio para Usuarios</Link></li>
-                            <li><Link to='#' className='primary-color'>Relleno de palabras clave</Link></li>
-                            <li><Link to='#' className='primary-color'>Errores SEO</Link></li>
-                            <li><Link to='#' className='primary-color'>Recursos bloqueados Herramientas Para Webmaster de Google</Link></li>
-                            <li><Link to='#' className='primary-color'>Crearse un Perfil de Enlaces uno Mismo es Antinatural</Link></li>
-                            <li><Link to='#' className='primary-color'>Evitar el contenido duplicado con mod_rewrite</Link></li>
-                            <li><Link to='#' className='primary-color'>Tipos de Redirecciones</Link></li>
-                            <li><Link to='#' className='primary-color'>Importancia del Correcto Uso de Etiquetas Encabezado</Link></li>
-                            <li><Link to='#' className='primary-color'>Densidad de palabras clave</Link></li>
-                            <li><Link to='#' className='primary-color'>Advertencias Enlaces No Naturales</Link></li>
-                            <li><Link to='#' className='primary-color'>Como Implementar un Redireccionamiento 301</Link></li>
-                            <li><Link to='#' className='primary-color'>Discordancia de Imagenes en SEO</Link></li>
-                            <li><Link to='#' className='primary-color'>Contenido Basura</Link></li>
-                            <li><Link to='#' className='primary-color'>Repetir SEO</Link></li>
-                            <li><Link to='#' className='primary-color'>Etiqueta Canonical</Link></li>
-                            <li><Link to='#' className='primary-color'>Cómo Supervisar su Progreso SEO</Link></li>
-                            <li><Link to='#' className='primary-color'>SEO Movil</Link></li>
-                            <li><Link to='#' className='primary-color'>Consejos Tecnicos SEO</Link></li>
-                            <li><Link to='#' className='primary-color'>Como Evaluar Backlinks</Link></li>
-                            <li><Link to='#' className='primary-color'>Seguimiento Backlinks y Poda Enlaces</Link></li>
-                        </ol>
-                    </div>
                 </div>
             </div>
 
