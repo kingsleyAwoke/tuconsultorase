@@ -28,7 +28,7 @@ const LeeMas_Consultoria = () => {
 
                     <p>from <strong><Link to="http://www.slideshare.net/tuconsultoraseo" target="_blank" className='primary-color'>Estela Silva</Link></strong></p>
 
-                    <p><strong><Link to="https://web.archive.org/web/20160305140517/http://www.slideshare.net/tuconsultoraseo/seo-o-posicionamiento-en-buscadores-58624756" target="_blank" title="Seo o Posicionamiento en buscadores" className='primary-color'>Seo o Posicionamiento en buscadores</Link></strong> from <Link to='#' className='primary-color'>Estela Silva</Link></p>
+                    <p><strong>Seo o Posicionamiento en buscadores</strong> from <Link to='#' className='primary-color'>Estela Silva</Link></p>
 
                     <p>En Tu <strong>Consultora</strong> <strong>Seo</strong>, examinamos su sitio web, analizamos el tipo experiencia que su sitio ofrece a los usuarios, el <strong>diseño web </strong>teniendo en cuenta la usabilidad y la experiencia de búsqueda en general. Evaluamos las técnicas de conversión que utiliza, para asegurar un embudo de conversión efectivo.</p>
 

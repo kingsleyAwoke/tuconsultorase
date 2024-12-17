@@ -45,7 +45,7 @@ const Plantilla = () => {
 
                         <p className='template-txt'>&iexcl;&iexcl;La<strong>&nbsp;</strong><strong>plantilla bootstrap Atomicai </strong>viene con 14 posiciones!!. <img alt="plantilla bootstrap atomicai gratuita" src="\images\template_preview.png" title="plantilla bootstrap atomicai gratuita" width='200' height='200' className='template-img'/></p>
 
-                        <Link to='/plantilla/plantillas-joomla' title="Demo Plantilla AtomicaI" className='primary-color center'>Ver demo plantilla AtomicaI</Link>
+                        <p>Ver demo plantilla AtomicaI</p>
 
                         <p><strong>Posiciones de la Plantilla Boostrap Atomicai</strong> :</p>
 
@@ -71,11 +71,11 @@ const Plantilla = () => {
                             <li>Haga clic en el bot &oacute;n &quot;Subir e Instalar &quot;.</li>
                         </ol>
 
-                        <p>Instale el m &oacute;dulo bootstap Jumboron y coloquelo en la posici &oacute;n atomicai-jumbotron, lea la <Link to="/modulos/jumbotron" title="Documentación del modulo bootstrap Jumbotron" className='primary-color'>documentaci &oacute;n del modulo boostrap jumbotron</Link></p>
+                        <p>Instale el m &oacute;dulo bootstap Jumboron y coloquelo en la posici &oacute;n atomicai-jumbotron, lea la documentaci &oacute;n del modulo boostrap jumbotron</p>
 
-                        <p>Instale el m &oacute;dulo bootstrap Bloque y coloquelos en las posiciones atomicai-topa-1, atomicai-topb1, atomicai-topc-1 hasta atomicai-topc-3. ( 9 modulos bloque). Lea la <Link to="/modulos/bloque" title="Documentación del módulo boostrap Bloque" className='primary-color'>documentaci &oacute;n del m &oacute;dulo bloque</Link></p>
+                        <p>Instale el m &oacute;dulo bootstrap Bloque y coloquelos en las posiciones atomicai-topa-1, atomicai-topb1, atomicai-topc-1 hasta atomicai-topc-3. ( 9 modulos bloque). Lea la documentaci &oacute;n del m&oacute;dulo bloque</p>
 
-                        <Link to='http://tuconsultoraseo.com//descargas/Plantilla Boostrap Atomicai.zip' className='primary-color center' title="Descargar plantilla AtomicaI">Descargar plantilla Boostrap AtomicaI</Link>
+                        <p>Descargar plantilla Boostrap AtomicaI</p>
                     </div>
                 </div>
 

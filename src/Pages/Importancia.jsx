@@ -67,7 +67,7 @@ const Importancia = () => {
 
                         <p>En todos estos casos, tendrá que incluir un comando en el archivo robots.txt que le indique a los motores de búsqueda que no accedan a esa página, para que no la indexen, y así no se muestre en los resultados de búsqueda y de ese modo no enviar a los visitantes a la misma.</p>
 
-                        <p>Echemos un vistazo a cómo se puede <strong>probar el archivo robots.txt</strong> que ha creado en su sitio. Con una cuenta en las <Link to="http://www.google.com/webmasters /" className='primary-color' target=" _blank " rel="nofollow">herramientas para webmasters de Google</Link>, usted puede probar el archivo robots.txt, seleccionando la opción " probador de robot.txt " en la opción " Rastreo " en la barra de menú lateral. Si usted agregó: <br />User-agent: * <br />Disallow: /coloso</p>
+                        <p>Echemos un vistazo a cómo se puede <strong>probar el archivo robots.txt</strong> que ha creado en su sitio. Con una cuenta en las herramientas para webmasters de Google, usted puede probar el archivo robots.txt, seleccionando la opción " probador de robot.txt " en la opción " Rastreo " en la barra de menú lateral. Si usted agregó: <br />User-agent: * <br />Disallow: /coloso</p>
 
                         <p>y en la parte inferior coloca http://su-sitio.com/coloso y selecciona el user agent, la herramienta le mostrará en color rojo la línea Disallow:/coloso, indicando así que ese directorio está bloqueado para cada uno de los user-agent con los que haga la prueba. Si comenta esa línea con # y repite la prueba haciendo clic en el botón probar, éste dirá permitido.</p>
 
@@ -78,7 +78,7 @@ const Importancia = () => {
 
                         <p>Una vez que haya especificado los comandos de las páginas y archivos que desea bloquear en el block de notas guárdelo como robots.txt.</p>
 
-                        <p><strong>Instalar el archivo robots.txt</strong> <br />Una vez que tenga el archivo robots.txt, puede cargarlo en el directorio principal (www) de su sitio web. Usted puede hacer esto usando un programa FTP como <Link to="https://filezilla-project.org/" className='primary-color' target="_blank" title="Filezilla" rel="nofollow" >Filezilla</Link>. La otra opción es contratar a un programador web para crear e instalar el archivo robots.txt, haciéndole saber qué páginas desea bloquear. Si usted elige esta opción, un buen programador web puede completar el trabajo en una hora aproximadamente. <br /><strong>Conclusión</strong> </p>
+                        <p><strong>Instalar el archivo robots.txt</strong> <br />Una vez que tenga el archivo robots.txt, puede cargarlo en el directorio principal (www) de su sitio web. Usted puede hacer esto usando un programa FTP como Filezilla. La otra opción es contratar a un programador web para crear e instalar el archivo robots.txt, haciéndole saber qué páginas desea bloquear. Si usted elige esta opción, un buen programador web puede completar el trabajo en una hora aproximadamente. <br /><strong>Conclusión</strong> </p>
 
                         <p>Es importante actualizar el archivo robots.txt si agrega páginas, archivos o directorios en su sitio que usted no desea sean indexados por los motores de búsqueda o accedidos por los usuarios de Internet. Esto garantizará la <strong>seguridad</strong>
                         de su sitio web y los mejores resultados posibles con su posicionamiento web.</p>
@@ -105,8 +105,7 @@ const Importancia = () => {
                         Sitemap: http://tuconsultoraseo.com/sitemap.xml
                     </div>
 
-                    <p>También necesitarás saber<Link to="/web/20150826062430/http://tuconsultoraseo.com/blog/seo/218-como-probar-el-archivo-robots-txt" className='primary-color' title="Como probar el archivo robots.txt"> como probar el archivo robots.txt</Link>
-                    .</p>
+                    <p>También necesitarás saber como probar el archivo robots.txt.</p>
                     
                     <p>¡¡Si te ha parecido interesante y útil el contenido del artículo, no olvides compartir!!</p>
 

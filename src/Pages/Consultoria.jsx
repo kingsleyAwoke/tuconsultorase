@@ -54,7 +54,7 @@ const Consultoria = () => {
 
                 <p>Los consultores o especialistas <strong>SEO</strong>, no estamos satisfechos hasta que nuestros clientes están alineando así, con un tráfico muy dirigido y un proceso de conversión efectivo para maximizar los ingresos de su sitio. Alto tráfico de visitantes que buscan precisamente lo que su sitio ofrece es la única manera de lograr esto.</p>
 
-                <p>Nuestro trabajo es comprender tanto cómo los usuarios interactúan con los sitios web y motores de búsqueda como lo que se requiere para indexar y clasificar su sitio web con eficacia. Como una <strong> <Link to="http://translate.googleusercontent.com/translate_c?depth=1&amp;hl=es&amp;prev=search&amp;rurl=translate.google.co.ve&amp;sl=en&amp;u=http://www.seoworkers.com/ethical-practices.html&amp;usg=ALkJrhi-faf-eYwsax3AEZxvKMTlGr9zdw" className='primary-color'>compañía de SEO ético</Link></strong>, sentimos que es nuestra responsabilidad.</p>
+                <p>Nuestro trabajo es comprender tanto cómo los usuarios interactúan con los sitios web y motores de búsqueda como lo que se requiere para indexar y clasificar su sitio web con eficacia. Como una <strong> compañía de SEO ético</strong>, sentimos que es nuestra responsabilidad.</p>
 
                 <div className='translation-p'>
                   <p><Link className='translation-link'>Estela Silva</Link> hoy para una propuesta que describe todas las opciones disponibles para mejorar el rendimiento de su sitio y conseguir las primeras posiciones del motor de búsqueda por delante de su competencia, y aumentar su tasa de conversión!</p>

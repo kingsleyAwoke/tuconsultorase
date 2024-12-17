@@ -35,7 +35,7 @@ const LasDirectories = () => {
 
                         <p>Google se ha tomado el trabajo de publicar una serie de directrices o prácticas para ayudar a su rastreador a encontrar, clasificar e indexar los sitios:</p>
 
-                        <h2><Link to='https://support.google.com/webmasters/answer/35769?hl=es-419' target=" _blank " className='primary-color'>Directrices para webmaster</Link></h2>
+                        <h2>Directrices para webmaster</h2>
                         
                         <p>Los sitios web que infrinjan estas normas pueden perder su ranking y ser penalizados por Google</p>
 
@@ -68,8 +68,7 @@ const LasDirectories = () => {
 
                         <p>Una acción de web spam manual puede aplicarse a todo el sitio o a una sección específica del sitio</p>
 
-                        <p>Una vez que haya corregido cualquier violación de las directrices de calidad, el siguiente paso es solicitar una <Link to="https://support.google.com/webmasters/answer/35843" className='primary-color' target="_blank" rel="nofollow">reconsideración</Link>
-                        .</p>
+                        <p>Una vez que haya corregido cualquier violación de las directrices de calidad, el siguiente paso es solicitar una reconsideración.</p>
 
                         <h3 className='primary-color'>La lista de acciones manuales incluyen</h3>
 
@@ -78,15 +77,15 @@ const LasDirectories = () => {
                         <ul className='unordered-list'>
                             <li>Enlaces no naturales a su sitio.</li>
                             <li>Sitio hackeado</li>
-                            <li>Contenido con poco o ningún valor añadido (<Link to="/blog" title="Contenido delgado" className='primary-color '>Contenido delgado</Link>
+                            <li>Contenido con poco o ningún valor añadido (Contenido delgado
                             )</li>
                             <li>Correo no deseado</li>
-                            <li><Link to="/blog" title="Paginas y dominios puerta" className='primary-color'>Paginas y dominios puerta</Link></li>
+                            <li>Paginas y dominios puerta</li>
                             <li>Spam generado por el usuario</li>
-                            <li>Encubrimiento y/o <Link to="/blog" title="redireccionamientos engañosos" className='primary-color'>redireccionamientos engañosos</Link>.</li>
-                            <li><Link to="/blog" title="Texto oculto y/o relleno de palabras clave" className='primary-color'>Texto oculto y/o relleno de palabras clave</Link></li>
+                            <li>Encubrimiento y/o redireccionamientos engañosos.</li>
+                            <li>Texto oculto y/o relleno de palabras clave</li>
                             <li>Freehosts Spammy (“ <cite title="si una parte significativa de las páginas de los sitios alojados en un servidor son spam, podemos tomar acción manual sobre el servidor en su conjunto. Google" className='green'>si una parte significativa de las páginas de los sitios alojados en un servidor son spam, podemos tomar acción manual sobre el servidor en su conjunto. Google</cite>”.)</li>
-                            <li><Link to="/blog" title="Discrepancia de imágenes" className='primary-color'>Discrepancia de imágenes</Link>
+                            <li>Discrepancia de imágenes
                             .</li>
                         </ul>
 
@@ -99,19 +98,15 @@ const LasDirectories = () => {
                             <li>Una <strong>página web</strong>debe contener un número razonable de enlaces. Lo que importa aquí, es no abrumar a los lectores del sitio con un número excesivo de enlaces. Si hay más de 100 enlaces <strong><em>probablemente </em>
                             </strong>no ésta siguiendo esta pauta.</li>
                             <li>"<cite title="Asegúrate de que tu servidor web admita la cabecera HTTP &quot;If-Modified-Since&quot;. Esta función permite que tu servidor web avise a Google si el contenido de tu sitio ha cambiado desde la última vez que lo rastreamos. El uso de esta función te permitirá ahorrar ancho de banda y reducir gastos generales" className='green'>Asegúrate de que tu servidor web admita la cabecera HTTP "If-Modified-Since". Esta función permite que tu servidor web avise a Google si el contenido de tu sitio ha cambiado desde la última vez que lo rastreamos. El uso de esta función te permitirá ahorrar ancho de banda y reducir gastos generales</cite>
-                            ". Para asegurarte si tu servidor web admite la cabecera If-Modified-Since, utiliza nuestra <Link to="/utilidades" title="herramienta gratuita If Modified" className='primary-color'>herramienta gratuita If Modified</Link>
-                            .</li>
-                            <li><Link to="/blog" title="Crear un mapa del sitio para los usuarios" className='primary-color'>Crear un mapa del sitio para los usuarios</Link>
-                            .</li>
-                            <li>"<cite title="Hacer esfuerzos razonables para asegurar que la publicidad no afectan el posicionamiento en buscadores. Por ejemplo, los anuncios de AdSense de Google y DoubleClick enlaces deben estar bloqueados del rastreo de un archivo robots.txt" className='green'>Hacer esfuerzos razonables para asegurar que la publicidad no afectan el posicionamiento en buscadores. Por ejemplo, los anuncios de AdSense de Google y DoubleClick enlaces deben estar bloqueados del rastreo de un </cite><Link to="/blog" title="archivo robots.txt" className='primary-color'>
-                            <cite title="Hacer esfuerzos razonables para asegurar que la publicidad no afectan el posicionamiento en buscadores. Por ejemplo, los anuncios de AdSense de Google y DoubleClick enlaces deben estar bloqueados del rastreo de un archivo robots.txt">archivo robots.txt</cite>". </Link>
+                            ". Para asegurarte si tu servidor web admite la cabecera If-Modified-Since, utiliza nuestra herramienta gratuita If Modified.</li>
+                            <li>Crear un mapa del sitio para los usuarios.</li>
+                            <li>"<cite title="Hacer esfuerzos razonables para asegurar que la publicidad no afectan el posicionamiento en buscadores. Por ejemplo, los anuncios de AdSense de Google y DoubleClick enlaces deben estar bloqueados del rastreo de un archivo robots.txt" className='green'>Hacer esfuerzos razonables para asegurar que la publicidad no afectan el posicionamiento en buscadores. Por ejemplo, los anuncios de AdSense de Google y DoubleClick enlaces deben estar bloqueados del rastreo de un archivo robots.txt</cite>". 
                             <span>Muchos sitios web y páginas web han perdido su clasificación en Google o se han eliminado de Google por completo porque no siguieron esta pauta. </span>
-                            Aprender más sobre <Link to="/blog" title="enlaces de pago y publicidad" className='primary-color'>enlaces de pago y publicidad</Link></li>
+                            Aprender más sobre enlaces de pago y publicidad</li>
                             <li>Piense en las palabras que podrían introducir los usuarios para localizar tus páginas y asegúrate de que esas palabras están incluidas en tu sitio.</li>
 
                             <li>"<cite title="Intenta utilizar texto en lugar de imágenes para mostrar nombres, contenido o enlaces importantes. El rastreador de Google no reconoce el texto integrado en imágenes. Si debes utilizar imágenes para contenido textual, considera la posibilidad de utilizar el atributo &quot;ALT&quot; para incluir algunas palabras de texto descriptivo" className='green'>Intenta utilizar texto en lugar de imágenes para mostrar nombres, contenido o enlaces importantes. El rastreador de Google no reconoce el texto integrado en imágenes. Si debes utilizar imágenes para contenido textual, considera la posibilidad de utilizar el atributo "ALT" para incluir algunas palabras de texto descriptivo</cite>
-                            ". Para averiguar si sus imágenes respetan esta pauta utilice nuestra <Link to="/utilidades" title="herramienta gratuita seo imagen" className='primary-color'>herramienta gratuita seo imagen</Link>
-                            .</li>
+                            ". Para averiguar si sus imágenes respetan esta pauta utilice nuestra herramienta gratuita seo imagen.</li>
 
                             <li>"<cite title="Asegúrate de que los elementos &lt;title&gt; y los atributos &quot;alt&quot; de tu sitio sean descriptivos y precisos" className='green'>Asegúrate de que los elementos &lt;title &gt;y los atributos "alt" de tu sitio sean descriptivos y precisos</cite>".</li>
 

@@ -35,11 +35,11 @@ const DemoModulo = () => {
                         </div>
 
 
-                        <Link to='/modulos/demo-modulo' title='Demo Modulo Jumbotron Bootstrap para joomla' className='center primary-color'>Demo Modulo Jumbotron Bootstrap para joomla</Link>
+                       <p>Demo Modulo Jumbotron Bootstrap para joomla</p>
 
                         
 
-                        <Link to='/modulos/demo-modulo' title="Descargar Mod_jumbotron_1.6 " className='primary-color center'>Descargar Mod_jumbotron</Link>
+                        <p>Descargar Mod_jumbotron</p>
 
                     <div className="author-section">
                         <h1>Sobre la autora</h1>

@@ -32,14 +32,14 @@ const Seo = () => {
                     <div className="service-content-head"><span title="Como identificar y diagnosticar un sitio pirateado">Como identificar y diagnosticar un sitio pirateado</span></div>
 
                     <div className="service-content-txt">
-                        <p>La importancia de <strong>identificar y diagnosticar un sitio pirateado</strong> se traduce en pérdida de visitas, clientes y violación de d<span>irectrices específicas de calidad de los motores de búsqueda, siendo éste motivo para <span>que Google emprenda </span><Link to="https://support.google.com/webmasters/answer" target="_blank " title=" acciones manuales " className='primary-color'>acciones manuales</Link><span> para resolver esta infracción, perjudicando nuestro <strong>SEO</strong> o <strong>posicionamiento en los resultados de los motores de búsqueda</strong>. Una vez solucionado el problema, puedes </span><Link to="https://support.google.com/webmasters/answer " target="_blank " title=" enviar tu sitio para que se vuelva a revisar " className='primary-color'>enviar tu sitio para que se vuelva a revisar</Link>.</span></p>                        
+                        <p>La importancia de <strong>identificar y diagnosticar un sitio pirateado</strong> se traduce en pérdida de visitas, clientes y violación de directrices específicas de calidad de los motores de búsqueda, siendo éste motivo para que Google emprenda acciones manuales para resolver esta infracción, perjudicando nuestro <strong>SEO</strong> o <strong>posicionamiento en los resultados de los motores de búsqueda</strong>. Una vez solucionado el problema, puedes enviar tu sitio para que se vuelva a revisar.</p>                        
                     </div>
                 </div>
 <br />                
                 <div className='column'>
                     <div className="service-content-head"><span title="Mejoras de HTML Search Console para SEO">Mejoras de HTML Search Console para SEO</span></div>
 
-                    <h3>Para acceder a la página Mejoras de HTML, de<strong> <Link class=" goog-inline-block product-name-logo" to="https://www.google.com/webmasters/tools/home " className='primary-color'>Search Console</Link> </strong>sigue estos pasos:</h3>
+                    <h3>Para acceder a la página Mejoras de HTML, de<strong> Search Console</strong>sigue estos pasos:</h3>
 
                     <ol className='ordered-list'>
                         <li>En la página principal de Search Console, haz clic en un sitio.</li>
@@ -70,7 +70,7 @@ const Seo = () => {
                     <div className="service-content-head"><span title="Googlebot no puede acceder a los archivos CSS y JS">Como Probar el Archivo robots.txt</span></div>
 
                     <div className="service-content-txt">
-                        <p>Las herramientas para webmaster de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la<Link to="/" title="importancia del archivo robots.txt para la seguridad y el SEO"></Link></p>
+                        <p>Las herramientas para webmaster de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la</p>
 
                         importancia del archivo robots.txt para la seguridad y el <strong>SEO.</strong>
 
