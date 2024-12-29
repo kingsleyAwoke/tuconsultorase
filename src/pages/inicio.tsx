@@ -5,7 +5,7 @@ import { Hero } from "./components/hero";
 import { Extra } from "./components/extra";
 import { Layouts } from "../components/layouts/layouts";
 import { Posicion } from "./components/posicion";
-import { BlogHeader } from "../components/blog/blog";
+import { BlogHeader, BlogItemContainer, BlogItemWrapper } from "../components/blog/blog";
 import { CustomActiveLink } from "../components/Link/customLink";
 import { blogImage1, blogImage2, blogImage3, blogImage4, blogImage5, blogImage6, blogImage7, blogImage8 } from "../assets/image";
 import { ImageSectionWrapper } from "../components/section/section";
@@ -143,14 +143,14 @@ const Inicio = () => {
 
 const BlogFeatured = () => {
 	return (
-		<BlogFeaturedWrapper>
+		<BlogItemWrapper>
 			<BlogHeader>
 				<Typography variant="h2">
 					Diseño de Paginas web y seo. Acelerar sitio Joomla
 				</Typography>
 			</BlogHeader>
 
-			<BlogFeaturedContainer>
+			<BlogItemContainer>
 				<Typography variant="h4">
 					Al tener un sitio web con nuestros  <span>especialistas Joomla</span> usted añadirá una segunda puerta principal de acceso a su empresa. Nuestra imagen en internet puede cerrar o abrir puertas a futuros clientes. La comunicación con sus clientes es fundamental, el sitio web pierde interés si no está actualizado.-
 				</Typography>
@@ -176,8 +176,8 @@ const BlogFeatured = () => {
 						Leer más: Diseño de paginas web y seo. Acelerar sitio Joomla
 					</Typography>
 				</CustomActiveLink>
-			</BlogFeaturedContainer>
-		</BlogFeaturedWrapper>
+			</BlogItemContainer>
+		</BlogItemWrapper>
 	)
 }
 
@@ -257,40 +257,6 @@ const InicioWrapper = styled(Box)(({ theme }) => ({
 	}
 }))
 
-const BlogFeaturedWrapper = styled(Box)(({ theme }) => ({
-	gap: '15px',
-	display: 'flex',
-	flexDirection: 'column',
-	padding: '0px 20px',
-
-	[theme.breakpoints.down('md')]: {
-		gap: '10px'
-	}
-}))
-
-const BlogFeaturedContainer = styled(Box)(({ theme }) => ({
-	gap: '15px',
-	display: 'flex',
-	flexDirection: 'column',
-	padding: '0px 10px',
-
-	h2: {
-		fontWeight: 500,
-		color: theme.palette.common.fifthTypographyColor,
-	},
-
-	h4: {
-		fontSize: '16px',
-		span: {
-			fontWeight: 600,
-		}
-	},
-
-	[theme.breakpoints.down('md')]: {
-		gap: '10px',
-		padding: '0px',
-	}
-}))
 
 const BlogWrapper = styled(Box)(({ theme }) => ({
 	padding: '0px 15px',

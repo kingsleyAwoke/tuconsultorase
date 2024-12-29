@@ -5,6 +5,7 @@ import { heroBg } from "../../assets/image";
 import { CustomTextField } from "../../components/TextField/CustomTextField";
 import { SubmitButton } from "../../components/button/customButton";
 import { CustomActiveLink } from "../../components/Link/customLink";
+import { CustomBreadcrumbs } from "./breadcrumbs";
 
 const Hero = () => {
 	return (
@@ -33,7 +34,7 @@ const Hero = () => {
 					<Typography variant="h5">Búsqueda avanzada</Typography>
 				</CustomActiveLink>
 
-				<Typography variant="h5" component="h6">Está aquí: Inicio</Typography>
+				<CustomBreadcrumbs />
 			</HeroHomeContainer>
 		</HeroWrapper>
 	)
@@ -68,10 +69,6 @@ const HeroContainer = styled(Box)(({ theme }) => ({
 const HeroHomeContainer = styled(Box)(({ theme }) => ({
 	'h5': {
 		fontWeight: 600,
-	},
-
-	'h6': {
-		fontWeight: 400,
 	},
 
 	'a': {

@@ -6,6 +6,7 @@ import 'react-notifications/lib/notifications.css';
 import { Inicio } from './pages/inicio';
 import { useGlobalContext } from './provider';
 import { Loading } from './components/Loading';
+import { Seo } from './pages/blogs/seo';
 
 export const Routers = () => {
   const [state] = useGlobalContext();
@@ -14,6 +15,7 @@ export const Routers = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/inicio' element={<Inicio />} />
+        <Route path='/seo' element={<Seo />} />
 
         <Route path='*' element={<Inicio />} />
       </Routes>
