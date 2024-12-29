@@ -48,9 +48,10 @@ const MoreArticles = () => {
 }
 
 const MoreArticlesWrapper = styled(Box)(({ theme }) => ({
+	gap: '10px',
 	display: 'flex',
 	flexDirection: 'column',
-	gap: '10px',
+	paddingTop: '10px',
 
 	'h2': {
 		fontWeight: 500,

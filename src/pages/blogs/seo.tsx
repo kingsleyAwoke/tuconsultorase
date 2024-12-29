@@ -1,20 +1,14 @@
 import { styled } from "@mui/material/styles"
-import { Grid, Box, Typography } from "@mui/material"
+import { Grid, Box } from "@mui/material"
 
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs"
-import { BlogHeader, BlogItemWrapper } from "../../components/blog/blog"
-import { CustomActiveLink } from "../../components/Link/customLink"
 import { MoreArticles } from "../components/moreArticles"
 import { PopularArticles } from "../components/popularArticles"
+import { BlogItem } from "../components/blogitem"
 
-interface BlogSeoData {
-	title: string;
-	description: string[];
-}
-
-const blogSeoData: BlogSeoData[] = [
+const blogSeoData: BlogData[] = [
 	{
 		title: 'Páginas con Texto Autogenerado',
 		description: [
@@ -81,7 +75,7 @@ const Seo = () => {
 					<Grid item xs={12} md={6}>
 						<Box display="flex" flexDirection="column" gap={2}>
 							{blogSeoData.map((item, index) => (
-								<SeoBlogItem key={index} {...item} />
+								<BlogItem key={index} {...item} />
 							))}
 
 							<MoreArticles />
@@ -97,31 +91,11 @@ const Seo = () => {
 	)
 }
 
-const SeoBlogItem = ({ title, description }: BlogSeoData) => {
-	return (
-		<BlogItemWrapper>
-			<BlogHeader>
-				<Typography variant="h2">{title}</Typography>
-			</BlogHeader>
-
-			<Box>
-				{description.map((item, index) => (
-					<Typography variant="h4" key={index} dangerouslySetInnerHTML={{ __html: item }} />
-				))}
-			</Box>
-
-			<CustomActiveLink to="#">
-				<Typography variant="h5">Leer más: {title}</Typography>
-			</CustomActiveLink>
-		</BlogItemWrapper>
-	)
-}
-
-const SeoWrapper = styled(Box)(({ theme }) => ({
+const SeoWrapper = styled(Box)({
 	gap: '5px',
 	paddingTop: '10px',
 	display: 'flex',
 	flexDirection: 'column',
-}))
+})
 
 export { Seo }	

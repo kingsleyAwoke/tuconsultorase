@@ -24,8 +24,13 @@ const headerConfig: HeaderConfig[] = [
 				isChildren: false,
 			},
 			{
-				label: 'Diseño',
-				href: '/diseno',
+				label: 'seguridad',
+				href: '/seguridad',
+				isChildren: false,
+			},
+			{
+				label: 'SEO',
+				href: '/seo',
 				isChildren: false,
 			}
 		]
