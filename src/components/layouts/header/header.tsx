@@ -7,12 +7,10 @@ import {
   Button,
   Typography,
   IconButton,
-  Drawer,
   List,
   ListItem,
   ListItemText,
   Collapse,
-  Popper,
   Fade
 } from "@mui/material";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -22,21 +20,32 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { headerConfig } from "./headerConfig";
-import { CustomMenu, CustomMenuItem, CustomPopper } from "../../menu/CustomMenu";
 import { CustomLink } from "../../Link/customLink";
+import { CustomMenuItem, CustomPopper } from "../../menu/CustomMenu";
+
+interface MobileMenuItemProps {
+  item: HeaderConfig;
+  activeSubmenu: string | null;
+  handleMobileSubMenu: (label: string) => void;
+  closeMobileMenu: () => void;
+}
 
 const Header = () => {
-  const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [openSubMenus, setOpenSubMenus] = useState<{ [key: string]: boolean }>({});
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
-  };
+  }
 
   const handleMobileSubMenu = (label: string) => {
-    setOpenSubMenus(prev => ({ ...prev, [label]: !prev[label] }));
-  };
+    setActiveSubmenu(activeSubmenu === label ? null : label);
+  }
+
+  const closeMobileMenu = () => {
+    setMobileOpen(false);
+    setActiveSubmenu(null);
+  }
 
   return (
     <HeaderWrapper>
@@ -50,70 +59,28 @@ const Header = () => {
           </Box>
 
           {/* Desktop Menu */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
+          <DeskTopMenuWrapper>
             {headerConfig.map((item) => (
               <DesktopMenuItem key={item.label} item={item} />
             ))}
-          </Box>
-        </Container>
-      </AppBar>
+          </DeskTopMenuWrapper>
 
-      {/* Mobile Drawer */}
-      <MobileDrawer anchor="right"
-        variant="temporary"
-        open={mobileOpen}
-        onClose={handleDrawerToggle}
-        ModalProps={{ keepMounted: true }}
-        sx={{
-          display: { xs: 'block', md: 'none' },
-          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 280 },
-        }}
-      >
-        {headerConfig.map((item) => (
-          <React.Fragment key={item.label}>
-            {item.isChildren ? (
-              <>
-                <ListItem onClick={() => handleMobileSubMenu(item.label)}>
-                  <ListItemText>
-                    <Typography variant="h5">{item.label}</Typography>
-                  </ListItemText>
-                  {openSubMenus[item.label] ? <ExpandLess /> : <ExpandMore />}
-                </ListItem>
-                <Collapse in={openSubMenus[item.label]} timeout="auto" unmountOnExit>
-                  <List component="div" disablePadding>
-                    {item.children?.map((child) => (
-                      <CustomLink key={child.label} to={child.href || '#'}>
-                        <ListItem
-                          button
-                          sx={{ pl: 4 }}
-                          onClick={handleDrawerToggle}
-                          className={location.pathname === child.href ? 'active' : ''}
-                        >
-                          <ListItemText>
-                            <Typography variant="h5">{child.label}</Typography>
-                          </ListItemText>
-                        </ListItem>
-                      </CustomLink>
-                    ))}
-                  </List>
-                </Collapse>
-              </>
-            ) : (
-              <CustomLink to={item.href || '#'}>
-                <ListItem
-                  button
-                  onClick={handleDrawerToggle}
-                  className={location.pathname === item.href ? 'active' : ''}
-                >
-                  <ListItemText>
-                    <Typography variant="h5">{item.label}</Typography>
-                  </ListItemText>
-                </ListItem>
-              </CustomLink>
-            )}
-          </React.Fragment>
-        ))}
-      </MobileDrawer>
+        </Container>
+
+        {/* Mobile Menu */}
+        {!!mobileOpen && (
+          <MobileMenuWrapper>
+            {headerConfig.map((item) => (
+              <MobileMenuItem key={item.label}
+                activeSubmenu={activeSubmenu}
+                handleMobileSubMenu={handleMobileSubMenu}
+                closeMobileMenu={closeMobileMenu}
+                item={item}
+              />
+            ))}
+          </MobileMenuWrapper>
+        )}
+      </AppBar>
     </HeaderWrapper>
   );
 };
@@ -176,8 +143,65 @@ const DesktopMenuItem = ({ item }: { item: HeaderConfig }) => {
   )
 }
 
+const MobileMenuItem = (props: MobileMenuItemProps) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { item, activeSubmenu, handleMobileSubMenu, closeMobileMenu } = props;
+
+  const handleLink = (to: string) => {
+    navigate(to);
+    closeMobileMenu();
+  }
+
+  return (
+    <Box sx={{ display: "flex", flexDirection: "column" }}>
+      {item.isChildren ? (
+        <React.Fragment>
+          <CustomMenuItem onClick={() => handleMobileSubMenu(item.label)}
+            className={item.children?.some(child => location.pathname === child.href) ? 'active' : ''}
+          >
+            <ListItemText>
+              <Typography variant="h5">{item.label}</Typography>
+            </ListItemText>
+
+            {activeSubmenu === item.label ? (
+              <ExpandLess fontSize="small" />
+            ) : (
+              <ExpandMore fontSize="small" />
+            )}
+          </CustomMenuItem>
+
+          <Collapse in={activeSubmenu === item.label} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              {item.children?.map((child) => (
+                <CustomMenuItem sx={{ pl: 4 }}
+                  onClick={() => { handleLink(child.href || '#') }}
+                  className={location.pathname === child.href ? 'active' : ''}
+                >
+                  <ListItemText>
+                    <Typography variant="h5">{child.label}</Typography>
+                  </ListItemText>
+                </CustomMenuItem>
+              ))}
+            </List>
+          </Collapse>
+        </React.Fragment>
+      ) : (
+        <CustomMenuItem onClick={() => { handleLink(item.href || '#') }}
+          className={location.pathname === item.href ? 'active' : ''}
+        >
+          <ListItemText>
+            <Typography variant="h5">{item.label}</Typography>
+          </ListItemText>
+        </CustomMenuItem>
+      )}
+    </Box>
+  )
+}
+
 const HeaderWrapper = styled(Box)(({ theme }) => ({
-  position: 'absolute',
+  zIndex: 1000,
+  position: 'fixed',
   top: 0, left: 0, right: 0,
 
   backgroundColor: theme.palette.common.headerBg,
@@ -221,30 +245,30 @@ const HeaderMenuItem = styled(Button)(({ theme }) => ({
   }
 }))
 
-const MobileDrawer = styled(Drawer)(({ theme }) => ({
-  '& .MuiPaper-root': {
-    backgroundColor: theme.palette.common.headerBg,
-  },
-  '& .MuiBackdrop-root': {
-    backgroundColor: 'transparent',
-  },
+const DeskTopMenuWrapper = styled(Box)(({ theme }) => ({
+  flexGrow: 1,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 
-  '& .MuiSvgIcon-root': {
-    color: theme.palette.common.menuActiveColor,
-  },
+  [theme.breakpoints.down('md')]: {
+    display: 'none',
+  }
+}))
 
-  '& .MuiListItem-root': {
-    padding: '8px 16px',
-    '&.active': {
-      backgroundColor: theme.palette.common.menuActiveBg,
-      '& .MuiTypography-root': {
-        color: theme.palette.common.menuActiveColor,
-      }
-    }
-  },
-  '& a': {
-    textDecoration: 'none',
-    color: 'inherit',
+const MobileMenuWrapper = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'column',
+  maxHeight: '500px',
+  overflowY: 'auto',
+  overflowX: 'hidden',
+
+  borderColor: theme.palette.common.headerBorderBg,
+  borderWidth: '1px 0 0 0',
+  borderStyle: 'solid',
+
+  [theme.breakpoints.up('md')]: {
+    display: 'none',
   }
 }))
 

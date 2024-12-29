@@ -25,6 +25,7 @@ const CustomMenu = styled(Menu)(({ theme }) => ({
 
 const CustomMenuItem = styled(MenuItem)(({ theme }) => ({
 	padding: '5px 10px',
+	minHeight: 'unset',
 
 	'&.active': {
 		backgroundColor: theme.palette.common.menuActiveBg,
