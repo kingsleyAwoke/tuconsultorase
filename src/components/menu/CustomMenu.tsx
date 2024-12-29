@@ -1,5 +1,15 @@
-import { Menu, MenuItem } from "@mui/material";
+import { Menu, MenuItem, Popper } from "@mui/material";
 import { styled } from "@mui/material/styles";
+
+const CustomPopper = styled(Popper)(({ theme }) => ({
+	'.MuiBox-root': {
+		minWidth: '180px',
+		padding: '5px 0px',
+		backgroundColor: theme.palette.common.white,
+		boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.15)',
+		border: `1px solid ${theme.palette.common.firstBorderColor}`,
+	},
+}))
 
 const CustomMenu = styled(Menu)(({ theme }) => ({
 	'& .MuiPaper-root': {
@@ -32,4 +42,4 @@ const CustomMenuItem = styled(MenuItem)(({ theme }) => ({
 	}
 }))
 
-export { CustomMenu, CustomMenuItem }
+export { CustomMenu, CustomMenuItem, CustomPopper }

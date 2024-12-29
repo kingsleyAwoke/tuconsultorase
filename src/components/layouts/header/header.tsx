@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { styled } from "@mui/material/styles";
 import {
   Box,
@@ -11,31 +11,24 @@ import {
   List,
   ListItem,
   ListItemText,
-  Collapse
+  Collapse,
+  Popper,
+  Fade
 } from "@mui/material";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import { headerConfig } from "./headerConfig";
-import { CustomMenu, CustomMenuItem } from "../../menu/CustomMenu";
+import { CustomMenu, CustomMenuItem, CustomPopper } from "../../menu/CustomMenu";
 import { CustomLink } from "../../Link/customLink";
 
 const Header = () => {
   const location = useLocation();
-  const [anchorElMenus, setAnchorElMenus] = useState<{ [key: string]: HTMLElement | null }>({});
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openSubMenus, setOpenSubMenus] = useState<{ [key: string]: boolean }>({});
-
-  const handleOpenSubMenu = (event: React.MouseEvent<HTMLElement>, label: string) => {
-    setAnchorElMenus(prev => ({ ...prev, [label]: event.currentTarget }));
-  };
-
-  const handleCloseSubMenu = (label: string) => {
-    setAnchorElMenus(prev => ({ ...prev, [label]: null }));
-  };
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -59,39 +52,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
             {headerConfig.map((item) => (
-              <Box key={item.label}>
-                {item.isChildren ? (
-                  <>
-                    <HeaderMenuItem onClick={(e) => handleOpenSubMenu(e, item.label)}
-                      endIcon={<KeyboardArrowDownIcon sx={{ fontSize: '18px !important' }} />}
-                      className={item.children?.some(child => location.pathname === child.href) ? 'active' : ''}
-                    >
-                      <Typography variant="h5">{item.label}</Typography>
-                    </HeaderMenuItem>
-
-                    <CustomMenu anchorEl={anchorElMenus[item.label]}
-                      open={Boolean(anchorElMenus[item.label])}
-                      onClose={() => handleCloseSubMenu(item.label)}
-                    >
-                      {item.children?.map((child) => (
-                        <CustomLink key={child.label} to={child.href || '#'}>
-                          <CustomMenuItem onClick={() => handleCloseSubMenu(item.label)}
-                            className={location.pathname === child.href ? 'active' : ''}
-                          >
-                            <Typography variant="h5">{child.label}</Typography>
-                          </CustomMenuItem>
-                        </CustomLink>
-                      ))}
-                    </CustomMenu>
-                  </>
-                ) : (
-                  <CustomLink key={item.label} to={item.href || '#'}>
-                    <HeaderMenuItem className={location.pathname === item.href ? 'active' : ''}>
-                      <Typography variant="h5">{item.label}</Typography>
-                    </HeaderMenuItem>
-                  </CustomLink>
-                )}
-              </Box>
+              <DesktopMenuItem key={item.label} item={item} />
             ))}
           </Box>
         </Container>
@@ -156,6 +117,64 @@ const Header = () => {
     </HeaderWrapper>
   );
 };
+
+const DesktopMenuItem = ({ item }: { item: HeaderConfig }) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const menuItemRef = useRef<any>(null);
+  const [hoverState, setHoverState] = useState<boolean>(false);
+  const [openPopper, setOpenPopper] = useState<boolean>(false);
+
+  const handleLink = (to: string) => {
+    navigate(to);
+    setHoverState(false);
+    setOpenPopper(false);
+  }
+
+  return (
+    <Box sx={{ display: "flex" }}>
+      {item.isChildren ? (
+        <React.Fragment>
+          <HeaderMenuItem ref={menuItemRef}
+            onMouseOver={() => { setOpenPopper(true) }}
+            onMouseLeave={() => { setOpenPopper(false) }}
+            endIcon={<KeyboardArrowDownIcon sx={{ fontSize: '18px !important' }} />}
+            className={item.children?.some(child => location.pathname === child.href) ? 'active' : ''}
+          >
+            <Typography variant="h5">{item.label}</Typography>
+          </HeaderMenuItem>
+
+          <CustomPopper transition
+            placement="bottom-start"
+            anchorEl={menuItemRef.current}
+            open={openPopper || hoverState}
+          >
+            {({ TransitionProps }) => (
+              <Fade {...TransitionProps} timeout={500}>
+                <Box onMouseOver={() => { setHoverState(true) }} onMouseLeave={() => { setHoverState(false) }}>
+                  {item.children?.map((child) => (
+                    <CustomMenuItem key={child.label}
+                      onClick={() => { handleLink(child.href || '#') }}
+                      className={location.pathname === child.href ? 'active' : ''}
+                    >
+                      <Typography variant="h5">{child.label}</Typography>
+                    </CustomMenuItem>
+                  ))}
+                </Box>
+              </Fade>
+            )}
+          </CustomPopper>
+        </React.Fragment>
+      ) : (
+        <HeaderMenuItem onClick={() => { handleLink(item.href || '#') }}
+          className={location.pathname === item.href ? 'active' : ''}
+        >
+          <Typography variant="h5">{item.label}</Typography>
+        </HeaderMenuItem>
+      )}
+    </Box>
+  )
+}
 
 const HeaderWrapper = styled(Box)(({ theme }) => ({
   position: 'absolute',
@@ -227,6 +246,6 @@ const MobileDrawer = styled(Drawer)(({ theme }) => ({
     textDecoration: 'none',
     color: 'inherit',
   }
-}));
+}))
 
 export { Header };
