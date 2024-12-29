@@ -3,11 +3,11 @@ import { Grid, Box, Typography } from "@mui/material"
 
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
-import { Posicion } from "../components/posicion"
 import { CustomBreadcrumbs } from "../components/breadcrumbs"
 import { BlogHeader, BlogItemWrapper } from "../../components/blog/blog"
 import { CustomActiveLink } from "../../components/Link/customLink"
 import { MoreArticles } from "../components/moreArticles"
+import { PopularArticles } from "../components/popularArticles"
 
 interface BlogSeoData {
 	title: string;
@@ -89,7 +89,7 @@ const Seo = () => {
 					</Grid>
 
 					<Grid item xs={12} md={3}>
-						<Posicion />
+						<PopularArticles />
 					</Grid>
 				</Grid>
 			</SeoWrapper>
