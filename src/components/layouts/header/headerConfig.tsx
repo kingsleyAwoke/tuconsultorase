@@ -27,11 +27,6 @@ const headerConfig: HeaderConfig[] = [
 				label: 'seguridad',
 				href: '/seguridad',
 				isChildren: false,
-			},
-			{
-				label: 'SEO',
-				href: '/seo',
-				isChildren: false,
 			}
 		]
 	},

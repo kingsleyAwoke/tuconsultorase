@@ -23,7 +23,7 @@ const Footer = () => {
           </FooterItem>
         ))}
 
-        <FooterItemLink to="/contacto">
+        <FooterItemLink to="/contactenos">
           <Typography variant="h2">Contactenos</Typography>
         </FooterItemLink>
       </FooterContainer>
