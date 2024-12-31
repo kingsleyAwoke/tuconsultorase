@@ -1,10 +1,10 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs"
-import { MoreArticles } from "../components/moreArticles"
 import { PopularArticles } from "../components/popularArticles"
 import { BlogItem } from "../components/blogitem"
 
@@ -35,6 +35,9 @@ const blogDisenoData: BlogData[] = [
 ]
 
 const Diseno = () => {
+	useEffect(() => {
+        document.title = 'Diseño - Consultoria SEO';
+    }, []);
 	return (
 		<Layouts>
 			<DisenoWrapper>

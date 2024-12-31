@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
@@ -28,13 +29,13 @@ const blogJoomlaData: BlogData[] = [
 		title: 'Es Mi Sitio Joomla Movil Fácil',
 		description: [
 			'Este artículo te encantará. La mejor manera de hacer tu <span>pagina web </span>o <span>sitio</span> <span>joomla móvil</span> <span>Facil</span> es usando una plantilla especialmente pensada para móviles o celulares y totalmente gratuita.',
-			'El uso de moviles o celulares para navegar por la web está creciendo de forma astronómica y, sin embargo, la mayoría de las webs no están optimizadas para estos dispositivos. Los móviles suelen tener un tamaño de pantalla limitado y debería cambiar la forma de presentar el contenido en estas pantallas.'
+			'<br>El uso de moviles o celulares para navegar por la web está creciendo de forma astronómica y, sin embargo, la mayoría de las webs no están optimizadas para estos dispositivos. Los móviles suelen tener un tamaño de pantalla limitado y debería cambiar la forma de presentar el contenido en estas pantallas.'
 		]
 	}, {
 		title: 'Como ingresar metadatos joomla ',
 		description: [
 			' Los metadatos son datos sobre datos. Suelen definir el título del documento, estilos, enlaces, base, scripts y otra información meta.',
-			'Es información sobre la página web y se define en la sección &lt;head&gt; del documento. La sección &lt;head&gt; es un contenedor de <span>metadatos</span>. Esta información es utilizada por los motores de búsqueda para determinar la relevancia que las páginas dan a la solicitud de búsqueda que se está procesando en un momento dado en un determinado buscador.'
+			'<br>Es información sobre la página web y se define en la sección &lt;head&gt; del documento. La sección &lt;head&gt; es un contenedor de <span>metadatos</span>. Esta información es utilizada por los motores de búsqueda para determinar la relevancia que las páginas dan a la solicitud de búsqueda que se está procesando en un momento dado en un determinado buscador.'
 		]
 	},{
 		title: "Declaraciones Jdoc en Joomla ",
@@ -45,7 +46,7 @@ const blogJoomlaData: BlogData[] = [
 		title: "Como hacer un diseño web efectivo",
 		description: [
 			' Usted sueña con hacer de su sitio un gran sitio, tal vez un blog,  ya tiene el borrador de como lo quiere y con que funcionalidades debería contar.',
-			' Si ya tiene el sitio, usted está dispuesto a rediseñarlo con tal de garantizar su éxito.',
+			'<br>Si ya tiene el sitio, usted está dispuesto a rediseñarlo con tal de garantizar su éxito.',
 			'<span>Hacer un diseño de pagina web efectivo</span> no consiste solo en que tan bien se ve, es importante como funciona y debe funcionar perfectamente bien.'
 		]
 	},{
@@ -67,6 +68,9 @@ const blogJoomlaData: BlogData[] = [
 ]
 
 const Joomla = () => {
+	useEffect(() => {
+        document.title = 'artículos útiles sobre joomla - Consultoria SEO';
+    }, []);
 	return (
 		<Layouts>
 			<JoomlaWrapper>

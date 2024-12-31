@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
@@ -22,20 +23,15 @@ const blogSeoData: BlogData[] = [
 	}, {
 		title: 'Palabras clave de contenido para',
 		description: ['Las <span>Palabras clave de contenido</span> en la Consola de búsqueda de google o Search Console. Bajo el Índice Google, encontrará <span>palabras clave de contenido</span>. Esta herramienta le permite saber a Google de que trata su website y ayuda a Google a interpretar el contenido de su sitio.',
-			'Muestra las palabras clave que se utilizan en su sitio, su importancia expresadas en porcentaje y las URL`s en que las encontró. También muestra',
+			'<br>Muestra las palabras clave que se utilizan en su sitio, su importancia expresadas en porcentaje y las URL`s en que las encontró. También muestra',
 			'las variaciones encontradas de esas palabras clave. '
 		]
 	}, {
 		title: 'Mejoras de HTML Search Console para SEO',
 		description: ['Para acceder a la página Mejoras de HTML, de <span>Search Console</span> sigue estos pasos:',
-			'1.En la página principal de Search Console, haz clic en un sitio.',
-			'2.En el menú de la parte izquierda, haz clic en Aspecto de la búsqueda y, a continuación, en Mejoras de HTML',
-			'',
+			'<ol><li>En la página principal de Search Console, haz clic en un sitio.</li><li>En el menú de la parte izquierda, haz clic en Aspecto de la búsqueda y, a continuación, en Mejoras de HTML</li></ol>',
 			'A continuación se indican los datos que se pueden incluir en esta página.',
-			'Errores del título: posibles errores en la etiqueta del título en tus páginas, como la falta de título en la página o títulos repetidos.',
-			'Errores de metadescripciones: posibles errores generados por la falta o duplicación de metadescripciones, o por otras metadescripciones problemáticas.',
-			'Contenido no indexable: páginas cuyo contenido no es indexable, como algunos archivos multimedia, vídeos o imágenes.',
-			'',
+			'<ul><li>Errores del título: posibles errores en la etiqueta del título en tus páginas, como la falta de título en la página o títulos repetidos.</li><li>Errores de metadescripciones: posibles errores generados por la falta o duplicación de metadescripciones, o por otras metadescripciones problemáticas.</li><li>Contenido no indexable: páginas cuyo contenido no es indexable, como algunos archivos multimedia, vídeos o imágenes.</li></ul>',
 			'Estos errores se refieren a contenido duplicado. El contenido duplicado es perjudicial para el <span>SEO</span> o para la <span>optimización para motores de búsqueda</span>.',
 		],
 	}, {
@@ -44,7 +40,7 @@ const blogSeoData: BlogData[] = [
 	}, {
 		title: 'Como Probar el Archivo robots.txt',
 		description: ['Las herramientas para webmaster de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la importancia del archivo robots.txt para la seguridad y el <span>SEO</span>.',
-			'Puedes probar si el rastreador Googlebot-Video puede rastrear la url de un video que quieres bloquear en la búsqueda de videos de Google o si el rastreador Adsbot-Google  puede rastrear la url de un anuncio que quieres bloquearle.'
+			'<br>Puedes probar si el rastreador Googlebot-Video puede rastrear la url de un video que quieres bloquear en la búsqueda de videos de Google o si el rastreador Adsbot-Google  puede rastrear la url de un anuncio que quieres bloquearle.'
 		],
 	}, {
 		title: 'Porque Actualizar el Contenido Web',
@@ -62,6 +58,9 @@ const blogSeoData: BlogData[] = [
 ]
 
 const Seo = () => {
+	useEffect(() => {
+        document.title = 'SEO - Consultoria SEO';
+    }, []);
 	return (
 		<Layouts>
 			<SeoWrapper>

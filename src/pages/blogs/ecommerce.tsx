@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
@@ -13,7 +14,7 @@ const blogEcommerceData: BlogData[] = [
 		title: 'Tips Consejos SEO para sitios e-commerce',
 		description: [
 			'Los siguientes son ideas y consejos relacionadas con <span>SEO</span>  que pueden resultar útiles para su sitio de comercio electrónico (e-commerce).',
-			'<span>1. Cosas que harán que los compradores potenciales lo piensen antes de ir más allá en el proceso de compra en su tienda online.</span>',
+			'<ol><li><b>Cosas que harán que los compradores potenciales lo piensen antes de ir más allá en el proceso de compra en su tienda online.</b></li></ol>',
 			'Los clics excesivos pueden hacer perder compradores, ya que no agilizan el proceso de compra.',
 		]
 	}, {
@@ -30,6 +31,9 @@ const blogEcommerceData: BlogData[] = [
 ]
 
 const Ecommerce = () => {
+	useEffect(() => {
+        document.title = 'e-commerce - Consultoria SEO';
+    }, []);
 	return (
 		<Layouts>
 			<EcommerceWrapper>

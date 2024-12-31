@@ -40,6 +40,7 @@ import { Programadores } from './pages/servicios/programadores';
 import { Redaccionde } from './pages/servicios/redaccionde';
 import { Consultoria } from './pages/servicios/consultoria';
 import { Limpieza } from './pages/servicios/limpieza';
+import { DisenoPaginas } from './pages/servicios/disenoPaginas';
 
 export const Routers = () => {
   const [state] = useGlobalContext();
@@ -79,7 +80,7 @@ export const Routers = () => {
         <Route path='/portafolio' element={<Portafolio />} />
 
         {/* servicios */}
-        <Route path='/diseño-paginas-web' element={<Diseno />} />        
+        <Route path='/diseño-paginas-web' element={<DisenoPaginas />} />        
         <Route path='/acelerar-joomla' element={<Acelerar />} />        
         <Route path='/alta-buscadores' element={<AltaEnBuscadores />} />        
         <Route path='/alta-directorio' element={<AltaEnDirectories />} />        

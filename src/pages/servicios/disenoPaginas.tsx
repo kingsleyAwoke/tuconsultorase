@@ -61,7 +61,7 @@ const blogSeoData: BlogData[] = [
 	}
 ]
 
-const Diseno = () => {
+const DisenoPaginas = () => {
 	return (
 		<Layouts>
 			<SeoWrapper>
@@ -98,4 +98,4 @@ const SeoWrapper = styled(Box)({
 	flexDirection: 'column',
 })
 
-export { Diseno }	
+export { DisenoPaginas }	

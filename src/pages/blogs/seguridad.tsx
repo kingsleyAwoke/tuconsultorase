@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
@@ -13,7 +14,7 @@ const blogSeguridadData: BlogData[] = [
 		title: 'Ventajas de Cloud Servers ',
 		description: [
 			'Cloud hosting es un tipo de alojamiento que se hace para los sitios web a través de servidores virtuales que utilizan recursos informáticos extraídos de las redes que sirven de fundamento de servidores web físicos. Tiene un modo de utility computing, haciéndolo disponible como un servicio y no como un producto; por lo tanto, se puede comparar con servicios públicos habituales como el gas y la electricidad. En esencia, los clientes aprovechan los servicios en función de sus demandas de sitios web y el juego para un solo uso.',
-			'Cloud hosting es una gran alternativa al alojamiento de servidor dedicado y compartido y puede ser visto como alojamiento en clúster donde los sitios web se pueden alojar en varios servidores. La red de servidores de cloud hosting puede basarse desde diferentes lugares y diferentes centros de datos.',
+			'<br>Cloud hosting es una gran alternativa al alojamiento de servidor dedicado y compartido y puede ser visto como alojamiento en clúster donde los sitios web se pueden alojar en varios servidores. La red de servidores de cloud hosting puede basarse desde diferentes lugares y diferentes centros de datos.',
 			'<span>Los Beneficios</span>'
 		]
 	}, {
@@ -69,6 +70,9 @@ const blogSeguridadData: BlogData[] = [
 ]
 
 const Seguridad = () => {
+	useEffect(() => {
+        document.title = 'Seguridad - Consultoria SEO';
+    }, []);
 	return (
 		<Layouts>
 			<SeguridadWrapper>
