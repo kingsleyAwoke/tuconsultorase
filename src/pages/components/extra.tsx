@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles"
 
 import { CustomTextField } from "../../components/TextField/CustomTextField"
 import { PrimaryButton, SubmitButton } from "../../components/button/customButton"
-import { tutorialSeo } from "../../assets/image"
+import { tutorialSeo } from "../../assets/image/image"
 import { ImageSectionWrapper } from "../../components/section/section"
 
 const Extra = () => {

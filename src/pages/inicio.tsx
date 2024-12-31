@@ -7,7 +7,7 @@ import { Layouts } from "../components/layouts/layouts";
 import { Posicion } from "./components/posicion";
 import { BlogHeader, BlogItemContainer, BlogItemWrapper } from "../components/blog/blog";
 import { CustomActiveLink } from "../components/Link/customLink";
-import { blogImage1, blogImage2, blogImage3, blogImage4, blogImage5, blogImage6, blogImage7, blogImage8 } from "../assets/image";
+import { blogImage1, blogImage2, blogImage3, blogImage4, blogImage5, blogImage6, blogImage7, blogImage8 } from "../assets/image/image";
 import { ImageSectionWrapper } from "../components/section/section";
 import { PrimaryButton } from "../components/button/customButton";
 import { Link } from "react-router-dom";

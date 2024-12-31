@@ -22,11 +22,11 @@ const DemoItem: React.FC<DemoItemProps> = ({ title, image, description, btn }) =
                 },
             }}
         >
-            <img src={image} alt={title} style={{ width: '100%', borderRadius: '8px' }} />
-            <Typography variant="h6" sx={{ margin: '16px 0' }}>
+            <Typography variant="h3" sx={{ margin: '16px 0', color: 'purple' }}>
                 {title}
             </Typography>
-            <Typography variant="body2" sx={{ marginBottom: '16px' }}>
+            <img src={image} alt={title} style={{ width: '100%', borderRadius: '8px' }} />
+            <Typography variant="body2" sx={{ marginBottom: '10px' }}>
                 {description.join(' ')}
             </Typography>
             {btn}

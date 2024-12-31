@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import { Box, Typography } from "@mui/material";
 
-import { heroBg } from "../../assets/image";
+import { heroBg } from "../../assets/image/image";
 import { CustomTextField } from "../../components/TextField/CustomTextField";
 import { SubmitButton } from "../../components/button/customButton";
 import { CustomActiveLink } from "../../components/Link/customLink";

@@ -4,7 +4,7 @@ import { Grid, Box } from "@mui/material";
 import { DemoItem } from "../components/demoplantillasitem";
 import { FaCcMastercard, FaEnvelope, FaLaptop, FaTwitter, FaStar, FaGoogle, FaRocket } from 'react-icons/fa';
 import { Hero } from '../components/hero';
-import { TopA1, TopA2, TopA3, TopB1, TopB2, TopB3, TopC1, TopC2, TopC3 } from '../../assets/image';
+import { TopA1, TopA2, TopA3, TopB1, TopB2, TopB3, TopC1, TopC2, TopC3 } from '../../assets/image/image';
 import { BtnDemoplantillas } from "../../components/button/demoplantillas";
 import { Layouts } from "../../components/layouts/layouts";
 
@@ -112,7 +112,7 @@ const DemoPlantillas = () => {
 };
 
 const DemoPlantillaWrapper = styled(Box)({
-    margin: '50px',
+    // margin: '50px',
 });
 
 export { DemoPlantillas };

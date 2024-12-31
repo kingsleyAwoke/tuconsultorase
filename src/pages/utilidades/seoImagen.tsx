@@ -9,6 +9,7 @@ import { PopularArticles } from "../components/popularArticles";
 import { BlogItem } from "../components/blogitem";
 import ContactAuthorSection from "../components/ContactAuthorSection";
 
+
 const UtilidadesSEOImagenData: BlogData[] = [
     {
         title: 'herramienta seo imagen',
