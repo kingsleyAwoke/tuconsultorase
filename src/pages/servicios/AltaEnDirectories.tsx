@@ -1,67 +1,32 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
-import { CustomBreadcrumbs } from "../components/breadcrumbs"
-import { MoreArticles } from "../components/moreArticles"
-import { PopularArticles } from "../components/popularArticles"
-import { BlogItem } from "../components/blogitem"
+import { CustomBreadcrumbs } from "../components/breadcrumbs";
+import { PopularArticles } from "../components/popularArticles";
+import { BlogItem } from "../components/blogitem";
+import ContactAuthorSection from "../components/ContactAuthorSection";
 
 const blogSeoData: BlogData[] = [
 	{
-		title: 'Páginas con Texto Autogenerado',
+		title: 'Alta en Directorios',
 		description: [
-			'¿Google toma medidas sobre páginas generadas automáticamente que no proporcionan valor añadido? La respuesta es sí. Sin embargo; Google no es perfecto y si ves ejemplos de contenido autogenerado que se encuentra en los resultados de búsqueda que no agregan valor, como las páginas de resultados, Google quiere que envíe un informe de spam.',
+			'El<strong> Alta en Directorios</strong> ha demostrado ser un m &eacute;todo maravilloso para la obtenci &oacute;n de enlaces de calidad de un solo sentido. La calidad de los enlaces entrantes mejora su posicionamiento en los buscadores y su visibilidad en Internet. Ofrecemos un servicio de <strong>alta en directorios </strong>para los sitios que cumplen con nuestra pol &iacute;tica de sitios aceptados.',
+			'<br>Ofrecemos dar de <strong>alta en directorios </strong>de calidad a su sitio de forma manual para comprobar que cada directorio es gestionado por personas y existe un control sobre los sitios y categorias. Esta alta de sitios web la realizamos para un notable n&uacute;mero de directorios de calidad, que ofrezcen enlaces no rec&iacute;procos de un solo sentido, para de este modo conseguir visitantes orientados a su nicho de mercado y mejorar su posicionamiento en buscadores. Mediante la utilizaci&oacute;n de los servicios de <strong>alta en directorios</strong>, recibir&aacute;el tr&aacute;fico adicional a su sitio de esos directorios de calidad que mejoran el ranking en los motores de b&uacute;squeda.',
+			'<br>Los paquetes de directorios incluyen lo siguiente:',
+			'<ul><li>El uso de diferentes texto ancla para lograr una buena clasificaci&oacute;n.</li><li>Otra carater&iacute;stica del servicio de<strong> alta en directorios </strong>es que se realiza en directorios gratuitos para evitar enlaces de pago que afectan negativamente la clasificaci&oacute;n.</li><li>Alta manual en la categor&iacute;a relacionada.</li><li>Informe de la presentaci&oacute;n que se hizo a los directorios de su sitio web.</li></ul>',
+			'<br><strong>Ventajas del alta en directorios</strong>',
+			'<ul><li>Mejora de la posici&oacute;n debido a que son una forma de enlaces (cualquiera que conozca la optimizac&oacute;n del Search Engine, sabe lo importante que es tener enlaces que apunten a su sitio para mejorar el ranking de sitios web)</li><li>Nuestros servicios de <strong>alta en directorios</strong> le ahorrar&aacute;tiempo y esfuerzo que puede utilizar en otro tipo de comercializaci&oacute;n o&aacute;rea t&eacute;cnica del sitio web. Usted recibir&aacute;enlaces relevantes para apoyar sus estrategias de optimizaci&oacute;n de motores de b&uacute;squeda.</li><li>Ayuda en la r&aacute;pida indexaci&oacute;n de su sitio en los motores de b&uacute;squeda.</li></ul>'
 		]
-	}, {
-		title: 'Como identificar y diagnosticar un sitio pirateado',
-		description: [
-			'La importancia de <span>identificar y diagnosticar un sitio pirateado</span> se traduce en pérdida de visitas, clientes y violación de directrices específicas de calidad de los motores de búsqueda, siendo éste motivo para que Google emprenda <span>acciones manuales</span> para resolver esta infracción, perjudicando nuestro <span>SEO</span> o <span>posicionamiento en los resultados de los motores de búsqueda</span>. Una vez solucionado el problema, puedes <span>enviar tu sitio para que se vuelva a revisar</span>.',
-		]
-	}, {
-		title: 'Palabras clave de contenido para',
-		description: ['Las <span>Palabras clave de contenido</span> en la Consola de búsqueda de google o Search Console. Bajo el Índice Google, encontrará <span>palabras clave de contenido</span>. Esta herramienta le permite saber a Google de que trata su website y ayuda a Google a interpretar el contenido de su sitio.',
-			'Muestra las palabras clave que se utilizan en su sitio, su importancia expresadas en porcentaje y las URL`s en que las encontró. También muestra',
-			'las variaciones encontradas de esas palabras clave. '
-		]
-	}, {
-		title: 'Mejoras de HTML Search Console para SEO',
-		description: ['Para acceder a la página Mejoras de HTML, de <span>Search Console</span> sigue estos pasos:',
-			'1.En la página principal de Search Console, haz clic en un sitio.',
-			'2.En el menú de la parte izquierda, haz clic en Aspecto de la búsqueda y, a continuación, en Mejoras de HTML',
-			'',
-			'A continuación se indican los datos que se pueden incluir en esta página.',
-			'Errores del título: posibles errores en la etiqueta del título en tus páginas, como la falta de título en la página o títulos repetidos.',
-			'Errores de metadescripciones: posibles errores generados por la falta o duplicación de metadescripciones, o por otras metadescripciones problemáticas.',
-			'Contenido no indexable: páginas cuyo contenido no es indexable, como algunos archivos multimedia, vídeos o imágenes.',
-			'',
-			'Estos errores se refieren a contenido duplicado. El contenido duplicado es perjudicial para el <span>SEO</span> o para la <span>optimización para motores de búsqueda</span>.',
-		],
-	}, {
-		title: 'Googlebot no puede acceder a los archivos CSS y JS',
-		description: ['Ud. Llegó a este útil artículo porque seguramente recibió este mensaje "<span>Googlebot no puede acceder a los archivos CSS y JS</span> " en su cónsola de herramientas para webmaster de Google.'],
-	}, {
-		title: 'Como Probar el Archivo robots.txt',
-		description: ['Las herramientas para webmaster de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la importancia del archivo robots.txt para la seguridad y el <span>SEO</span>.',
-			'Puedes probar si el rastreador Googlebot-Video puede rastrear la url de un video que quieres bloquear en la búsqueda de videos de Google o si el rastreador Adsbot-Google  puede rastrear la url de un anuncio que quieres bloquearle.'
-		],
-	}, {
-		title: 'Porque Actualizar el Contenido Web',
-		description: ['Bueno, según la forma en que lo veo, si no actualiza su sitio web todos los días con contenido nuevo y único, usted puede estar muerto para los motores de búsqueda, o perder una gran cantidad de visitantes diarios a su sitio. Yo no soy la única que piensa así. Este es sin duda el consenso entre los principales webmaster y sobre todo seos, ellos saben que uno de los factores más importantes para convertir un site en un site de éxito está en la constante actualización del contenido, bien sea un cibersitio, blog, canal de vídeo, podcast, etc., con nuevo contenido tan a menudo como sea posible. Por lo menos todos los días y aún más si es posible. '],
-	}, {
-		title: 'Los Mejores Lugares en mi Página Web Para Insertar Palabras Clave',
-		description: ['¡Muy Bien! iremos directamente al punto. Esta es una lista de <span>los mejores lugares en mi página web para insertar palabras clave</span> y por tanto, mejorar mi <span>SEO</span>.'],
-	}, {
-		title: 'Como Construir Enlaces de Manera Correcta ',
-		description: ['Con las constantes actualizaciones de Google Penguin, Panda y la introducción de Colibrí, el <span>SEO</span> es más complejo que nunca. Las sanciones a algunos de los sitios web más populares del mundo, y la disminución constante de la prominencia de PageRank, los métodos tradicionales de <span>SEO</span>&nbsp;ya no tienen la misma importancia.&nbsp;Mientras que muchas técnicas ya son obsoletas, otras son temidas por su posible resultado negativo.&nbsp;La construcción de links es una de estas técnicas que se encuentra bajo la estricta vigilancia del pingüino.&nbsp;Sin embargo, esto debe ser visto como una oportunidad y no una amenaza, debido a que sigue siendo una de las formas más importantes y eficaces para clasificar su sitio web mejor.&nbsp;Si se realiza correctamente, puede ser una excelente manera de obtener una ventaja competitiva sobre los demás sitios web.&nbsp;Aquí hay algunas consejos para webmasters y expertos de <span>SEO:</span>'],
-	}, {
-		title: 'Herramienta Libre Investigación de Palabras Clave de SEO ',
-		description: ['¿Alguna vez has escrito algo para publicarlo en línea y quiere que la gente sea capaz de encontrarlo?'],
 	}
 ]
 
 const AltaEnDirectories = () => {
+	useEffect(() => {
+        document.title = 'Alta en Directorios - Consultoria SEO';
+    }, []);
 	return (
 		<Layouts>
 			<SeoWrapper>
@@ -78,7 +43,7 @@ const AltaEnDirectories = () => {
 								<BlogItem key={index} {...item} />
 							))}
 
-							<MoreArticles />
+							<ContactAuthorSection />
 						</Box>
 					</Grid>
 

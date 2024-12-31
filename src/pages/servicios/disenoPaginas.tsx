@@ -1,67 +1,37 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs"
-import { MoreArticles } from "../components/moreArticles"
 import { PopularArticles } from "../components/popularArticles"
 import { BlogItem } from "../components/blogitem"
+import ContactAuthorSection from "../components/ContactAuthorSection"
 
 const blogSeoData: BlogData[] = [
 	{
-		title: 'Páginas con Texto Autogenerado',
+		title: 'Dise&ntilde;o de paginas web Joomla',
 		description: [
-			'¿Google toma medidas sobre páginas generadas automáticamente que no proporcionan valor añadido? La respuesta es sí. Sin embargo; Google no es perfecto y si ves ejemplos de contenido autogenerado que se encuentra en los resultados de búsqueda que no agregan valor, como las páginas de resultados, Google quiere que envíe un informe de spam.',
+			'En el <strong>dise&ntilde;o de paginas web joomla</strong> la salida visual es controlada por las <strong>plantillas</strong>, &eacute;stas se pueden hacer seg&uacute;n sus requerimientos. Tenemos dos formas de hacer el dise&ntilde;o que desee:',
+			'<br>Plantilla joomla personalizada y una nueva <strong>plantilla </strong>joomla adaptada a sus necesidades espec&iacute;ficas.',
+			'<br>Plantilla Joomla Personalizada,<br> Hay miles de <strong>plantillas</strong> disponibles en varios sitios web a trav&eacute;s de la web, algunas de estas <strong>plantillas</strong>son gratuitas y algunas tienen un cargo. La forma moderna de los negocios para los dise&ntilde;adores de <strong> plantilla </strong>web es poner en marcha un club de plantilla. Los club de plantilla cobran una cantidad por un a &ntilde;o, el acceso a cientos de <strong>plantillas</strong>. Pero usted debe saber, que cientos, si no miles de personas la est &aacute;n utilizando, nosotros personalizamos las <strong>plantillas</strong>, nuestra manera preferida de dise&ntilde;o de un nuevo sitio web es tener una <strong>plantilla </strong>extraordinaria, fuera de lo com&uacute;n y transformarla, en exactamente lo que quiere usted para el dise&ntilde;o de su presencia/sitio web en l&iacute;nea.',
+			'<br>Tuconsultoraseo puede dise&ntilde;ar y construir una nueva plantilla Joomla desde cero. Todo lo que necesitamos es el esquema de su empresa corporativa: color, su logotipo, una idea b&aacute;sica del tipo de men&uacute;(desplegable, men&uacute;superior de una sola planta, men&uacute;lateral de varios niveles, etc) y la estructura de su dise&ntilde;o preferido. A partir de esta informaci&oacute;n b&aacute;sica, utilizando nuestra amplia experiencia de creaci&oacute;n de <strong>plantillas </strong>Joomla, nuestro equipo de expertos crear&aacute;una plantilla a medida que ofrece, el estilo, la innovaci&oacute;n y lo m&aacute;s importante de todo, la satisfacci&oacute;n del visitante.',
+			'<br>Joomla Est &aacute;ndares de <strong>Dise&ntilde;o Web</strong><br />Todos nuestros <strong>dise&ntilde;os de paginas web/plantillas </strong>son XHTML y CSS compatibles, nunca ponemos en marcha una p&aacute;gina web con errores de javascript o cualquier mala codificaci&oacute;n. Desarrollado para ser accesible a los que utilizan lectores de pantalla y otras tecnolog&iacute;as asistida.',
+			'<br>Compatibilidad del navegador con nuestros <strong>dise&ntilde;os Web</strong>',
+			'<br>compatibles en todos los navegadores principales: Google Chrome, Mozilla Firefox, Opera, Safari e IE9 +.',
+			'<br>Desarrollamos para la&uacute;ltima versi&oacute;n de Internet Explorer (IE), si una nueva versi&oacute;n se ha publicado recientemente, vamos a desarrollar sin costo adicional para las dos&uacute;ltimas versiones de IE.',
+			'<br>Nuestros servicios de <strong>dise&ntilde;o paginas web Joomla</strong><br />son utilizados por los principales medios de comunicaci&oacute;n creativos y empresas de medios digitales. Ellos reconocen que somos m&aacute;s especializados de lo que pueden manejar, o simplemente le resulte m&aacute;s rentable contratar a verdaderos expertos Joomla para obtener el trabajo de manera r&aacute;pida y profesional.',
+			'<br>Nuestro objetivo es alcanzar sus objetivos de negocio, el <strong>dise&ntilde;o de p&aacute;ginas web </strong>es in&uacute;til si no est &aacute;cumpliendo con sus objetivos:',
+			'<br>Si usted quiere un nuevo sitio web o una importante revisi&oacute;n de su sitio web existente, somos la empresa de <strong>dise&ntilde;o</strong> web para usted. Consulte nuestra p&aacute;gina de Joomla Web Design Portfolio y navegue por el resto del sitio para ver nuestra gama completa de servicios de <strong>dise&ntilde;o web </strong>Joomla.'
 		]
-	}, {
-		title: 'Como identificar y diagnosticar un sitio pirateado',
-		description: [
-			'La importancia de <span>identificar y diagnosticar un sitio pirateado</span> se traduce en pérdida de visitas, clientes y violación de directrices específicas de calidad de los motores de búsqueda, siendo éste motivo para que Google emprenda <span>acciones manuales</span> para resolver esta infracción, perjudicando nuestro <span>SEO</span> o <span>posicionamiento en los resultados de los motores de búsqueda</span>. Una vez solucionado el problema, puedes <span>enviar tu sitio para que se vuelva a revisar</span>.',
-		]
-	}, {
-		title: 'Palabras clave de contenido para',
-		description: ['Las <span>Palabras clave de contenido</span> en la Consola de búsqueda de google o Search Console. Bajo el Índice Google, encontrará <span>palabras clave de contenido</span>. Esta herramienta le permite saber a Google de que trata su website y ayuda a Google a interpretar el contenido de su sitio.',
-			'Muestra las palabras clave que se utilizan en su sitio, su importancia expresadas en porcentaje y las URL`s en que las encontró. También muestra',
-			'las variaciones encontradas de esas palabras clave. '
-		]
-	}, {
-		title: 'Mejoras de HTML Search Console para SEO',
-		description: ['Para acceder a la página Mejoras de HTML, de <span>Search Console</span> sigue estos pasos:',
-			'1.En la página principal de Search Console, haz clic en un sitio.',
-			'2.En el menú de la parte izquierda, haz clic en Aspecto de la búsqueda y, a continuación, en Mejoras de HTML',
-			'',
-			'A continuación se indican los datos que se pueden incluir en esta página.',
-			'Errores del título: posibles errores en la etiqueta del título en tus páginas, como la falta de título en la página o títulos repetidos.',
-			'Errores de metadescripciones: posibles errores generados por la falta o duplicación de metadescripciones, o por otras metadescripciones problemáticas.',
-			'Contenido no indexable: páginas cuyo contenido no es indexable, como algunos archivos multimedia, vídeos o imágenes.',
-			'',
-			'Estos errores se refieren a contenido duplicado. El contenido duplicado es perjudicial para el <span>SEO</span> o para la <span>optimización para motores de búsqueda</span>.',
-		],
-	}, {
-		title: 'Googlebot no puede acceder a los archivos CSS y JS',
-		description: ['Ud. Llegó a este útil artículo porque seguramente recibió este mensaje "<span>Googlebot no puede acceder a los archivos CSS y JS</span> " en su cónsola de herramientas para webmaster de Google.'],
-	}, {
-		title: 'Como Probar el Archivo robots.txt',
-		description: ['Las herramientas para webmaster de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la importancia del archivo robots.txt para la seguridad y el <span>SEO</span>.',
-			'Puedes probar si el rastreador Googlebot-Video puede rastrear la url de un video que quieres bloquear en la búsqueda de videos de Google o si el rastreador Adsbot-Google  puede rastrear la url de un anuncio que quieres bloquearle.'
-		],
-	}, {
-		title: 'Porque Actualizar el Contenido Web',
-		description: ['Bueno, según la forma en que lo veo, si no actualiza su sitio web todos los días con contenido nuevo y único, usted puede estar muerto para los motores de búsqueda, o perder una gran cantidad de visitantes diarios a su sitio. Yo no soy la única que piensa así. Este es sin duda el consenso entre los principales webmaster y sobre todo seos, ellos saben que uno de los factores más importantes para convertir un site en un site de éxito está en la constante actualización del contenido, bien sea un cibersitio, blog, canal de vídeo, podcast, etc., con nuevo contenido tan a menudo como sea posible. Por lo menos todos los días y aún más si es posible. '],
-	}, {
-		title: 'Los Mejores Lugares en mi Página Web Para Insertar Palabras Clave',
-		description: ['¡Muy Bien! iremos directamente al punto. Esta es una lista de <span>los mejores lugares en mi página web para insertar palabras clave</span> y por tanto, mejorar mi <span>SEO</span>.'],
-	}, {
-		title: 'Como Construir Enlaces de Manera Correcta ',
-		description: ['Con las constantes actualizaciones de Google Penguin, Panda y la introducción de Colibrí, el <span>SEO</span> es más complejo que nunca. Las sanciones a algunos de los sitios web más populares del mundo, y la disminución constante de la prominencia de PageRank, los métodos tradicionales de <span>SEO</span>&nbsp;ya no tienen la misma importancia.&nbsp;Mientras que muchas técnicas ya son obsoletas, otras son temidas por su posible resultado negativo.&nbsp;La construcción de links es una de estas técnicas que se encuentra bajo la estricta vigilancia del pingüino.&nbsp;Sin embargo, esto debe ser visto como una oportunidad y no una amenaza, debido a que sigue siendo una de las formas más importantes y eficaces para clasificar su sitio web mejor.&nbsp;Si se realiza correctamente, puede ser una excelente manera de obtener una ventaja competitiva sobre los demás sitios web.&nbsp;Aquí hay algunas consejos para webmasters y expertos de <span>SEO:</span>'],
-	}, {
-		title: 'Herramienta Libre Investigación de Palabras Clave de SEO ',
-		description: ['¿Alguna vez has escrito algo para publicarlo en línea y quiere que la gente sea capaz de encontrarlo?'],
 	}
 ]
 
 const DisenoPaginas = () => {
+	useEffect(() => {
+        document.title = 'Diseño de Páginas web - Consultoria SEO';
+    }, []);
 	return (
 		<Layouts>
 			<SeoWrapper>
@@ -78,7 +48,7 @@ const DisenoPaginas = () => {
 								<BlogItem key={index} {...item} />
 							))}
 
-							<MoreArticles />
+							<ContactAuthorSection />
 						</Box>
 					</Grid>
 
