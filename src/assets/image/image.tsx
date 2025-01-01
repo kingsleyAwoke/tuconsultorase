@@ -31,6 +31,11 @@ import Image3 from './8b-futurefit-co-uk-628x353.jpg';
 import contactenos1 from './evaluacion gratuita seo.png';
 import contactenos2 from './contacto.png';
 
+import plantillas1 from './demoPlantillas/posiciones plantilla boostrap atomicai.jpg';
+import plantillas2 from './demoPlantillas/template_preview.png'
+
+export { plantillas1, plantillas2 }
+
 export { contactenos1, contactenos2 }
 
 export { Image1, Image2, Image3 }

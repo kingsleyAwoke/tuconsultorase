@@ -1,67 +1,34 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs"
-import { MoreArticles } from "../components/moreArticles"
 import { PopularArticles } from "../components/popularArticles"
 import { BlogItem } from "../components/blogitem"
+import ContactAuthorSection from "../components/ContactAuthorSection"
 
 const blogSeoData: BlogData[] = [
 	{
-		title: 'Páginas con Texto Autogenerado',
+		title: 'Publicidad Pago por Clic',
 		description: [
-			'¿Google toma medidas sobre páginas generadas automáticamente que no proporcionan valor añadido? La respuesta es sí. Sin embargo; Google no es perfecto y si ves ejemplos de contenido autogenerado que se encuentra en los resultados de búsqueda que no agregan valor, como las páginas de resultados, Google quiere que envíe un informe de spam.',
+			'<strong>Publicidad Pago por </strong><font><strong>clic </strong>(PPC) es un modelo de <strong>publicidad </strong>de Internet utilizado en sitios web, en la que los anunciantes pagan s&oacute;lo cuando el cibernauta hace clic en su anuncio.</font><font>Con los motores de b&uacute;squeda, los anunciantes suelen pujar por frases de palabras clave relevantes para su mercado objetivo.</font><font>Los sitios de contenido suelen cobrar un precio fijo por clic en lugar de utilizar un sistema de licitaci&oacute;n.</font><font>El concepto de <strong>pago por clic</strong> gu&iacute;a a los empresarios dedicados en cuanto a la forma de ampliar el negocio de la manera m &aacute;s sofisticada.</font><font>Un hombre convertirse en un hombre de negocios realmente inteligente, siguiendo los consejos y trucos de <strong>PPC</strong>.</font>',
+			'<br><font>Los anunciantes disfrutan de la <strong>publicidad </strong>PPC porque es simple, tienen un mayor control sobre su campa&ntilde;a publicitaria, y reciben una mejor retroalimentaci&oacute;n sobre su desempe&ntilde;o. Aunque existen muchos proveedores de PPC, Google AdWords, Yahooo! Search Marketing y Microsoft adCenter son los tres operadores de red m&aacute;s grandes, y los tres operan bajo un modelo basado en la oferta-</font><font>El programa de Google llamado AdWords ofrece <strong>pago </strong>dirigido por clic en los anuncios a trav&eacute;s de sus propios sitios web en los buscadores y una gran cantidad de sitios asociados. </font><font>Google encabeza la lista con su creciente participaci&oacute;n en la b&uacute;squeda de pago, principalmente de su <strong>pago </strong>por clic, servicio de AdWords.</font>',
+			'<br><font>La clave para las campa&ntilde;as de PPC eficaz est &aacute;en su estrategia de palabras clave y la calidad de su an&aacute;lisis a los visitantes.</font><font>Muchas empresas establecen sus campa&ntilde;as de publicidad PPC sin mucha planificaci&oacute;n. Las c</font><font>ampa&ntilde;as deben estructurarse de modo que las palabras clave improductivos puedan ser filtrados y las de alto rendimiento mejoradas.</font><font>Para maximizar el rendimiento de la publicidad PPC, usted debe hacer una oferta sobre las frases de palabras clave seleccionadas, escribir persuasivamente, moviendo el texto del anuncio, y tener una p &aacute;gina bien escrita, as&iacute; obtendr &aacute;clics a trav &eacute;s del anuncio.</font><font>Si usted sabe c &oacute;mo atraer clics al anuncio y ofrecer una soluci&oacute;n a un problema, usted ser &aacute;recompensado con un buen &iacute;ndice de ventas.</font>',
+			'<h2>&iquest;Por qu &eacute;elegir TuConsultoraSeo para su campa&ntilde;a de pago por clic?</h2>',
+			'<ul><li><font>Un plan personalizado es dise&ntilde;ado para cada campa&ntilde;a de PPC, mientras que el desarrollo del plan tiene en cuenta los puntos fuertes de nuestros clientes y las directrices establecidas por los motores de b&uacute;squeda m&aacute;s importantes.</font></li><li><font>Informamos regularmente al cliente sobre el progreso de las campa&ntilde;as.</font></li><li><font>Nuestro equipo est &aacute;permanentemente actualizado sobre nuevas tendencias de marketing digital y le ayudar&aacute;en sus futuros planes de comercializaci&oacute;n de su negocio.</font></li><li><font>na bien orientada<strong> publicidad de pago por clic </strong>le entregara un excelente retorno de su inversi&oacute;n.</font></li></ul>',
+			'<br>Dependiendo de sus requerimiento se dise&ntilde;ar&aacute;una campa&ntilde;a eficaz de <strong>publicidad pago por clic, </strong>expliquenos en el siguiente formulario qu&eacute;necesita, nos pondremos en contacto con usted con una propuesta, s&oacute;lo entonces usted cancelar&iacute;a el servicio.',
+			'<br><strong>No olvide indicarnos su sitio o url.</strong>',
+			'<iframe allowtransparency="true" frameborder="0" src="https://services.codeeta.com/widget/v3/47769/?responsive=pc&amp;parent=https%3A%2F%2F&amp;embed=script&amp;widget_id=47769" height="528"></iframe>'
 		]
-	}, {
-		title: 'Como identificar y diagnosticar un sitio pirateado',
-		description: [
-			'La importancia de <span>identificar y diagnosticar un sitio pirateado</span> se traduce en pérdida de visitas, clientes y violación de directrices específicas de calidad de los motores de búsqueda, siendo éste motivo para que Google emprenda <span>acciones manuales</span> para resolver esta infracción, perjudicando nuestro <span>SEO</span> o <span>posicionamiento en los resultados de los motores de búsqueda</span>. Una vez solucionado el problema, puedes <span>enviar tu sitio para que se vuelva a revisar</span>.',
-		]
-	}, {
-		title: 'Palabras clave de contenido para',
-		description: ['Las <span>Palabras clave de contenido</span> en la Consola de búsqueda de google o Search Console. Bajo el Índice Google, encontrará <span>palabras clave de contenido</span>. Esta herramienta le permite saber a Google de que trata su website y ayuda a Google a interpretar el contenido de su sitio.',
-			'Muestra las palabras clave que se utilizan en su sitio, su importancia expresadas en porcentaje y las URL`s en que las encontró. También muestra',
-			'las variaciones encontradas de esas palabras clave. '
-		]
-	}, {
-		title: 'Mejoras de HTML Search Console para SEO',
-		description: ['Para acceder a la página Mejoras de HTML, de <span>Search Console</span> sigue estos pasos:',
-			'1.En la página principal de Search Console, haz clic en un sitio.',
-			'2.En el menú de la parte izquierda, haz clic en Aspecto de la búsqueda y, a continuación, en Mejoras de HTML',
-			'',
-			'A continuación se indican los datos que se pueden incluir en esta página.',
-			'Errores del título: posibles errores en la etiqueta del título en tus páginas, como la falta de título en la página o títulos repetidos.',
-			'Errores de metadescripciones: posibles errores generados por la falta o duplicación de metadescripciones, o por otras metadescripciones problemáticas.',
-			'Contenido no indexable: páginas cuyo contenido no es indexable, como algunos archivos multimedia, vídeos o imágenes.',
-			'',
-			'Estos errores se refieren a contenido duplicado. El contenido duplicado es perjudicial para el <span>SEO</span> o para la <span>optimización para motores de búsqueda</span>.',
-		],
-	}, {
-		title: 'Googlebot no puede acceder a los archivos CSS y JS',
-		description: ['Ud. Llegó a este útil artículo porque seguramente recibió este mensaje "<span>Googlebot no puede acceder a los archivos CSS y JS</span> " en su cónsola de herramientas para webmaster de Google.'],
-	}, {
-		title: 'Como Probar el Archivo robots.txt',
-		description: ['Las herramientas para webmaster de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la importancia del archivo robots.txt para la seguridad y el <span>SEO</span>.',
-			'Puedes probar si el rastreador Googlebot-Video puede rastrear la url de un video que quieres bloquear en la búsqueda de videos de Google o si el rastreador Adsbot-Google  puede rastrear la url de un anuncio que quieres bloquearle.'
-		],
-	}, {
-		title: 'Porque Actualizar el Contenido Web',
-		description: ['Bueno, según la forma en que lo veo, si no actualiza su sitio web todos los días con contenido nuevo y único, usted puede estar muerto para los motores de búsqueda, o perder una gran cantidad de visitantes diarios a su sitio. Yo no soy la única que piensa así. Este es sin duda el consenso entre los principales webmaster y sobre todo seos, ellos saben que uno de los factores más importantes para convertir un site en un site de éxito está en la constante actualización del contenido, bien sea un cibersitio, blog, canal de vídeo, podcast, etc., con nuevo contenido tan a menudo como sea posible. Por lo menos todos los días y aún más si es posible. '],
-	}, {
-		title: 'Los Mejores Lugares en mi Página Web Para Insertar Palabras Clave',
-		description: ['¡Muy Bien! iremos directamente al punto. Esta es una lista de <span>los mejores lugares en mi página web para insertar palabras clave</span> y por tanto, mejorar mi <span>SEO</span>.'],
-	}, {
-		title: 'Como Construir Enlaces de Manera Correcta ',
-		description: ['Con las constantes actualizaciones de Google Penguin, Panda y la introducción de Colibrí, el <span>SEO</span> es más complejo que nunca. Las sanciones a algunos de los sitios web más populares del mundo, y la disminución constante de la prominencia de PageRank, los métodos tradicionales de <span>SEO</span>&nbsp;ya no tienen la misma importancia.&nbsp;Mientras que muchas técnicas ya son obsoletas, otras son temidas por su posible resultado negativo.&nbsp;La construcción de links es una de estas técnicas que se encuentra bajo la estricta vigilancia del pingüino.&nbsp;Sin embargo, esto debe ser visto como una oportunidad y no una amenaza, debido a que sigue siendo una de las formas más importantes y eficaces para clasificar su sitio web mejor.&nbsp;Si se realiza correctamente, puede ser una excelente manera de obtener una ventaja competitiva sobre los demás sitios web.&nbsp;Aquí hay algunas consejos para webmasters y expertos de <span>SEO:</span>'],
-	}, {
-		title: 'Herramienta Libre Investigación de Palabras Clave de SEO ',
-		description: ['¿Alguna vez has escrito algo para publicarlo en línea y quiere que la gente sea capaz de encontrarlo?'],
 	}
 ]
 
 const PublicidadPago = () => {
+	useEffect(() => {
+		document.title = 'Publicidad Pago por Clic - Consultoria SEO';
+	  }, []);
 	return (
 		<Layouts>
 			<SeoWrapper>
@@ -78,7 +45,7 @@ const PublicidadPago = () => {
 								<BlogItem key={index} {...item} />
 							))}
 
-							<MoreArticles />
+							<ContactAuthorSection />
 						</Box>
 					</Grid>
 

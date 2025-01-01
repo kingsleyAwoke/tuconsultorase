@@ -1,67 +1,39 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs"
-import { MoreArticles } from "../components/moreArticles"
 import { PopularArticles } from "../components/popularArticles"
 import { BlogItem } from "../components/blogitem"
+import ContactAuthorSection from "../components/ContactAuthorSection"
 
 const blogSeoData: BlogData[] = [
 	{
-		title: 'Páginas con Texto Autogenerado',
+		title: 'Como la Consultoria Seo Aumenta la Eficacia de su sitio Web',
 		description: [
-			'¿Google toma medidas sobre páginas generadas automáticamente que no proporcionan valor añadido? La respuesta es sí. Sin embargo; Google no es perfecto y si ves ejemplos de contenido autogenerado que se encuentra en los resultados de búsqueda que no agregan valor, como las páginas de resultados, Google quiere que envíe un informe de spam.',
+			'En TuConsultora <strong>Seo</strong>, examinamos su sitio web, analizamos el tipo experiencia que su sitio ofrece a los usuarios, teniendo en cuenta la usabilidad y la experiencia de búsqueda en general. Evaluamos las técnicas de conversión que utiliza, para asegurar un embudo de conversión efectivo.',
+			'<br>Por último, nos aseguramos de que su sitio cumple con las directrices de los motores de búsqueda y técnicas de optimización recomendadas, mientras investigamos a fondo la competencia de su industria. La formulación de una estrategia integral de contenido y la aplicación de nuestras probadas técnicas de marketing de contenidos para aumentar la visibilidad y la marca de su sitio web son una parte importante de este proceso.',
+			'Analizando todos estos aspectos juntos y le presentamos un plan de acción integral, diseñado para ayudarle a llevar su negocio al siguiente nivel - una alta clasificación para los términos de búsqueda preferidos y la conversión de visitantes en clientes.',
+			'<h2>Mejorar la visibilidad del Search Engine y las tasas de conversión</h2>',
+			'Todo el trabajo duro que has puesto en tratar de mejorar sus rankings en los motores de búsqueda y su tasa de conversión ¿ha dado los resultados que usted esperaba?',
+			'<ul><li>¿Están los clientes potenciales encontrando su sitio web o tienda de comercio electrónico con facilidad?</li><li>¿Podría ser que los clientes potenciales no pueden siquiera saben que existe su sitio?</li><li>¿Están los términos de búsqueda específicos altamente posicionados en los resultados de búsqueda?</li><li>¿Atrae su sitio web actualmente a un gran número de visitantes diarios y mantener una alta tasa de conversión?</li></ul>mantener una alta tasa de conversión?</li></ul>',
+			'Graduaciones más altas son importantes para generar tráfico de búsqueda orgánica, pero no son suficientes para mejorar sus ingresos de ventas en línea.',
+			'<h2>Alto Ranking y Conversiones</h2>',
+			'Tener un hermoso sitio web y lograr una excelente clasificación en los motor de búsqueda puede aumentar el tráfico dirigido a su sitio web, pero con el fin de proporcionar algún beneficio en el balance final, su tasa de conversión debe ser optimizado. ¿Su sitio web pertenecen a esta categoría?',
+			'<br>Algunos webmasters e incluso algunos <strong>SEO</strong>s (especialistas optimizadores de motores de búsqueda) creen que su trabajo se realiza una vez que han logrado altas graduaciones para las palabras clave específicas. A partir de ese momento en adelante, ellos pueden sentir que el rendimiento general del sitio es responsabilidad de otra persona.',
+			'<br>Los consultores o especialistas <strong>SEO</strong>, no estamos satisfechos hasta que nuestros clientes están alineando así, con un tráfico muy dirigido y un proceso de conversión efectivo para maximizar los ingresos de su sitio. Alto tráfico de visitantes que buscan precisamente lo que su sitio ofrece es la única manera de lograr esto.',
+			'<br>Nuestro trabajo es comprender tanto cómo los usuarios interactúan con los sitios web y motores de búsqueda como lo que se requiere para indexar y clasificar su sitio web con eficacia. Como una <strong> compañía de SEO ético</strong>, sentimos que es nuestra responsabilidad.',
+			'<br>Estela Silva</Link> hoy para una propuesta que describe todas las opciones disponibles para mejorar el rendimiento de su sitio y conseguir las primeras posiciones del motor de búsqueda por delante de su competencia, y aumentar su tasa de conversión!'
 		]
-	}, {
-		title: 'Como identificar y diagnosticar un sitio pirateado',
-		description: [
-			'La importancia de <span>identificar y diagnosticar un sitio pirateado</span> se traduce en pérdida de visitas, clientes y violación de directrices específicas de calidad de los motores de búsqueda, siendo éste motivo para que Google emprenda <span>acciones manuales</span> para resolver esta infracción, perjudicando nuestro <span>SEO</span> o <span>posicionamiento en los resultados de los motores de búsqueda</span>. Una vez solucionado el problema, puedes <span>enviar tu sitio para que se vuelva a revisar</span>.',
-		]
-	}, {
-		title: 'Palabras clave de contenido para',
-		description: ['Las <span>Palabras clave de contenido</span> en la Consola de búsqueda de google o Search Console. Bajo el Índice Google, encontrará <span>palabras clave de contenido</span>. Esta herramienta le permite saber a Google de que trata su website y ayuda a Google a interpretar el contenido de su sitio.',
-			'Muestra las palabras clave que se utilizan en su sitio, su importancia expresadas en porcentaje y las URL`s en que las encontró. También muestra',
-			'las variaciones encontradas de esas palabras clave. '
-		]
-	}, {
-		title: 'Mejoras de HTML Search Console para SEO',
-		description: ['Para acceder a la página Mejoras de HTML, de <span>Search Console</span> sigue estos pasos:',
-			'1.En la página principal de Search Console, haz clic en un sitio.',
-			'2.En el menú de la parte izquierda, haz clic en Aspecto de la búsqueda y, a continuación, en Mejoras de HTML',
-			'',
-			'A continuación se indican los datos que se pueden incluir en esta página.',
-			'Errores del título: posibles errores en la etiqueta del título en tus páginas, como la falta de título en la página o títulos repetidos.',
-			'Errores de metadescripciones: posibles errores generados por la falta o duplicación de metadescripciones, o por otras metadescripciones problemáticas.',
-			'Contenido no indexable: páginas cuyo contenido no es indexable, como algunos archivos multimedia, vídeos o imágenes.',
-			'',
-			'Estos errores se refieren a contenido duplicado. El contenido duplicado es perjudicial para el <span>SEO</span> o para la <span>optimización para motores de búsqueda</span>.',
-		],
-	}, {
-		title: 'Googlebot no puede acceder a los archivos CSS y JS',
-		description: ['Ud. Llegó a este útil artículo porque seguramente recibió este mensaje "<span>Googlebot no puede acceder a los archivos CSS y JS</span> " en su cónsola de herramientas para webmaster de Google.'],
-	}, {
-		title: 'Como Probar el Archivo robots.txt',
-		description: ['Las herramientas para webmaster de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la importancia del archivo robots.txt para la seguridad y el <span>SEO</span>.',
-			'Puedes probar si el rastreador Googlebot-Video puede rastrear la url de un video que quieres bloquear en la búsqueda de videos de Google o si el rastreador Adsbot-Google  puede rastrear la url de un anuncio que quieres bloquearle.'
-		],
-	}, {
-		title: 'Porque Actualizar el Contenido Web',
-		description: ['Bueno, según la forma en que lo veo, si no actualiza su sitio web todos los días con contenido nuevo y único, usted puede estar muerto para los motores de búsqueda, o perder una gran cantidad de visitantes diarios a su sitio. Yo no soy la única que piensa así. Este es sin duda el consenso entre los principales webmaster y sobre todo seos, ellos saben que uno de los factores más importantes para convertir un site en un site de éxito está en la constante actualización del contenido, bien sea un cibersitio, blog, canal de vídeo, podcast, etc., con nuevo contenido tan a menudo como sea posible. Por lo menos todos los días y aún más si es posible. '],
-	}, {
-		title: 'Los Mejores Lugares en mi Página Web Para Insertar Palabras Clave',
-		description: ['¡Muy Bien! iremos directamente al punto. Esta es una lista de <span>los mejores lugares en mi página web para insertar palabras clave</span> y por tanto, mejorar mi <span>SEO</span>.'],
-	}, {
-		title: 'Como Construir Enlaces de Manera Correcta ',
-		description: ['Con las constantes actualizaciones de Google Penguin, Panda y la introducción de Colibrí, el <span>SEO</span> es más complejo que nunca. Las sanciones a algunos de los sitios web más populares del mundo, y la disminución constante de la prominencia de PageRank, los métodos tradicionales de <span>SEO</span>&nbsp;ya no tienen la misma importancia.&nbsp;Mientras que muchas técnicas ya son obsoletas, otras son temidas por su posible resultado negativo.&nbsp;La construcción de links es una de estas técnicas que se encuentra bajo la estricta vigilancia del pingüino.&nbsp;Sin embargo, esto debe ser visto como una oportunidad y no una amenaza, debido a que sigue siendo una de las formas más importantes y eficaces para clasificar su sitio web mejor.&nbsp;Si se realiza correctamente, puede ser una excelente manera de obtener una ventaja competitiva sobre los demás sitios web.&nbsp;Aquí hay algunas consejos para webmasters y expertos de <span>SEO:</span>'],
-	}, {
-		title: 'Herramienta Libre Investigación de Palabras Clave de SEO ',
-		description: ['¿Alguna vez has escrito algo para publicarlo en línea y quiere que la gente sea capaz de encontrarlo?'],
 	}
 ]
 
 const Consultoria = () => {
+	useEffect(() => {
+		document.title = 'Consultoria Seo - Consultoria SEO';
+	  }, []);
 	return (
 		<Layouts>
 			<SeoWrapper>
@@ -78,7 +50,7 @@ const Consultoria = () => {
 								<BlogItem key={index} {...item} />
 							))}
 
-							<MoreArticles />
+							<ContactAuthorSection />
 						</Box>
 					</Grid>
 

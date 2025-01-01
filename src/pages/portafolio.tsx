@@ -35,7 +35,7 @@ const portafolioData: PortafolioData[] = [
 	}
 ]
 
-const BlogItem: React.FC<PortafolioData> = ({ title, image, description }) => {
+const PortafolioData: React.FC<PortafolioData> = ({ title, image, description }) => {
     const handleClick = () => {
         alert('Learn More clicked!');
     };
@@ -70,7 +70,7 @@ const Portafolio = () => {
 					<Grid item xs={12} md={6}>
 						<Box display="flex" flexDirection="column" gap={2}>
 							{portafolioData.map((item, index) => (
-								<BlogItem key={index} {...item} />
+								<PortafolioData key={index} {...item} />
 							))}
 
 							<ContactAuthorSection />

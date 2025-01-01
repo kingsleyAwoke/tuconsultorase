@@ -1,67 +1,49 @@
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
 import { Extra } from "../components/extra"
 import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs"
-import { MoreArticles } from "../components/moreArticles"
 import { PopularArticles } from "../components/popularArticles"
 import { BlogItem } from "../components/blogitem"
+import ContactAuthorSection from "../components/ContactAuthorSection"
 
 const blogSeoData: BlogData[] = [
 	{
-		title: 'Páginas con Texto Autogenerado',
+		title: 'Limpieza sitio hackeado',
 		description: [
-			'¿Google toma medidas sobre páginas generadas automáticamente que no proporcionan valor añadido? La respuesta es sí. Sin embargo; Google no es perfecto y si ves ejemplos de contenido autogenerado que se encuentra en los resultados de búsqueda que no agregan valor, como las páginas de resultados, Google quiere que envíe un informe de spam.',
+			'Joomla sitio web hackeado! Limpieza de un sitio web hackeado',
+			'<br>El equipo de expertos en <strong>seguridad</strong> de tuconsultoraseo limpia su website hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitioweb web Joomla, discretamente. Además de la limpieza de su cibersitio hackeado, lo aseguramos contra hackers futuros - y <strong>a diferencia de cualquier otra persona que opera en el ámbito de la seguridad de Joomla, garantizamos nuestro trabajo</strong>',
+		 	'<h2>Ayuda - sitio web Joomla hackeado</h2>',
+			'Tenemos una amplia gama de experiencia en lo que respecta a la solución de sitios hackeados. Si su <strong>website</strong><strong>Joomla ha sido hackeado entonces usted necesita nuestra ayuda. </strong>Ofrecemos tres servicios principales para la recuperación de un web hackeada:',
+			'<br>La limpieza de un site Joomla hackeado in-situ',
+			'<br>Limpieza completa con reconstrucción de los archivos del sitioweb',
+			'<h2>La limpieza de un sitio Joomla hackeado y la mejora de la <strong>seguridad</strong><h2>',
+			'Por desgracia, es muy común encontrar que sitiosweb web Joomla hackeados son operados por usuarios que por cualquier razón no tienen copias de <strong>seguridad </strong>viables disponibles. Existen dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de los archivos de forma nueva y limpia.',
+			'<h2>Joomla Hacked - Sitioweb Hacked</h2>',
+			'<h3>Método 1: Limpieza de los archivos de hackers de un sitioweb Joomla hackeado y endurecer la <strong>seguridad</strong></h3>',
+			'La limpieza de Joomla después que su website ha sido hackeado implica la eliminación de código o archivos que no pertenecen a los archivos y carpetas de Joomla. Los archivos que han sido manipulados serán reemplazados por código limpio, nuevo, es un proceso de puesta al día de archivos. Esto requiere el escaneo automatizado y revisión meticulosa. Si bien este es el más rápido de los dos métodos es algo menos completo que el más completo "limpia re-generaciócompleta."',
+			'<h4>Escanear Joomla Para Hacker Archivos</h4>',
+			'<br>Joomla se construye a partir de cientos de carpetas que contienen miles de archivos. Todo el mundo ha instalado algunas de las miles de extensiones Joomla disponibles. Algunos cibersitios han modificado archivos del núcleo de Joomla, esto es una pesadilla cuando se trata de la limpieza de sitios web Joomla después de un incidente de hacking, saber lo que se necesita para mantener el sitio funcionando es una gran habilidad. Cuando vea los informes de sitios Joomla siendo hackeado una y otra vez - es invariablemente debido a los archivos que los hackers dejaron atrás, dejando puertas traseras para futuros ataques de hackers.',
+			'<h4>La forma en que limpiamos tu Joomla</h4>',
+			'<ul><li>Vamos a limpiar los archivos de hackers a finales de la próxima jornada de trabajo</li><li>Si los archivos de registro están disponibles vamos a trazar el vector inicial por el cual fue comprometido el website- por lo general un componente obsoleto - y vamos a actualizar el componente y el propio Joomla, si es necesario</li><li>Vamos a instalar nuestra propia protección anti hackers que aumente enormemente la <strong>seguridad</strong>del sitioweb</li></ul>',
+			'<h3>Método 2: Más reelaboración en profundidad del sitio de Joomla para reforzar la <strong>seguridad</strong></h3>',
+			'Este servicio está dirigido a los clientes que han hecho extensas personalizaciones de archivos del núcleo de Joomla. Nuestro servicio "limpieza de un website Joomla hackeado" estándar in situ por lo general incluye sobrescribir los archivos de Joomla con una copia limpia de Joomla. Para los clientes que han hecho extensas personalizaciones esto puede ser un problema - ya que el proceso de edición de los archivos principales está mal visto, entendemos plenamente que a veces las necesidades de negocio anulan las "mejores prácticas". A veces sólo tienes que conseguir el resultado final deseado ya que es el productivo.',
+			'<br>En estas circunstancias, la obtención de un website Joomla funcional y limpio, implica mucho más trabajo. Tenemos que comparar sus archivos con los archivos "limpios" y asegurarnos de que sus ediciones están presentes, pero que un hacker no ha insertado algunas ediciones propias. Afortunadamente somos muy buenos en lo que hacemos y por lo que a pesar de que es una carga de trabajo adicional importante, hemos logrado mantener abajo las implicaciones de costos adicionales a un mínimo. Creemos que esta cuota representa una excelente relación calidad-precio.',
+			'<h2>Nuestra garantía Joomla <strong>Seguridad</strong></h2>',
+			'No somos comerciantes de entrar y salir - no nos limitamos a tomar el dinero y correr.',
+			'<br>Después de aproximadamente siete días, comprobamos su cibersitio web de nuevo - y de nuevo después de unos treinta días.',
+			'<br>Si por alguna razón su web se vuelve a comprometer en este plazo, vamos a limpiar su website Joomla hackeado de forma gratuita. No sólo eso, sino que su garantía de 30 días comienza de nuevo.',
+			'<br>Podemos ofrecer esta garantía porque somos buenos en lo que hacemos. Sabemos que las probabilidades de una recurrencia de su problema son pocas - y que si algo sale mal merece ser protegido de nuevo. Si usted está pensando en usar uno de nuestros competidores pregúnteles si ofrecen una garantía similar, y si no lo hacen, pregúntese por qué no.'
 		]
-	}, {
-		title: 'Como identificar y diagnosticar un sitio pirateado',
-		description: [
-			'La importancia de <span>identificar y diagnosticar un sitio pirateado</span> se traduce en pérdida de visitas, clientes y violación de directrices específicas de calidad de los motores de búsqueda, siendo éste motivo para que Google emprenda <span>acciones manuales</span> para resolver esta infracción, perjudicando nuestro <span>SEO</span> o <span>posicionamiento en los resultados de los motores de búsqueda</span>. Una vez solucionado el problema, puedes <span>enviar tu sitio para que se vuelva a revisar</span>.',
-		]
-	}, {
-		title: 'Palabras clave de contenido para',
-		description: ['Las <span>Palabras clave de contenido</span> en la Consola de búsqueda de google o Search Console. Bajo el Índice Google, encontrará <span>palabras clave de contenido</span>. Esta herramienta le permite saber a Google de que trata su website y ayuda a Google a interpretar el contenido de su sitio.',
-			'Muestra las palabras clave que se utilizan en su sitio, su importancia expresadas en porcentaje y las URL`s en que las encontró. También muestra',
-			'las variaciones encontradas de esas palabras clave. '
-		]
-	}, {
-		title: 'Mejoras de HTML Search Console para SEO',
-		description: ['Para acceder a la página Mejoras de HTML, de <span>Search Console</span> sigue estos pasos:',
-			'1.En la página principal de Search Console, haz clic en un sitio.',
-			'2.En el menú de la parte izquierda, haz clic en Aspecto de la búsqueda y, a continuación, en Mejoras de HTML',
-			'',
-			'A continuación se indican los datos que se pueden incluir en esta página.',
-			'Errores del título: posibles errores en la etiqueta del título en tus páginas, como la falta de título en la página o títulos repetidos.',
-			'Errores de metadescripciones: posibles errores generados por la falta o duplicación de metadescripciones, o por otras metadescripciones problemáticas.',
-			'Contenido no indexable: páginas cuyo contenido no es indexable, como algunos archivos multimedia, vídeos o imágenes.',
-			'',
-			'Estos errores se refieren a contenido duplicado. El contenido duplicado es perjudicial para el <span>SEO</span> o para la <span>optimización para motores de búsqueda</span>.',
-		],
-	}, {
-		title: 'Googlebot no puede acceder a los archivos CSS y JS',
-		description: ['Ud. Llegó a este útil artículo porque seguramente recibió este mensaje "<span>Googlebot no puede acceder a los archivos CSS y JS</span> " en su cónsola de herramientas para webmaster de Google.'],
-	}, {
-		title: 'Como Probar el Archivo robots.txt',
-		description: ['Las herramientas para webmaster de Google cuenta con una función que permite probar si el archivo robots.txt bloquea el acceso de los rastreadores web de Google a URL concretas del sitio debido a la importancia del archivo robots.txt para la seguridad y el <span>SEO</span>.',
-			'Puedes probar si el rastreador Googlebot-Video puede rastrear la url de un video que quieres bloquear en la búsqueda de videos de Google o si el rastreador Adsbot-Google  puede rastrear la url de un anuncio que quieres bloquearle.'
-		],
-	}, {
-		title: 'Porque Actualizar el Contenido Web',
-		description: ['Bueno, según la forma en que lo veo, si no actualiza su sitio web todos los días con contenido nuevo y único, usted puede estar muerto para los motores de búsqueda, o perder una gran cantidad de visitantes diarios a su sitio. Yo no soy la única que piensa así. Este es sin duda el consenso entre los principales webmaster y sobre todo seos, ellos saben que uno de los factores más importantes para convertir un site en un site de éxito está en la constante actualización del contenido, bien sea un cibersitio, blog, canal de vídeo, podcast, etc., con nuevo contenido tan a menudo como sea posible. Por lo menos todos los días y aún más si es posible. '],
-	}, {
-		title: 'Los Mejores Lugares en mi Página Web Para Insertar Palabras Clave',
-		description: ['¡Muy Bien! iremos directamente al punto. Esta es una lista de <span>los mejores lugares en mi página web para insertar palabras clave</span> y por tanto, mejorar mi <span>SEO</span>.'],
-	}, {
-		title: 'Como Construir Enlaces de Manera Correcta ',
-		description: ['Con las constantes actualizaciones de Google Penguin, Panda y la introducción de Colibrí, el <span>SEO</span> es más complejo que nunca. Las sanciones a algunos de los sitios web más populares del mundo, y la disminución constante de la prominencia de PageRank, los métodos tradicionales de <span>SEO</span>&nbsp;ya no tienen la misma importancia.&nbsp;Mientras que muchas técnicas ya son obsoletas, otras son temidas por su posible resultado negativo.&nbsp;La construcción de links es una de estas técnicas que se encuentra bajo la estricta vigilancia del pingüino.&nbsp;Sin embargo, esto debe ser visto como una oportunidad y no una amenaza, debido a que sigue siendo una de las formas más importantes y eficaces para clasificar su sitio web mejor.&nbsp;Si se realiza correctamente, puede ser una excelente manera de obtener una ventaja competitiva sobre los demás sitios web.&nbsp;Aquí hay algunas consejos para webmasters y expertos de <span>SEO:</span>'],
-	}, {
-		title: 'Herramienta Libre Investigación de Palabras Clave de SEO ',
-		description: ['¿Alguna vez has escrito algo para publicarlo en línea y quiere que la gente sea capaz de encontrarlo?'],
 	}
 ]
 
 const Limpieza = () => {
+	useEffect(() => {
+		document.title = 'Limpieza sitio hackeado - Consultoria SEO';
+	  }, []);
 	return (
 		<Layouts>
 			<SeoWrapper>
@@ -78,7 +60,7 @@ const Limpieza = () => {
 								<BlogItem key={index} {...item} />
 							))}
 
-							<MoreArticles />
+							<ContactAuthorSection />
 						</Box>
 					</Grid>
 
