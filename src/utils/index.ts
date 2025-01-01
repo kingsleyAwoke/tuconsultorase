@@ -1,5 +1,3 @@
-import React from "react";
-
 interface saveToFileProps {
 	jsonData: any
 	fileName: string

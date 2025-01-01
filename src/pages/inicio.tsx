@@ -171,7 +171,7 @@ const BlogFeatured = () => {
 					Especialistas Joomla en <span>diseño de paginas web</span>, desarrollo de sitios web específicos a medida, para las necesidades de nuestros clientes. Nuestros <span>especialistas Joomla</span> en diseño web, se encargarán de abrir un segundo canal de marketing a su negocio, vea nuestro portafolio de <span>diseño web</span>. Totalmente compatible con todos los estándares de <span>diseño web</span>, nuestros sitios web diseñados a medida funcionan exactamente como sea necesario debido a nuestros estándares de desarrollo y plataforma extensible de Joomla.
 				</Typography>
 
-				<CustomActiveLink to="/">
+				<CustomActiveLink to="/obi">
 					<Typography variant="h5">
 						Leer más: Diseño de paginas web y seo. Acelerar sitio Joomla
 					</Typography>
