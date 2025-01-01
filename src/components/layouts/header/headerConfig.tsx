@@ -30,7 +30,7 @@ const headerConfig: HeaderConfig[] = [
 			},
 			{
 				label: 'diseño',
-				href: '/diseño',
+				href: '/diseno',
 				isChildren: false,
 			}
 		]

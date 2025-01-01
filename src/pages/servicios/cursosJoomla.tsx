@@ -15,7 +15,7 @@ const blogSeoData: BlogData[] = [
 		description: [
 			'Nuestro plan de formaci &oacute;n de este excelente CMS lo proporcionamos de la siguiente manera:',
 			'<ul><li>One to one de <strong>formacion joomla</strong> - a trav &eacute;s de Skype.</li><li>Cursos presenciales de <strong>formacion Joomla</strong>(en su lugar de trabajo)</li><li>Cursos de <strong>formacion Joomla </strong>fuera de sitio (hoteles, centros de conferencias).</li></ul>',
-			 '<h2>Paquetes de Capacitaci &oacute;n CMS Corporativos</h2>',
+			 '<h2 style="color: #428bca;">Paquetes de Capacitaci &oacute;n CMS Corporativos</h2>',
 			'Hemos preparado una serie de materiales de informaci &oacute;n que explican m &aacute;s acerca de lo que debe buscar en un sistema de gesti &oacute;n de contenidos y por qu &eacute;se recomienda el sistema de gesti &oacute;n de contenidos Joomla para nuestros clientes.',
 		]
 	},{

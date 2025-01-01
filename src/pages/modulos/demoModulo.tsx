@@ -12,7 +12,7 @@ const blogSeoData: BlogData[] = [
 	{
 		title: 'Demo modulo jumbotron',
 		description: [
-			'<h1>Portal Jumbotron</h1>',
+			'<h1 style="color: #428bca;">Portal Jumbotron</h1>',
 			'<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla sit amet enim ut hendrerit. Praesent rutrum dui a turpis porttitor mollis. In eu scelerisque ipsum',
 			'<br>Demo Modulo Jumbotron Bootstrap para joomla',
 			'<br><br>Descargar Mod_jumbotron'

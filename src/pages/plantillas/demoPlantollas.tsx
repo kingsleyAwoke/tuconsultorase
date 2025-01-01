@@ -13,7 +13,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo A1',
         image: TopA1,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaCcMastercard />} />
     },
@@ -21,7 +21,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo B1',
         image: TopA2,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaEnvelope />} />
     },
@@ -29,7 +29,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo C1',
         image: TopA3,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaLaptop />} />
     },
@@ -37,7 +37,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo A2',
         image: TopB1,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaTwitter />} />
     },
@@ -45,7 +45,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo B2',
         image: TopB2,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaGoogle />} />
     },
@@ -53,7 +53,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo C2',
         image: TopB3,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaRocket />} />
     },
@@ -61,7 +61,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo A3',
         image: TopC1,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaStar />} />
     },
@@ -69,7 +69,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo B3',
         image: TopC2,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaRocket />} />
     },
@@ -77,7 +77,7 @@ const PlantillasDemoData: PlantillasDemoData[] = [
         title: 'Articulo C3',
         image: TopC3,
         description: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         ],
         btn: <BtnDemoplantillas icon={<FaStar />} />
     }
@@ -102,7 +102,11 @@ const DemoPlantillas = () => {
                 <Grid container spacing={2}>
                     {PlantillasDemoData.map((item, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index}>
-                            <DemoItem {...item} />
+                            <DemoItem {...item} btn={
+                                <Box>
+                                    {item.btn}
+                                </Box>
+                            } />
                         </Grid>
                     ))}
                 </Grid>

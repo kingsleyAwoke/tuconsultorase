@@ -10,8 +10,6 @@ import blogImage6 from './blog/blog-6.png';
 import blogImage7 from './blog/blog-7.jpg';
 import blogImage8 from './blog/blog-8.jpg';
 
-import SEOImagen from './seoimagen.png';
-
 import Biker from './demoPlantillas/5_.jpg';
 import TopA1 from './demoPlantillas/topc-2.jpg';
 import TopA2 from './demoPlantillas/Articulo B1.jpg';
@@ -23,14 +21,16 @@ import TopC1 from './demoPlantillas/topa-3.jpg';
 import TopC2 from './demoPlantillas/topb3.jpg';
 import TopC3 from './demoPlantillas/topc-3.jpg';
 
-
+// PORTIFOLIO
 import Image1 from './1b-koinsurance-com-628x353.jpg';
 import Image2 from './4e-dressestime-com-628x353.jpg';
 import Image3 from './8b-futurefit-co-uk-628x353.jpg';
 
+// CONTACTNOS
 import contactenos1 from './evaluacion gratuita seo.png';
 import contactenos2 from './contacto.png';
 
+// PLANTILLAS
 import plantillas1 from './demoPlantillas/posiciones plantilla boostrap atomicai.jpg';
 import plantillas2 from './demoPlantillas/template_preview.png'
 
@@ -39,8 +39,6 @@ export { plantillas1, plantillas2 }
 export { contactenos1, contactenos2 }
 
 export { Image1, Image2, Image3 }
-
-export { SEOImagen }
 
 export {
 	heroBg,

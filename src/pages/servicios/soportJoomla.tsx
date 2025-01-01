@@ -14,8 +14,8 @@ const blogSeoData: BlogData[] = [
 		title: 'Soporte Joomla',
 		description: [
 			'Nuestra ayuda y servicios de apoyo est&aacute;n disponibles en dos formas:',
-			'<br><strong>Soporte Joomla 1</strong>: Servicios de apoyo contratado: est&aacute;n dise&ntilde;ados para permanentes relaciones con los clientes a largo plazo. No somos una &quot;entrada y salida r&aacute;pida&quot; de la empresa, preferimos estar con usted para el largo plazo, y para reflejar esto, nuestros servicios contratados se ofrece con un masivo 33% de descuento.',
-			'<br><strong>Soporte Joomla 2: </strong>Ayuda bajo demanda:estos servicios son generalmente m&aacute;s&uacute;tiles para los nuevos clientes que tienen un problema grave que requiere asistencia de localizaci&oacute;n de fallas inmediata.'
+			'<br><strong style="color: #428bca;">Soporte Joomla 1</strong>: Servicios de apoyo contratado: est&aacute;n dise&ntilde;ados para permanentes relaciones con los clientes a largo plazo. No somos una &quot;entrada y salida r&aacute;pida&quot; de la empresa, preferimos estar con usted para el largo plazo, y para reflejar esto, nuestros servicios contratados se ofrece con un masivo 33% de descuento.',
+			'<br><strong style="color: #428bca;">Soporte Joomla 2: </strong>Ayuda bajo demanda:estos servicios son generalmente m&aacute;s&uacute;tiles para los nuevos clientes que tienen un problema grave que requiere asistencia de localizaci&oacute;n de fallas inmediata.'
 		]
 	}
 ]

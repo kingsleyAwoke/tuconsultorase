@@ -8,6 +8,7 @@ import { CustomBreadcrumbs } from "../components/breadcrumbs";
 import { PopularArticles } from "../components/popularArticles";
 import { BlogItem } from "../components/blogitem";
 import ContactAuthorSection from "../components/ContactAuthorSection";
+import SEOimagen from '../../assets/image/utilidade/seoimagen.png';
 
 
 const UtilidadesSEOImagenData: BlogData[] = [
@@ -15,8 +16,9 @@ const UtilidadesSEOImagenData: BlogData[] = [
         title: 'herramienta seo imagen',
         description: [
             '"La directiva de Google dice:"',
-            '<ul><li>&quot;Intenta utilizar texto en lugar de imágenes para mostrar nombres, contenido o enlaces importantes. El rastreador de Google no reconoce el texto integrado en imágenes. Si debes utilizar imágenes para contenido textual, considera la posibilidad de utilizar el atributo "ALT" para incluir algunas palabras de texto descriptivo&quot;</li><li>Asegúrate de que los elementos &lt;title &gt;y los atributos "alt" de tu sitio sean descriptivos y precisos</li></ul>',
-            'Esta herramienta analiza que tan optimizadas están las imágenes de una página web. Usted ingresa la<strong>url del dominio</strong> a analizar y pulsa enter o el botón <strong>&quot;analizar imagenes&quot;</strong> y la herramienta le entregará información importante  acerca de las imágenes de su página web.',
+            '<ul><li style="color: #4cb2cf;">&quot;Intenta utilizar texto en lugar de imágenes para mostrar nombres, contenido o enlaces importantes. El rastreador de Google no reconoce el texto integrado en imágenes. Si debes utilizar imágenes para contenido textual, considera la posibilidad de utilizar el atributo "ALT" para incluir algunas palabras de texto descriptivo&quot;</li><li style="color: #4cb2cf;">Asegúrate de que los elementos &lt;title &gt;y los atributos "alt" de tu sitio sean descriptivos y precisos</li></ul>',
+            `<img src="${SEOimagen}" alt="Fundamentos de Diseño Web" height="80" width="150";"/>`,
+            'Esta herramienta analiza que tan optimizadas están las imágenes de una página web. Usted ingresa la<strong> url del dominio</strong> a analizar y pulsa enter o el botón <strong>&quot;analizar imagenes&quot;</strong> y la herramienta le entregará información importante  acerca de las imágenes de su página web.',
             '<ul><li>nombre de la imagen</li><li>Atributo alt texto de la imagen (o la advertencia de que no existe ningún texto alternativo)</li><li>dimensiones de la imagen (o la advertencia de que no existen las dimensiones de la imágen)</li><li>la propia imagen se mostrará si es posible a través de un enlace a la misma.</li></ul>',            
             'Estas son las principales cosas que Google recomienda para las imágenes y esta herramienta permite al usuario saber qué tan bien lo está haciendo.',
             '<strong>Lo que esta herramienta puede ayudar a determinar</strong>',
