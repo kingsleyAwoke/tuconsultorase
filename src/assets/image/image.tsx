@@ -32,7 +32,20 @@ import contactenos2 from './contacto.png';
 
 // PLANTILLAS
 import plantillas1 from './demoPlantillas/posiciones plantilla boostrap atomicai.jpg';
-import plantillas2 from './demoPlantillas/template_preview.png'
+import plantillas2 from './demoPlantillas/template_preview.png';
+
+// Popular Articule
+import Paso1 from './popularArticules/paso1.png';
+import Paso2 from './popularArticules/paso2.png';
+import Paso3 from './popularArticules/paso3.png';
+import Por from './popularArticules/Por ultimo calculadora.png';
+
+export {
+	Paso1,
+	Paso2,
+	Paso3,
+	Por
+}
 
 export { plantillas1, plantillas2 }
 

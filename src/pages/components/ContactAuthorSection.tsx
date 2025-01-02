@@ -20,9 +20,9 @@ const ContactAuthorSection: React.FC = () => {
 };
 
 const SectionWrapper = styled(Box)(({ theme }) => ({
-    padding: '20px',
+    padding: '10px',
     backgroundColor: '#f1f1f1',
-    borderRadius: '8px',
+    borderRadius: '5px',
     marginBottom: '20px',
     boxShadow: '0 0 0 0.5px'
 }));
