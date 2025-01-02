@@ -11,7 +11,7 @@ import ContactAuthorSection from "../components/ContactAuthorSection"
 
 const blogSeoData: BlogData[] = [
 	{
-		title: '',
+		title: 'Enlaces negativos: Como afectan su sitio y su marca',
 		description: [
 			''
 		]
@@ -20,7 +20,7 @@ const blogSeoData: BlogData[] = [
 
 const Enlaces = () => {
 	useEffect(() => {
-		document.title = '';
+		document.title = 'Enlaces negativos: Como afectan su sitio y su marca - Consultoria SEO';
 	  }, []);
 	return (
 		<Layouts>

@@ -122,7 +122,7 @@ export const Routers = () => {
         <Route path='/Como-encontrar' element={<popularArticles.ComoEncontrar />} />
         <Route path='/como-construir' element={<popularArticles.ComoConstruir />} />
         <Route path='/inline-small' element={<popularArticles.InlineSmall />} />
-        <Route path='/como-quitar' element={<popularArticles.ComoQuitar />} />
+        <Route path='/como-quitra' element={<popularArticles.ComoQuitar />} />
         <Route path='/enlaces' element={<popularArticles.Enlaces />} />
         <Route path='/tutorial-seo' element={<popularArticles.TutorialSEO />} />
         <Route path='/como-agregar' element={<popularArticles.ComoAgregar />} />

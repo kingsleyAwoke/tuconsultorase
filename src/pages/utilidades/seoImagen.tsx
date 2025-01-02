@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { styled } from "@mui/material/styles";
 import { Grid, Box } from "@mui/material";
 
@@ -9,6 +9,7 @@ import { PopularArticles } from "../components/popularArticles";
 import { BlogItem } from "../components/blogitem";
 import ContactAuthorSection from "../components/ContactAuthorSection";
 import SEOimagen from '../../assets/image/utilidade/seoimagen.png';
+import { SearchForm } from "../components/searchForm";
 
 
 const UtilidadesSEOImagenData: BlogData[] = [
@@ -33,12 +34,6 @@ const UtilidadesSEOImagenData: BlogData[] = [
 ];
 
 const SeoImagen = () => {
-    const [text, setText] = useState('');
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        alert(`Analizando URL: ${text}`);
-    };
 
     useEffect(() => {
         document.title = 'seo imagen - Consultoria SEO';
@@ -59,40 +54,7 @@ const SeoImagen = () => {
                             {UtilidadesSEOImagenData.map((item, index) => (
                                 <BlogItem key={index} {...item} />
                             ))}
-                            <form  
-                                onSubmit={handleSubmit} 
-                                style={{
-                                    padding: '5px',
-                                    margin: '5px'
-                                }}
-                            >
-                                <input 
-                                    type="search"
-                                    maxLength={255} 
-                                    name="URL" 
-                                    value={text} 
-                                    onChange={(e) => setText(e.target.value)} 
-                                    id='search-box' 
-                                    style={{
-                                        padding: '1px 3px 3px 3px',
-                                        display: 'inline',
-                                        width: '100%',
-                                        marginBottom: '10px'
-                                    }}
-                                />
-                                <input 
-                                    type="submit" 
-                                    id='search-btn' 
-                                    name="comprobar" 
-                                    value="comprobar imagenes" 
-                                    style={{
-                                        border: 'solid 1px #806666',
-                                        padding: '3px 10px',
-                                        margin: '0 10px 0 0',
-                                        display: 'inline'
-                                    }}
-                                />
-                            </form>
+                            <SearchForm initialText="http://example.com" buttonText="Examinar esta url"/>
                             <ContactAuthorSection />
                         </Box>
                     </Grid>

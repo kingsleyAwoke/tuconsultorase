@@ -7,20 +7,23 @@ import { Layouts } from "../../components/layouts/layouts"
 import { CustomBreadcrumbs } from "../components/breadcrumbs";
 import { PopularArticles } from "../components/popularArticles"
 import { BlogItem } from "../components/blogitem"
-import ContactAuthorSection from "../components/ContactAuthorSection"
+import ContactAuthorSection from "../components/ContactAuthorSection";
+import Image from '../../assets/image/popularArticules/image.jpg';
 
 const blogSeoData: BlogData[] = [
 	{
-		title: '',
+		title: 'Causas de disminucion de visitas o trafico web',
 		description: [
-			''
+			'Es de vital importancia que antes de comprobar las causas de disminución de visitas Usted. sepa como recuperarse del efecto Google Panda ya que esta es una razón de pérdidas de visitas.',
+			'<br>Existen diversas causas o razones <strong> seo</strong> por las que un sitio o <strong>pagina web</strong>  puede perder visitas, conozca cuales son:',
+			`<br><img src=${Image} alt="Causas de disminucion de visitas o trafico web " title="Causas de disminucion de visitas o trafico web" style="max-width: 100%; height: auto; display: block" >`
 		]
 	}
 ]
 
 const Causesa = () => {
 	useEffect(() => {
-		document.title = '';
+		document.title = 'Causas de disminucion de visitas o trafico web - Consultoria SEO';
 	  }, []);
 	return (
 		<Layouts>

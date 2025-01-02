@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { styled } from "@mui/material/styles"
 import { Grid, Box } from "@mui/material"
 
@@ -8,6 +8,7 @@ import { CustomBreadcrumbs } from "../components/breadcrumbs"
 import { PopularArticles } from "../components/popularArticles"
 import { BlogItem } from "../components/blogitem"
 import ContactAuthorSection from "../components/ContactAuthorSection"
+import { SearchForm } from "../components/searchForm"
 
 const utilidadesComprobarData: BlogData[] = [
 	{
@@ -23,16 +24,9 @@ const utilidadesComprobarData: BlogData[] = [
 ]
 
 const Comprobar = () => {
-	const [text, setText] = useState('http://tuconsultoraseo.com');
-
 	useEffect(() => {
         document.title = 'Comprobar-redireccion - Consultoria SEO';
     }, []);
-
-	const handleSubmit = (e: React.FormEvent) => {
-		e.preventDefault();
-		alert(`Comprobar URL: ${text}`);
-	};
 	return (
 		<Layouts>
 			<ComprobarWrapper>
@@ -48,42 +42,7 @@ const Comprobar = () => {
 							{utilidadesComprobarData.map((item, index) => (
 								<BlogItem key={index} {...item} />
 							))}
-
-<form  
-                                onSubmit={handleSubmit} 
-                                style={{
-                                    padding: '5px',
-                                    margin: '5px'
-                                }}
-                            >
-                                <input 
-                                    type="search"
-                                    maxLength={255} 
-                                    name="URL" 
-                                    value={text} 
-                                    onChange={(e) => setText(e.target.value)} 
-                                    id='search-box' 
-                                    style={{
-                                        padding: '1px 3px 3px 3px',
-                                        display: 'inline',
-										width: '100%',
-										marginBottom: '10px'
-                                    }}
-                                />
-                                <input 
-                                    type="submit" 
-                                    id='search-btn' 
-                                    name="comprobar" 
-                                    value="¿apoya If-Modified?" 
-                                    style={{
-                                        border: 'solid 1px #806666',
-                                        padding: '3px 10px',
-                                        margin: '0 10px 0 0',
-                                        display: 'block'
-                                    }}
-                                />
-                            </form>
-
+							<SearchForm initialText="http://tuconsultoraseo.com" buttonText="¿apoya If-Modified?" />
 							<ContactAuthorSection />
 
 						</Box>
