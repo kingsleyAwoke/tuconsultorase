@@ -11,16 +11,16 @@ import ContactAuthorSection from "../components/ContactAuthorSection"
 
 const blogSeoData: BlogData[] = [
 	{
-		title: '',
+		title: 'Que caracter &iacute;sticas debe tener una contrase &ntilde;a para que sea segura en Joomla',
 		description: [
-			''
+			'<ul><li>debe ser de, al menos, 8 caracteres, siendo a partir de 12 lo correcto,</li><li>debe estar compuesta por letras (combinaci &oacute;n de may &uacute;sculas y min &uacute;sculas),</li><li>debe contener n &uacute;meros,</li><li>debe contener caracteres especiales permitidos, esto es $ &amp;/?</li><li>no deben ser palabras de diccionario,</li><li>no deben ser palabras que relacionen tu dominio,</li><li>no debe haber palabras que pertenezcan al nombre del dominio.</li></ul>'
 		]
 	}
 ]
 
 const QueCaracteristicas = () => {
 	useEffect(() => {
-		document.title = '';
+		document.title = 'Que características debe tener una contraseña para que sea segura en Joomla - Consultoria SEO';
 	  }, []);
 	return (
 		<Layouts>
