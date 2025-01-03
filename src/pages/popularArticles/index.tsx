@@ -46,14 +46,6 @@ import { PorDisminuya } from './porqueDisminuya';
 import { QueAspectos } from './queAspectos';
 
 
-
-
-// // READMORE LINKS //
-// export { LeeMas_Seguridad } from './LeeMas_Seguridad';
-// export { LeeMas_Consultoria } from './LeeMas_Consultoria';
-// export { LeeMas_Tiendas } from './LeeMas_Tiendas';
-// export { LeeMas_Desarrollo } from './LeeMas_Desarrollo';
-
 export { 
     Importancia,
     Donde,

@@ -20,7 +20,7 @@ const blogSeoData: BlogData[] = [
 
 const PorQue = () => {
 	useEffect(() => {
-		document.title = '';
+		document.title = 'Por que son malos los enlaces rotos - Consultoria SEO';
 	  }, []);
 	return (
 		<Layouts>
