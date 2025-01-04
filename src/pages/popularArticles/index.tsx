@@ -45,7 +45,6 @@ import { ComoCrearUn } from './comoCrearUn';
 import { PorDisminuya } from './porqueDisminuya';
 import { QueAspectos } from './queAspectos';
 
-
 export { 
     Importancia,
     Donde,
