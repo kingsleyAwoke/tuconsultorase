@@ -10,7 +10,6 @@ import { BlogItem } from "../components/blogitem";
 import ContactAuthorSection from "../components/ContactAuthorSection";
 import { Paso1, Paso2, Paso3, Por } from '../../assets/image/image';
 
-// Define BlogData type if not already defined
 interface BlogData {
     title: string;
     description: string[];
@@ -20,9 +19,17 @@ const blogSeoData: BlogData[] = [
     {
         title: 'Cómo construir un cotizador, calculadora o fórmula en Joomla',
         description: [
-            // Your description content...
             'En la siguiente página usted podrá construir su propio módulo calculadora para su sitio Joomla: http://andrewart.net/jcg/.  Ud. podrá crear calculadoras o cotizadores en línea sin tener conocimientos en PHP, CSS o HTML.',
-            // ... (rest of the content)
+            '<br>Es importante que entienda que usted sólo deberá generar su propio módulo personalizado que incluya los calculos que necesita con los parámetros adecuados, una vez haya creado el módulo, solo deberá probarlo, descargarlo e instalarlo en su sitio joomla.',
+            '<br>Para generar su módulo personalizado, solo deberá ingresar en la página http://andrewart.net/jcg y efectuar 3 sencillos pasos:',
+            `<br>Paso1:<br><img src=${Paso1} alt="Paso 1 del generador de módulo de calculadora para joomla" title="Paso 1 del generador de módulo de calculadora para joomla" width="480" height="114">`,
+            `<br>Paso2:<br><img src=${Paso2} alt="Paso 2 del generador de módulo de calculadora para joomla" title="Paso 2del generador de módulo de calculadora para joomla" width="473" height="149">`,
+            `<br>Paso3:<br><img src=${Paso3} alt="Paso 3 del generador de módulo de calculadora para joomla" title="Paso 3 del generador de módulo de calculadora para joomla" width="463" height="102">`,
+            '<br>Finalmente Ud. podrá probar el funcionamiento de su módulo, incluir un botón reset para limpiar los campos, darle un nombre a su módulo y si está satisfecho con el comportamiento del mismo lo podrá descargar.',
+            `<img src=${Por} alt="Probando y dando un nombre al módulo de calculadora para descargarlo" title="Probando y dando un nombre al módulo de calculadora para descargarlo" width="466" height="77">`,
+            '<br>Puede crear largas y complejas calculadoras, fórmulas o cotizadores en línea con muy pocos clics. También puede ver los módulos de demostración.',
+            '<br>El siguiente es un cotizador de tiendas on line utilizado el módulo generado con este magnífico modulo de calculadora:'
+            
         ]
     }
 ];

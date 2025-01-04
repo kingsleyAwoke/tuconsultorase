@@ -35,7 +35,7 @@ import { JoomlaContentido } from './jooomlaContentido';
 import { ComoProbar } from './comoProbar';
 import { TutorialComoCrear } from './tutorialComoCrear';
 import { PorQueMimiSition } from './porqueMimiSitio';
-import { ComoRecuperarse } from './comoRecuperarse';
+// import { ComoOptimizar } from './comoOptimizar';
 import { ImportancialPalabras } from './importanciaPalabras';
 import { ComoRecuperarseDel } from './comoRecuperarseDel';
 import { ProtejaSuSition } from './protejaSuSition';
@@ -83,7 +83,7 @@ export {
     ComoProbar,
     TutorialComoCrear,
     PorQueMimiSition,
-    ComoRecuperarse,
+    // ComoOptimizar,
     ImportancialPalabras,
     ComoRecuperarseDel,
     ProtejaSuSition,

@@ -27,7 +27,7 @@ const blogSeoData: BlogData[] = [
             'En esta parte te mostrar&eacute; c&oacute;mo utilizar el archivo htaccess.',
             '<h4>Archivos de &iacute;ndice de directorio personalizada</h4>',
             'El archivo <strong><em>index.php</em></strong> es el esqueleto de la <strong><em>p&aacute;gina web.</em></strong> Cada <strong>p&aacute;gina web</strong> que Joomla! entrega en el archivo  <strong><em>index.php</em></strong> una selecci&oacute;n de contenido insertado desde la base de datos. Por defecto, el archivo <em>index.html </em> se ejecutar&aacute; con prioridad, por lo que si usted tieneeste archivo en el directorio ra&iacute;z obtendr&aacute; una <strong>p&aacute;gina</strong> en blanco. Para solucionar este problema, agregue a htaccess las siguientes l&iacute;neas:',
-            '<ol style="background-color: #f1f1f1"><li>DirectoryIndex index.php index.html</li></ol>',
+            '<ol style="background-color: #f1f1f1;"><li>DirectoryIndex index.php index.html</li></ol>',
             '<h4>Ocultar y negar archivos</h4>',
             'A veces se desea ocultar o impedir el acceso a cualquier archivo en su carpeta Joomla! (por ejemplo, archivos xml)',
             '<ol style="background-color: #f1f1f1; box-shadow: 0 0 0 0.5px;" ><li>&lt;FIles ~ <span style=" color: blue">&quot;\.xml$&quot;</span>&gt;</li><li>Order allow deny,</li><li>Deny ffrom all</li><li>Satify all</li><li>&lt;/Files&gt;</li></ol>',

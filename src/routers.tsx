@@ -149,7 +149,7 @@ export const Routers = () => {
         <Route path='/como-probar-el' element={<popularArticles.ComoProbar />} />
         <Route path='/tutorial-como-crear' element={<popularArticles.TutorialComoCrear />} />
         <Route path='/porque-mi-sitio' element={<popularArticles.ProtejaSuSition />} />
-        <Route path='/como-recperarse' element={<popularArticles.ComoRecuperarse />} />
+        {/* <Route path='/como-optimizar' element={<popularArticles.ComoOptimizar/>} /> */}
         <Route path='/importancia-palabras' element={<popularArticles.ImportancialPalabras />} />
         <Route path='/como-recuperarse-del' element={<popularArticles.ComoRecuperarseDel />} />
         <Route path='/procedimientos' element={<popularArticles.Procedimientos />} />

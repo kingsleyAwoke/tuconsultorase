@@ -18,7 +18,7 @@ const blogSeoData: BlogData[] = [
 	}
 ]
 
-const ComoRecuperarse = () => {
+const ComoOptimizar = () => {
 	useEffect(() => {
 		document.title = '';
 	  }, []);
@@ -58,4 +58,4 @@ const SeoWrapper = styled(Box)({
 	flexDirection: 'column',
 })
 
-export { ComoRecuperarse }	
+export { ComoOptimizar }	
