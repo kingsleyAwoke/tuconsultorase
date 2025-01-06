@@ -38,7 +38,7 @@ const blogData: BlogData[] = [
 	{
 		title: 'Acelerar Joomla',
 		image: blogImage2,
-		description: ['¿Necesita ayuda para acelerar su sitio web? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como Google, Yahoo,etc.'],
+		description: ['¿Necesita ayuda para acelerar su sitio web? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como Google, Yahoo,etc. Leer mas <a href="https://www.joomla.org/" style="color: #2a6496; text-decoration: none">Joomla</a>'],
 		phoneNumber: '',
 		email: '',
 		Links: [],
@@ -84,7 +84,7 @@ const blogData: BlogData[] = [
 	{
 		title: 'Consultoria SEO',
 		image: blogImage5,
-		description: ['Somos especialistas o <span> consultores SEO</span>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso.'],
+		description: ['Somos especialistas o <span> consultores SEO</span>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. '],
 		phoneNumber: '',
 		email: '',
 		Links: [],
@@ -100,7 +100,7 @@ const blogData: BlogData[] = [
 	{
 		title: 'Formación Joomla',
 		image: blogImage7,
-		description: ['Tenemos 3 modalidades de cursos de este excelente gestor de contenidos. La formación abarca temas desde porqué se recomienda este gestor de contenidos, como instalarlo y otras preguntas esenciales. Todos nuestros cursos de formación de CMS son 100% personalizables.'],
+		description: ['Tenemos 3 modalidades de cursos de este excelente gestor de contenidos. La formación abarca temas desde porqué se recomienda este gestor de contenidos, como instalarlo y otras preguntas esenciales. Todos nuestros cursos de formación de CMS son 100% personalizables. Nuestros cursos también están disponibles en <a href="https://www.udemy.com/course/joomla-for-beginners-build-a-website-with-joomla-cms/" alt="Joomla for beginners" style="color: #2a6496; text-decoration: none">Udemy</a> de forma gratuita.'],
 		phoneNumber: '',
 		email: '',
 		Links: [],
@@ -168,7 +168,11 @@ const BlogFeatured = () => {
 				</Typography>
 
 				<Typography variant="h4">
-					Especialistas Joomla en <span>diseño de paginas web</span>, desarrollo de sitios web específicos a medida, para las necesidades de nuestros clientes. Nuestros <span>especialistas Joomla</span> en diseño web, se encargarán de abrir un segundo canal de marketing a su negocio, vea nuestro portafolio de <span>diseño web</span>. Totalmente compatible con todos los estándares de <span>diseño web</span>, nuestros sitios web diseñados a medida funcionan exactamente como sea necesario debido a nuestros estándares de desarrollo y plataforma extensible de Joomla.
+					Especialistas Joomla en <span>diseño de paginas web</span>, desarrollo de sitios web específicos a medida, para las necesidades de nuestros clientes. Nuestros <span>especialistas Joomla</span> en diseño web, se encargarán de abrir un segundo canal de marketing a su negocio, vea nuestro portafolio de <span>diseño web</span>. Totalmente compatible con todos los estándares de <span>diseño web</span>, nuestros sitios web diseñados a medida funcionan exactamente como sea necesario debido a nuestros estándares de desarrollo y plataforma extensible de Joomla. Para ofrecer servicios SEO de calidad utilizamos el <LinkColor to="https://seosmmpanel.com/">
+					SEOSMMPanel
+				</LinkColor> y <LinkColor to="https://seosmmpanel.com">
+					SemRush
+				</LinkColor> dos de las mejores herramientas SEO.
 				</Typography>
 
 				<CustomActiveLink to="/obi">
@@ -296,6 +300,19 @@ const BlogImageWrapper = styled(ImageSectionWrapper)(({ theme }) => ({
 		width: 'auto',
 		height: '129px',
 		objectFit: 'cover',
+	}
+}));
+
+const LinkColor = styled(Link)(({ theme }) => ({
+	textDecoration: 'none',
+	color: theme.palette.common.activeLinkColor,
+
+	'h1, h2, h3, h4, h5, h6, p, span': {
+		color: theme.palette.common.activeLinkColor,
+	},
+
+	'&:hover': {
+		textDecoration: 'underline',
 	}
 }))
 
