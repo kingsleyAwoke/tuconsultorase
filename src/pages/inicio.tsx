@@ -38,7 +38,7 @@ const blogData: BlogData[] = [
 	{
 		title: 'Acelerar Joomla',
 		image: blogImage2,
-		description: ['¿Necesita ayuda para acelerar su sitio web? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como Google, Yahoo,etc. Leer mas <a href="https://www.joomla.org/" style="color: #2a6496; text-decoration: none">Joomla</a>'],
+		description: ['¿Necesita ayuda para acelerar su sitio web <a href="https://www.joomla.org/" style="color: #2a6496; text-decoration: none">Joomla</a>? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como Google, Yahoo,etc.'],
 		phoneNumber: '',
 		email: '',
 		Links: [],
@@ -84,7 +84,7 @@ const blogData: BlogData[] = [
 	{
 		title: 'Consultoria SEO',
 		image: blogImage5,
-		description: ['Somos especialistas o <span> consultores SEO</span>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. '],
+		description: ['Somos especialistas o <span> consultores SEO</span>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. Para ofrecer servicios SEO de calidad utilizamos el <a href="https://seosmmpanel.com/" style="color: #2a6496; text-decoration: none">SEOSMMPanel </a> y <a href="https://www.semrush.com/" style="color: #2a6496; text-decoration: none">SemRush </a> dos de las mejores herramientas SEO. '],
 		phoneNumber: '',
 		email: '',
 		Links: [],
@@ -108,7 +108,7 @@ const blogData: BlogData[] = [
 	{
 		title: 'Limpieza sitio hackeado',
 		image: blogImage8,
-		description: ['El equipo de expertos en seguridad de tu consultora SEO limpia su sitio hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitio, discretamente. Disponemos de dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de  los archivos de forma nueva y limpia. '],
+		description: ['El equipo de expertos en seguridad de tu consultora SEO limpia su sitio hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitio, discretamente. Disponemos de dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de  los archivos de forma nueva y limpia. También incluimos gratis una licencia de 12 meses de <a href="https://immunefi.com/" style="color: #2a6496; text-decoration: none">Immunify</a>.'],
 		phoneNumber: '',
 		email: '',
 		Links: [],
@@ -170,12 +170,12 @@ const BlogFeatured = () => {
 				<Typography variant="h4">
 					Especialistas Joomla en <span>diseño de paginas web</span>, desarrollo de sitios web específicos a medida, para las necesidades de nuestros clientes. Nuestros <span>especialistas Joomla</span> en diseño web, se encargarán de abrir un segundo canal de marketing a su negocio, vea nuestro portafolio de <span>diseño web</span>. Totalmente compatible con todos los estándares de <span>diseño web</span>, nuestros sitios web diseñados a medida funcionan exactamente como sea necesario debido a nuestros estándares de desarrollo y plataforma extensible de Joomla. Para ofrecer servicios SEO de calidad utilizamos el <LinkColor to="https://seosmmpanel.com/">
 					SEOSMMPanel
-				</LinkColor> y <LinkColor to="https://seosmmpanel.com">
+				</LinkColor> y <LinkColor to="https://www.semrush.com/">
 					SemRush
 				</LinkColor> dos de las mejores herramientas SEO.
 				</Typography>
 
-				<CustomActiveLink to="/obi">
+				<CustomActiveLink to="/">
 					<Typography variant="h5">
 						Leer más: Diseño de paginas web y seo. Acelerar sitio Joomla
 					</Typography>
