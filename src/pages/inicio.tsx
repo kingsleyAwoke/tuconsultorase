@@ -84,7 +84,7 @@ const blogData: BlogData[] = [
 	{
 		title: 'Consultoria SEO',
 		image: blogImage5,
-		description: ['Somos especialistas o <span> consultores SEO</span>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. Para ofrecer servicios SEO de calidad utilizamos el <a href="https://seosmmpanel.com/" style="color: #2a6496; text-decoration: none">SEOSMMPanel </a> y <a href="https://www.semrush.com/" style="color: #2a6496; text-decoration: none">SemRush </a> dos de las mejores herramientas SEO. '],
+		description: ['Somos especialistas o <span> consultores SEO</span>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. '],
 		phoneNumber: '',
 		email: '',
 		Links: [],
@@ -168,11 +168,7 @@ const BlogFeatured = () => {
 				</Typography>
 
 				<Typography variant="h4">
-					Especialistas Joomla en <span>diseño de paginas web</span>, desarrollo de sitios web específicos a medida, para las necesidades de nuestros clientes. Nuestros <span>especialistas Joomla</span> en diseño web, se encargarán de abrir un segundo canal de marketing a su negocio, vea nuestro portafolio de <span>diseño web</span>. Totalmente compatible con todos los estándares de <span>diseño web</span>, nuestros sitios web diseñados a medida funcionan exactamente como sea necesario debido a nuestros estándares de desarrollo y plataforma extensible de Joomla. Para ofrecer servicios SEO de calidad utilizamos el <LinkColor to="https://seosmmpanel.com/">
-					SEOSMMPanel
-				</LinkColor> y <LinkColor to="https://www.semrush.com/">
-					SemRush
-				</LinkColor> dos de las mejores herramientas SEO.
+					Especialistas Joomla en <span>diseño de paginas web</span>, desarrollo de sitios web específicos a medida, para las necesidades de nuestros clientes. Nuestros <span>especialistas Joomla</span> en diseño web, se encargarán de abrir un segundo canal de marketing a su negocio, vea nuestro portafolio de <span>diseño web</span>. Totalmente compatible con todos los estándares de <span>diseño web</span>, nuestros sitios web diseñados a medida funcionan exactamente como sea necesario debido a nuestros estándares de desarrollo y plataforma extensible de Joomla.
 				</Typography>
 
 				<CustomActiveLink to="/">
