@@ -34,7 +34,7 @@ const Extra = () => {
 					Tutorial SEO paso a paso con herramientas SEO gratuitas. Con metodología "sombrero blanco" que se    apega a las directrices de los motores de búsqueda, altamente ético.
 				</Typography>
 
-				<PrimaryButton sx={{ padding: '8px' }}>
+				<PrimaryButton sx={{ padding: '8px', cursor: 'default' }}>
 					<Typography variant="h5">
 						Leer mas sobre el tutorial SEO
 					</Typography>

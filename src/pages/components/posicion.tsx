@@ -9,7 +9,7 @@ const Posicion = () => {
 	return (
 		<PosicionWrapper>
 			<Box display="flex" flexDirection="row" justifyContent="center">
-				<PrimaryButton>
+				<PrimaryButton sx={{ cursor: 'default'}}>
 					<Typography variant="body1">Los más Populares</Typography>
 				</PrimaryButton>
 			</Box>

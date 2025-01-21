@@ -235,7 +235,7 @@ const TopBlog = () => {
 					<Grid item xs={12} md={6} lg={4} xl={3} key={index}>
 						<TopBlogItemWrapper>
 							<Box display='flex' flexDirection='row' justifyContent='center'>
-								<PrimaryButton>
+								<PrimaryButton sx={{ cursor: 'default' }} >
 									<Typography variant="h4">{blog.title}</Typography>
 								</PrimaryButton>
 							</Box>
