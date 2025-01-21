@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 import { Hero } from "./components/hero";
@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 interface LinkData {
 	link: string
 	label: string
+	isButton: boolean
 }
 
 interface BlogData {
@@ -33,7 +34,13 @@ const blogData: BlogData[] = [
 		description: ['En el diseño de paginas web joomla la salida visual es controlada por las plantillas. Existen 2 formas de desarrollar las plantillas: Personalizada y una plantilla adaptada a sus requerimientos. Nuestra meta es alcanzar sus objetivos de negocio, el <span>diseño de página páginas web</span> es inútil si no cumple con sus objetivos.'],
 		phoneNumber: '',
 		email: '',
-		Links: [],
+		Links: [
+			{
+				link: '/diseño-paginas-web',
+				label: 'Leer mas',
+				isButton: true
+			}
+		],
 	},
 	{
 		title: 'Acelerar Joomla',
@@ -41,7 +48,13 @@ const blogData: BlogData[] = [
 		description: ['¿Necesita ayuda para acelerar su sitio web <a href="https://www.joomla.org/" style="color: #2a6496; text-decoration: none">Joomla</a>? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como Google, Yahoo,etc.'],
 		phoneNumber: '',
 		email: '',
-		Links: [],
+		Links: [
+			{
+				link: '/acelerar-joomla',
+				label: 'Leer mas',
+				isButton: true
+			},
+		],
 	},
 	{
 		title: 'Seguridad Joomla',
@@ -52,7 +65,13 @@ const blogData: BlogData[] = [
 		],
 		phoneNumber: '',
 		email: '',
-		Links: [],
+		Links: [
+			{
+				link: '/seguridad',
+				label: 'Leer mas',
+				isButton: true
+			},
+		],
 	},
 	{
 		title: 'Contáctenos',
@@ -68,34 +87,49 @@ const blogData: BlogData[] = [
 		email: 'info@tuconsultoraseo.com',
 		Links: [
 			{
-				link: '#',
-				label: 'Escribenos'
+				link: '/contactenos',
+				label: 'Escribenos',
+				isButton: false
+			},
+			{
+				link: 'https://www.plus.google.com',
+				label: 'Visítenos en Google+',
+				isButton: false
 			},
 			{
 				link: '#',
-				label: 'Visítenos en Google+'
-			},
-			{
-				link: '#',
-				label: 'Agregar a favoritos'
+				label: 'Agregar a favoritos',
+				isButton: false
 			},
 		],
 	},
 	{
 		title: 'Consultoria SEO',
 		image: blogImage5,
-		description: ['Somos especialistas o <span> consultores SEO</span>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. '],
+		description: ['Somos especialistas o consultores <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=es" style="color: #2a6496; text-decoration: none">SEO</a>, el posicionamiento en buscadores es el proceso de mejorar el volumen o la calidad del tráfico a un sitio web en los motores de búsqueda a través de posicionamiento "natural", no de pago. Sólo la parte superior de los primeros 10 resultados de búsqueda tienen la oportunidad de convertir un visitante en un nuevo cliente valioso. Y gracias a nuestra asociación con <a href="https://www.upbuild.io/" style="color: #2a6496; text-decoration: none">UpBuild</a>, obtienes $30 créditos en backlinks de alta calidad.'],
 		phoneNumber: '',
 		email: '',
-		Links: [],
+		Links: [
+			{
+				link: '/publicidad-pago-por-clic',
+				label: 'Leer mas',
+				isButton: true
+			},
+		],
 	},
 	{
 		title: 'Tiendas online',
 		image: blogImage6,
-		description: ['Una tienda en línea puede ser un medio increíblemente eficaz para la venta de productos y servicios a clientes de todo el mundo que de otro modo nunca conocerían su empresa. En términos más básicos una tienda online o carrito de compras es un software que le permite mostrar los productos de su sitio web y recoge automáticamente el dinero cuando el cliente compra sus productos.'],
+		description: ['Una tienda en línea puede ser un medio increíblemente eficaz para la venta de productos y servicios a clientes de todo el mundo que de otro modo nunca conocerían su empresa. En términos más básicos, una tienda online o carrito de compras es un software que le permite mostrar los productos de su sitio web y recoge automáticamente el dinero cuando el cliente compra sus productos. También podemos crear tiendas con <a href="https://woocommerce.com/" style="color: #2a6496; text-decoration: none">WooCommerce</a>. Puedes ver un ejemplo de tienda en linea al que contribuimos a construir en <a href="https://www.lenostube.com/es/" style="color: #2a6496; text-decoration: none">Lenos</a>, el cual ahora es un sitio líder en la industria de SMM.'],
 		phoneNumber: '',
 		email: '',
-		Links: [],
+		Links: [
+			{
+				link: '/tiendas-online',
+				label: 'Leer mas',
+				isButton: true
+			},
+		],
 	},
 	{
 		title: 'Formación Joomla',
@@ -103,7 +137,13 @@ const blogData: BlogData[] = [
 		description: ['Tenemos 3 modalidades de cursos de este excelente gestor de contenidos. La formación abarca temas desde porqué se recomienda este gestor de contenidos, como instalarlo y otras preguntas esenciales. Todos nuestros cursos de formación de CMS son 100% personalizables. Nuestros cursos también están disponibles en <a href="https://www.udemy.com/course/joomla-for-beginners-build-a-website-with-joomla-cms/" alt="Joomla for beginners" style="color: #2a6496; text-decoration: none">Udemy</a> de forma gratuita.'],
 		phoneNumber: '',
 		email: '',
-		Links: [],
+		Links: [
+			{
+				link: '/programadores-php',
+				label: 'Leer mas',
+				isButton: true
+			},
+		],
 	},
 	{
 		title: 'Limpieza sitio hackeado',
@@ -111,7 +151,13 @@ const blogData: BlogData[] = [
 		description: ['El equipo de expertos en seguridad de tu consultora SEO limpia su sitio hackeado. Usted puede confiar en nosotros para ayudarle con incidentes de hacking de su sitio, discretamente. Disponemos de dos métodos: revisión de los archivos por nuestro personal de forma exhaustiva y reposición de  los archivos de forma nueva y limpia. También incluimos gratis una licencia de 12 meses de <a href="https://immunefi.com/" style="color: #2a6496; text-decoration: none">Immunify</a>.'],
 		phoneNumber: '',
 		email: '',
-		Links: [],
+		Links: [
+			{
+				link: '/limpieza-sitio-hackeado',
+				label: 'Leer mas',
+				isButton: true
+			},
+		],
 	},
 ]
 
@@ -171,7 +217,7 @@ const BlogFeatured = () => {
 					Especialistas Joomla en <span>diseño de paginas web</span>, desarrollo de sitios web específicos a medida, para las necesidades de nuestros clientes. Nuestros <span>especialistas Joomla</span> en diseño web, se encargarán de abrir un segundo canal de marketing a su negocio, vea nuestro portafolio de <span>diseño web</span>. Totalmente compatible con todos los estándares de <span>diseño web</span>, nuestros sitios web diseñados a medida funcionan exactamente como sea necesario debido a nuestros estándares de desarrollo y plataforma extensible de Joomla.
 				</Typography>
 
-				<CustomActiveLink to="/">
+				<CustomActiveLink to="/consultoria-seo">
 					<Typography variant="h5">
 						Leer más: Diseño de paginas web y seo. Acelerar sitio Joomla
 					</Typography>
@@ -218,27 +264,25 @@ const TopBlog = () => {
 								)}
 
 								{blog.Links && blog.Links.length > 0 && (
-									<Box sx={{ display: 'flex', flexDirection: 'row', gap: 1.5 }}>
-										{blog.Links.map((link, i) => (
-											<CustomActiveLink key={i} to={link.link}>
-												<Typography variant="body2">
-													{link.label}
-												</Typography>
-											</CustomActiveLink>
-										))}
-									</Box>
-								)}
-							</Box>
-
-							{(blog.Links && blog.Links.length === 0) && (
-								<Box sx={{ display: 'flex', flexDirection: 'row' }}>
-									<Link to='#'>
+								<Box sx={{ display: 'flex', flexDirection: 'row', gap: 1.5 }}>
+									{blog.Links.map((link, i) => (
+									// Conditionally render PrimaryButton based on a property (e.g., link.isButton)
+									link.isButton ? (
+										<Link key={i} to={link.link}>
 										<PrimaryButton>
-											<Typography variant="h5">Leer mas</Typography>
+											<Typography variant="body2">{link.label}</Typography>
 										</PrimaryButton>
-									</Link>
+										</Link>
+									) : (
+										<CustomActiveLink key={i} to={link.link}>
+										<Typography variant="body2">{link.label}</Typography>
+										</CustomActiveLink>
+									)
+									))}
 								</Box>
-							)}
+								)}
+
+							</Box>
 						</TopBlogItemWrapper>
 					</Grid>
 				))}
@@ -298,18 +342,5 @@ const BlogImageWrapper = styled(ImageSectionWrapper)(({ theme }) => ({
 		objectFit: 'cover',
 	}
 }));
-
-const LinkColor = styled(Link)(({ theme }) => ({
-	textDecoration: 'none',
-	color: theme.palette.common.activeLinkColor,
-
-	'h1, h2, h3, h4, h5, h6, p, span': {
-		color: theme.palette.common.activeLinkColor,
-	},
-
-	'&:hover': {
-		textDecoration: 'underline',
-	}
-}))
 
 export { Inicio };

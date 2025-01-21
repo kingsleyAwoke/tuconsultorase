@@ -15,9 +15,9 @@ const BlogItem = ({ title, description }: BlogData) => {
                 ))}
             </Box>
 
-            <CustomActiveLink to="/">
+            {/* <CustomActiveLink to="/">
                 <Typography variant="h5">Leer más: {title}</Typography>
-            </CustomActiveLink>
+            </CustomActiveLink> */}
         </BlogItemWrapper>
     );
 };
