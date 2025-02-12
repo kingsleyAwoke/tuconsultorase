@@ -45,7 +45,7 @@ const blogData: BlogData[] = [
 	{
 		title: 'Acelerar Joomla',
 		image: blogImage2,
-		description: ['¿Necesita ayuda para acelerar su sitio web <a href="https://www.joomla.org/" style="color: #2a6496; text-decoration: none">Joomla</a>? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como <a href="https://www.google.com" style="color: #2a6496; text-decoration: none">Google</a>, <a href="https://www.yahoo/" style="color: #2a6496; text-decoration: none">Yahoo</a>, <a href="https://www.ping.com/" style="color: #2a6496; text-decoration: none">Ping</a>,etc.'],
+		description: ['¿Necesita ayuda para acelerar su sitio web <a href="https://www.joomla.org/" style="color: #2a6496; text-decoration: none">Joomla</a>? En Tu Consultora Seo tenemos una gran cantidad de experiencia que muestra cómo acelerar sitios web lentos, de hecho es uno de los servicios más solicitados que prestamos. Conozca como mejorar el rendimiento de su sitio, esto mejorará su posición en los buscadores como <a href="https://www.google.com" style="color: #2a6496; text-decoration: none">Google</a>, <a href="https://www.yahoo/" style="color: #2a6496; text-decoration: none">Yahoo</a>, <a href="https://www.bing.com/" style="color: #2a6496; text-decoration: none">Bing</a>,etc.'],
 		phoneNumber: '',
 		email: '',
 		Links: [
